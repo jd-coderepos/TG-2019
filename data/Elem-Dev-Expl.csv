@@ -587,7 +587,7 @@ Mercury_SC_402104	d1ac-a510-1958-0100	polluting means something harmful or somet
 Mercury_SC_402104	d213-eeb4-7ba2-40ca	toxic means poisonous	LEXGLUE
 Mercury_SC_402104	e4d1-f502-402f-4ce9	dumping something in an environment means adding that something to that environment	LEXGLUE
 Mercury_SC_402104	d116-6f25-b3ac-7d88	pollution has a negative impact on the environment or air quality	CENTRAL
-Mercury_SC_402104	57d4-79ba-a97d-0f9a	--[NOT FOUND]--	CENTRAL
+Mercury_SC_402104	57d4-79ba-a97d-0f9a	harming something has a negative impact on or effect on that something	CENTRAL
 Mercury_SC_402104	10ce-c060-90b9-b748	an animal is a kind of organism	GROUNDING
 Mercury_SC_402104	f7a7-6ffc-be3e-d21d	organisms are a part of an environment	CENTRAL
 Mercury_SC_402104	f4d3-fd82-31d1-855c	to cause means to result in	LEXGLUE
@@ -1017,7 +1017,7 @@ MCAS_2002_5_6	464c-d7c3-7c7d-8ae7	flying is a kind of motion air	GROUNDING
 MCAS_2002_5_6	d8a3-10bb-9aea-178a	motion or movement means moving or to move	LEXGLUE
 MCAS_2002_5_6	9a54-14e7-f8f4-6375	avoiding predators or escaping predators or avoiding consumers is a kind of protection Move to PREDATOR-PREY.	LEXGLUE
 MCAS_2002_5_6	360a-b24c-3306-9b73	protecting something means preventing harm to that something	LEXGLUE
-MCAS_2002_5_6	57d4-79ba-a97d-0f9a	--[NOT FOUND]--	LEXGLUE
+MCAS_2002_5_6	57d4-79ba-a97d-0f9a	harming something has a negative impact on or effect on that something	LEXGLUE
 MCAS_2002_5_6	ed09-025e-89b8-d48f	negative impact is the opposite of positive impact	LEXGLUE
 MCAS_2002_5_6	d0e2-806e-adad-7e98	a positive impact is a benefit	LEXGLUE
 MCAS_2002_5_6	984e-bccb-a608-55b8	a hummingbird can reach flowers by hovering in the air	NEG

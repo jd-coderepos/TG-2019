@@ -33,7 +33,7 @@ VASoL_2007_3_6	3650-2d8d-42b9-299b	nonliving or non-living or die is the opposit
 VASoL_2007_3_6	458c-0ba5-e5dd-00b8	harming an animal species causes that animal's population to decrease	CENTRAL
 VASoL_2007_3_6	f8e4-1af3-719b-20eb	if the population of an animal decreases then that animal may no longer be found in that place	CENTRAL
 VASoL_2007_3_6	305d-ed38-7824-6cc0	humans changing an environment sometimes causes that environment to be destroyed	CENTRAL
-VASoL_2007_3_6	57d4-79ba-a97d-0f9a	--[NOT FOUND]--	LEXGLUE
+VASoL_2007_3_6	57d4-79ba-a97d-0f9a	harming something has a negative impact on or effect on that something	LEXGLUE
 VASoL_2007_3_6	1800-f69c-1283-7d49	habitat is similar to environment	LEXGLUE
 Mercury_SC_416525	8958-fc28-d9ce-a1d6	a leaf performs photosynthesis or gas exchange	CENTRAL
 Mercury_SC_416525	694b-d9ec-8c65-5a6a	green plants provide food for themselves or animals or consumers by performing photosynthesis	CENTRAL
@@ -127,7 +127,7 @@ Mercury_SC_417556	8cd7-84f7-76a1-1ba5	a deer is a kind of animal	GROUNDING
 Mercury_SC_417556	90c5-2559-60d6-ec29	a road is a kind of location	GROUNDING
 Mercury_SC_417556	a06c-56a9-7090-ec00	if an animal is near a road then that animal might be killed by a car	CENTRAL
 Mercury_SC_417556	6a6c-3183-436e-898b	killing means harming something causing death	LEXGLUE
-Mercury_SC_417556	57d4-79ba-a97d-0f9a	--[NOT FOUND]--	CENTRAL
+Mercury_SC_417556	57d4-79ba-a97d-0f9a	harming something has a negative impact on or effect on that something	CENTRAL
 Mercury_SC_417556	ed09-025e-89b8-d48f	negative impact is the opposite of positive impact	LEXGLUE
 Mercury_SC_417556	4029-a596-3625-db81	attracting something to a location causes that something to be near that location	CENTRAL
 Mercury_SC_417556	1992-cbd3-6534-a7f7	protecting a living thing has a positive impact on that living thing's survival or health	CENTRAL
@@ -299,7 +299,7 @@ VASoL_2010_3_29	a65f-d177-962c-f0fe	logging is when humans cut down trees or for
 VASoL_2010_3_29	a54a-a04c-71eb-ba0a	a forest contains plants or trees	CENTRAL
 VASoL_2010_3_29	10fd-451d-ea1e-99fa	cutting down a forest means cutting down the trees in that forest	LEXGLUE
 VASoL_2010_3_29	360a-b24c-3306-9b73	protecting something means preventing harm to that something	LEXGLUE
-VASoL_2010_3_29	57d4-79ba-a97d-0f9a	--[NOT FOUND]--	LEXGLUE
+VASoL_2010_3_29	57d4-79ba-a97d-0f9a	harming something has a negative impact on or effect on that something	LEXGLUE
 VASoL_2010_3_29	ed09-025e-89b8-d48f	negative impact is the opposite of positive impact	LEXGLUE
 VASoL_2010_3_29	fc64-bcd7-4282-619e	good means positive	LEXGLUE
 VASoL_2010_3_29	aaa1-6683-9d15-9829	removing forests means removing animal habitats	CENTRAL
@@ -860,7 +860,7 @@ NYSEDREGENTS_2016_4_1	c035-787b-ecbc-b968	light is a kind of nonliving thing	CEN
 NYSEDREGENTS_2016_4_1	49dc-4526-46f9-5b32	sunlight is a kind of light	GROUNDING
 NYSEDREGENTS_2006_4_27	d951-095d-6862-917c	humans cause pollution	CENTRAL
 NYSEDREGENTS_2006_4_27	d1ac-a510-1958-0100	polluting means something harmful or something poisonous is added to an environment causing harm to the environment	CENTRAL
-NYSEDREGENTS_2006_4_27	57d4-79ba-a97d-0f9a	--[NOT FOUND]--	LEXGLUE
+NYSEDREGENTS_2006_4_27	57d4-79ba-a97d-0f9a	harming something has a negative impact on or effect on that something	LEXGLUE
 NYSEDREGENTS_2006_4_27	f4dc-5030-6255-a1f8	humans changing ecosystems or environments usually has a negative impact on an ecosystem or organisms living in an ecosystem	BACKGROUND
 NYSEDREGENTS_2006_4_27	0a09-b3f6-9229-9511	polluting is a kind of activity	CENTRAL
 NYSEDREGENTS_2009_4_17	c7b7-2fdc-e793-309e	the arctic is a kind of environment	ROLE
@@ -904,7 +904,7 @@ NYSEDREGENTS_2004_4_19	96a8-ac07-e165-b0ff	freezing means cold temperatures	LEXG
 NYSEDREGENTS_2004_4_19	3e42-533a-ed4d-c99b	covering something is a kind of protection	GROUNDING
 NYSEDREGENTS_2004_4_19	cf66-dfc6-48d2-57ce	cold temperatures usually have a negative impact on organisms	CENTRAL
 NYSEDREGENTS_2004_4_19	26c3-eec4-e1d0-fac5	a plant is a kind of organism	GROUNDING
-NYSEDREGENTS_2004_4_19	57d4-79ba-a97d-0f9a	--[NOT FOUND]--	LEXGLUE
+NYSEDREGENTS_2004_4_19	57d4-79ba-a97d-0f9a	harming something has a negative impact on or effect on that something	LEXGLUE
 MDSA_2007_4_35	d06e-6c86-abe9-f3d5	mass or weight is a property of matter or objects or materials	CENTRAL
 MDSA_2007_4_35	866b-5e77-f131-2b80	volume is a property of matter	CENTRAL
 MDSA_2007_4_35	33f0-39de-0983-aad8	the properties of something are used for describing that something	CENTRAL
@@ -1471,7 +1471,7 @@ NYSEDREGENTS_2011_4_27	10fd-451d-ea1e-99fa	cutting down a forest means cutting d
 NYSEDREGENTS_2011_4_27	7a75-f74f-4c98-0f01	an ecosystem contains a large community of or large numbers of living organisms in a particular place	BACKGROUND
 NYSEDREGENTS_2011_4_27	c1d3-4ab4-b443-aac3	an environment is similar to an ecosystem	LEXGLUE
 NYSEDREGENTS_2011_4_27	f4dc-5030-6255-a1f8	humans changing ecosystems or environments usually has a negative impact on an ecosystem or organisms living in an ecosystem	CENTRAL
-NYSEDREGENTS_2011_4_27	57d4-79ba-a97d-0f9a	--[NOT FOUND]--	LEXGLUE
+NYSEDREGENTS_2011_4_27	57d4-79ba-a97d-0f9a	harming something has a negative impact on or effect on that something	LEXGLUE
 NYSEDREGENTS_2011_4_27	a65f-d177-962c-f0fe	logging is when humans cut down trees or forests for wood	BACKGROUND
 Mercury_SC_LBS10923	44f4-634f-79d8-75d7	detailed observation of celestial objects requires a telescope	CENTRAL
 Mercury_SC_LBS10923	22a2-1029-702e-a29a	a planet is a kind of celestial object or body	GROUNDING
@@ -1968,7 +1968,7 @@ Mercury_SC_408048	0c02-ef0b-7f35-1468	illness has a negative impact on an organi
 Mercury_SC_408048	10ce-c060-90b9-b748	an animal is a kind of organism	GROUNDING
 Mercury_SC_408048	4253-4b9e-1e5f-1742	a human is a kind of animal	GROUNDING
 Mercury_SC_408048	9d3e-05a6-f555-db18	person is synonymous with human	GROUNDING
-Mercury_SC_408048	57d4-79ba-a97d-0f9a	--[NOT FOUND]--	CENTRAL
+Mercury_SC_408048	57d4-79ba-a97d-0f9a	harming something has a negative impact on or effect on that something	CENTRAL
 Mercury_SC_408048	360a-b24c-3306-9b73	protecting something means preventing harm to that something	LEXGLUE
 Mercury_SC_408048	1992-cbd3-6534-a7f7	protecting a living thing has a positive impact on that living thing's survival or health	CENTRAL
 Mercury_SC_408048	ed09-025e-89b8-d48f	negative impact is the opposite of positive impact	LEXGLUE
@@ -2241,7 +2241,7 @@ MCAS_1999_4_11	3f9d-8b3a-54b5-6a3c	a body of water is a kind of environment	GROU
 MCAS_1999_4_11	9885-6337-f26c-cfbd	a river is a kind of flowing body of water	GROUNDING
 MCAS_1999_4_11	3547-7689-fb87-ee96	pollution is when humans pollute the environment with pollutants	LEXGLUE
 MCAS_1999_4_11	d1ac-a510-1958-0100	polluting means something harmful or something poisonous is added to an environment causing harm to the environment	CENTRAL
-MCAS_1999_4_11	57d4-79ba-a97d-0f9a	--[NOT FOUND]--	LEXGLUE
+MCAS_1999_4_11	57d4-79ba-a97d-0f9a	harming something has a negative impact on or effect on that something	LEXGLUE
 NYSEDREGENTS_2005_4_25	8309-d5c8-048c-7198	high temperatures can cause an object to combust	CENTRAL
 NYSEDREGENTS_2005_4_25	9713-a39a-3a6d-fee6	to combust means to catch fire	LEXGLUE
 NYSEDREGENTS_2005_4_25	4dc5-13bf-3c46-af74	fire causes burning	GROUNDING
@@ -2642,7 +2642,7 @@ NYSEDREGENTS_2009_4_3	3d1b-c195-8dca-4587	dropping something causes that somethi
 NYSEDREGENTS_2009_4_3	2522-2f06-9dd6-6bf1	falling means moving downward	LEXGLUE
 NYSEDREGENTS_2009_4_3	1632-346e-67a5-b1b8	downward means down	LEXGLUE
 NYSEDREGENTS_2009_4_3	1271-8178-87cf-045c	gravity is a kind of force	CENTRAL
-NYSEDREGENTS_2016_4_13	57d4-79ba-a97d-0f9a	--[NOT FOUND]--	ROLE
+NYSEDREGENTS_2016_4_13	57d4-79ba-a97d-0f9a	harming something has a negative impact on or effect on that something	ROLE
 NYSEDREGENTS_2016_4_13	90eb-c6e6-6838-9461	garbage means waste	LEXGLUE
 NYSEDREGENTS_2016_4_13	2d23-54ce-1de1-e3a8	waste has a negative impact on the environment	CENTRAL
 NYSEDREGENTS_2016_4_13	8b85-9aff-8362-b0d3	impact means effect	LEXGLUE
@@ -2691,7 +2691,7 @@ Mercury_SC_408743	f23e-a9fe-6f95-676f	missing is similar to less	LEXGLUE
 Mercury_SC_408743	3796-e9f2-e94c-634d	an plant requires food for survival	CENTRAL
 Mercury_SC_408743	4d6a-a765-2231-eee7	having food has a positive impact on an organism's health	CENTRAL
 Mercury_SC_408743	ed09-025e-89b8-d48f	negative impact is the opposite of positive impact	LEXGLUE
-Mercury_SC_408743	57d4-79ba-a97d-0f9a	--[NOT FOUND]--	LEXGLUE
+Mercury_SC_408743	57d4-79ba-a97d-0f9a	harming something has a negative impact on or effect on that something	LEXGLUE
 Mercury_SC_408743	7159-d1fa-5784-4a1e	to hurt means to harm	LEXGLUE
 Mercury_SC_408743	26c3-eec4-e1d0-fac5	a plant is a kind of organism	GROUNDING
 TIMSS_2011_4_pg37	a538-175f-9223-d117	the sun is a source of light or light energy called sunlight	CENTRAL
@@ -3125,7 +3125,7 @@ Mercury_SC_409556	b5b8-ce64-6568-4a6c	helping something has a positive impact on
 Mercury_SC_409556	31be-afe3-6b4d-fa2d	difficulty seeing means visibility decreases	LEXGLUE
 Mercury_SC_400986	ee54-4b39-996f-44ce	the moon is less bright than the sun	CENTRAL
 Mercury_SC_400986	9209-73ec-9b0b-56a0	looking at bright objects has a negative impact on the eyes	CENTRAL
-Mercury_SC_400986	57d4-79ba-a97d-0f9a	--[NOT FOUND]--	LEXGLUE
+Mercury_SC_400986	57d4-79ba-a97d-0f9a	harming something has a negative impact on or effect on that something	LEXGLUE
 Mercury_SC_400986	fd2d-7763-c40b-59a9	safe is the opposite of harm or danger	CENTRAL
 Mercury_SC_LBS10656	615c-9023-3957-0501	lighting a candle causes that candle to burn	CENTRAL
 Mercury_SC_LBS10656	4dc5-13bf-3c46-af74	fire causes burning	CENTRAL
@@ -3430,7 +3430,7 @@ CSZ10245	d534-dac5-f81f-1e26	a plant stem contains a system of tubes for transpo
 Mercury_SC_409670	5e75-4bbb-dae0-311f	soil erosion means soil loss through wind or water or animals	CENTRAL
 Mercury_SC_409670	1fc9-87b3-4b09-6451	erosion of soil has a negative impact on the environment or soil quality	CENTRAL
 Mercury_SC_409670	d54f-e502-fa51-788d	In the erosion process roots of plants are an inhibitor	CENTRAL
-Mercury_SC_409670	57d4-79ba-a97d-0f9a	--[NOT FOUND]--	LEXGLUE
+Mercury_SC_409670	57d4-79ba-a97d-0f9a	harming something has a negative impact on or effect on that something	LEXGLUE
 Mercury_SC_409670	1ec2-4fac-096f-d2fc	inhibitor means something that prevents something from happening	CENTRAL
 Mercury_SC_409670	360a-b24c-3306-9b73	protecting something means preventing harm to that something	LEXGLUE
 Mercury_SC_410572	9e7d-986e-6af1-5ac1	heat is a kind of energy	CENTRAL
@@ -3552,7 +3552,7 @@ Mercury_SC_401772	b393-8aa8-f654-e6a9	recyclability is a property of a material 
 Mercury_SC_401772	f450-c52a-cebe-ac01	recyclable means a material can be recycled	CENTRAL
 VASoL_2009_5_21	f4dc-5030-6255-a1f8	humans changing ecosystems or environments usually has a negative impact on an ecosystem or organisms living in an ecosystem	CENTRAL
 VASoL_2009_5_21	4533-919e-b56d-820b	humans building homes in an ecosystem or in an environment causes that ecosystem or that environment to change	CENTRAL
-VASoL_2009_5_21	57d4-79ba-a97d-0f9a	--[NOT FOUND]--	LEXGLUE
+VASoL_2009_5_21	57d4-79ba-a97d-0f9a	harming something has a negative impact on or effect on that something	LEXGLUE
 VASoL_2009_5_21	426c-6ee0-9023-3cca	a wetland is a kind of ecosystem	GROUNDING
 Mercury_SC_400377	a224-d742-be36-390f	water easily passes through pebbles	CENTRAL
 Mercury_SC_400377	7fcb-f383-0c03-e6a0	pebbles are a kind of material	CENTRAL
@@ -3595,7 +3595,7 @@ NCEOGA_2013_5_55	0ddf-dd31-cd78-80b4	if an organism eats something then that som
 NCEOGA_2013_5_55	10ce-c060-90b9-b748	an animal is a kind of organism	GROUNDING
 NCEOGA_2013_5_55	87a0-dd02-dd6d-ee60	an organism is a living thing	LEXGLUE
 NCEOGA_2013_5_55	f346-e8eb-6338-4e34	the decrease of something required by an organism has a negative impact on that organism's survival	CENTRAL
-NCEOGA_2013_5_55	57d4-79ba-a97d-0f9a	--[NOT FOUND]--	LEXGLUE
+NCEOGA_2013_5_55	57d4-79ba-a97d-0f9a	harming something has a negative impact on or effect on that something	LEXGLUE
 NCEOGA_2013_5_12	ab12-f588-a1af-90a0	an amoeba is a kind of single-celled organism	CENTRAL
 NCEOGA_2013_5_12	1b3f-b617-d7ef-1815	a kind of something is an example of that something	LEXGLUE
 Mercury_SC_401314	e258-cdba-6488-1460	lower means less	LEXGLUE
@@ -4127,7 +4127,7 @@ MCAS_2010_5_9	54f0-f2ea-baa5-7a2f	if an animal's or organisms habitat no longer 
 MCAS_2010_5_9	7dc9-24ac-4c93-866e	to impact means to affect	LEXGLUE
 MCAS_2010_5_9	f3f5-fefd-3507-4a59	death means to die	LEXGLUE
 MCAS_2010_5_9	6a6c-3183-436e-898b	killing means harming something causing death	LEXGLUE
-MCAS_2010_5_9	57d4-79ba-a97d-0f9a	--[NOT FOUND]--	LEXGLUE
+MCAS_2010_5_9	57d4-79ba-a97d-0f9a	harming something has a negative impact on or effect on that something	LEXGLUE
 MCAS_2010_5_9	1240-2639-9a5f-96cd	an environment means an area	LEXGLUE
 MCAS_2010_5_9	5951-c5bc-d3b9-c818	if a body of water loses all water then that body of water does not exist any more	CENTRAL
 MCAS_2010_5_9	33d8-6fe3-b609-c1a4	drying up means losing all water	LEXGLUE
@@ -4424,7 +4424,7 @@ MDSA_2008_5_38	54f0-f2ea-baa5-7a2f	if an animal's or organisms habitat no longer
 MDSA_2008_5_38	10ce-c060-90b9-b748	an animal is a kind of organism	GROUNDING
 MDSA_2008_5_38	458c-0ba5-e5dd-00b8	harming an animal species causes that animal's population to decrease	CENTRAL
 MDSA_2008_5_38	f8e4-1af3-719b-20eb	if the population of an animal decreases then that animal may no longer be found in that place	CENTRAL
-MDSA_2008_5_38	57d4-79ba-a97d-0f9a	--[NOT FOUND]--	LEXGLUE
+MDSA_2008_5_38	57d4-79ba-a97d-0f9a	harming something has a negative impact on or effect on that something	LEXGLUE
 MDSA_2008_5_38	bebb-ed5a-4b7a-235d	humans moving into an environment usually causes native species to lose their habitats	CENTRAL
 Mercury_SC_408413	ea27-c3fc-7c64-eeb2	the circulatory system absorbs or carries food or substances or oxygen from the digestive and respiratory systems to the rest of the body	CENTRAL
 Mercury_SC_408413	46e9-7c6d-a71b-e151	the breaking down of food into simple substances occurs in the digestive system	BACKGROUND
@@ -4733,7 +4733,7 @@ Mercury_SC_400384	b077-71d0-b2cf-4b5c	get rid of means eliminate or remove	LEXGL
 Mercury_SC_400384	bf2f-e380-be4e-ca06	requiring is similar to needing help	LEXGLUE
 Mercury_SC_400384	b5b8-ce64-6568-4a6c	helping something has a positive impact on that something	LEXGLUE
 Mercury_SC_400384	ed09-025e-89b8-d48f	negative impact is the opposite of positive impact	LEXGLUE
-Mercury_SC_400384	57d4-79ba-a97d-0f9a	--[NOT FOUND]--	LEXGLUE
+Mercury_SC_400384	57d4-79ba-a97d-0f9a	harming something has a negative impact on or effect on that something	LEXGLUE
 Mercury_SC_407290	a908-944e-04aa-71bc	plants are a source of oxygen through photosynthesis	CENTRAL
 Mercury_SC_407290	b877-a58b-f75a-3998	a source of something emits or produces or generates that something	LEXGLUE
 Mercury_SC_407290	cb44-c094-9e51-f22c	oxygen has a positive impact on air quality	CENTRAL
@@ -4872,7 +4872,7 @@ NCEOGA_2013_5_59	7dc9-24ac-4c93-866e	to impact means to affect	LEXGLUE
 NCEOGA_2013_5_59	8b85-9aff-8362-b0d3	impact means effect	LEXGLUE
 MSA_2015_5_38	e36b-5464-c253-5b04	damage means harm	ROLE
 MSA_2015_5_38	d116-6f25-b3ac-7d88	pollution has a negative impact on the environment or air quality	CENTRAL
-MSA_2015_5_38	57d4-79ba-a97d-0f9a	--[NOT FOUND]--	CENTRAL
+MSA_2015_5_38	57d4-79ba-a97d-0f9a	harming something has a negative impact on or effect on that something	CENTRAL
 MSA_2015_5_38	8cf3-b5ef-e8a7-1202	offshore oil platforms might cause oil to leak into the water	CENTRAL
 MSA_2015_5_38	3879-d557-003d-491a	oil is a kind of pollutant	GROUNDING
 MSA_2015_5_38	3547-7689-fb87-ee96	pollution is when humans pollute the environment with pollutants	CENTRAL
@@ -5123,7 +5123,7 @@ Mercury_SC_402028	fd2d-7763-c40b-59a9	safe is the opposite of harm or danger	LEX
 Mercury_SC_402028	69e9-672f-1f1c-84a1	chemical splashing sometimes occurs during experiments	CENTRAL
 Mercury_SC_402028	891a-752f-b9c8-25e1	chemical splashing can cause harm to humans or to the eyes	CENTRAL
 Mercury_SC_402028	3ed8-5fde-3b7b-6513	a student is a kind of human	GROUNDING
-Mercury_SC_402028	57d4-79ba-a97d-0f9a	--[NOT FOUND]--	CENTRAL
+Mercury_SC_402028	57d4-79ba-a97d-0f9a	harming something has a negative impact on or effect on that something	CENTRAL
 Mercury_SC_402028	4ffd-30e8-918c-9a42	safety goggles are used for protecting the eyes during experiments	CENTRAL
 Mercury_SC_402028	578b-10b3-d171-7b7c	to protect means to make safe	LEXGLUE
 Mercury_SC_409148	f742-384b-744c-10a9	light is a kind of energy	CENTRAL
@@ -5461,7 +5461,7 @@ MSA_2012_5_24	b24b-be1d-9e0d-4037	plastic is a kind of material made by humans	G
 MSA_2012_5_24	1946-b43f-82d5-547d	rubber is a kind of material	GROUNDING
 MSA_2012_5_24	22ce-038b-ff4f-c5ba	electrical conduction is when metals or electrical conductors conduct electricity through a wire or electrical conductor or metal	CENTRAL
 MSA_2012_5_24	70a1-9e7d-18aa-7495	something dangerous can cause harm	CENTRAL
-MSA_2012_5_24	57d4-79ba-a97d-0f9a	--[NOT FOUND]--	CENTRAL
+MSA_2012_5_24	57d4-79ba-a97d-0f9a	harming something has a negative impact on or effect on that something	CENTRAL
 MSA_2012_5_24	7409-4a52-a23a-0c5c	electrocution causes harm to an organism	CENTRAL
 MSA_2012_5_24	cf3b-d6fc-6b3d-87d4	if electricity flows through or is transferred through the body of an animal then that animal is electrocuted	LEXGLUE
 MSA_2012_5_24	0ad2-d22e-525e-0038	an electrical insulator slows or prevents the transfer of or flow of electricity	CENTRAL
@@ -5939,7 +5939,7 @@ Mercury_SC_400696	5733-18d0-8191-c1ce	insulator means good insulator	LEXGLUE
 Mercury_SC_400696	f253-a9f3-3688-96a7	if too much heat is transferred to an object then that object may burn	CENTRAL
 Mercury_SC_400696	0e47-2c50-6be2-5375	burning a living thing usually causes harm to that living thing	CENTRAL
 Mercury_SC_400696	4eac-892f-ecd2-6e0d	a living thing is a kind of object	GROUNDING
-Mercury_SC_400696	57d4-79ba-a97d-0f9a	--[NOT FOUND]--	LEXGLUE
+Mercury_SC_400696	57d4-79ba-a97d-0f9a	harming something has a negative impact on or effect on that something	LEXGLUE
 Mercury_SC_400696	d390-3d50-786d-4e9f	decreasing something negative has a positive impact on a thing	CENTRAL
 Mercury_SC_400696	977f-e85c-57e4-6900	a handle is a part of an object for holding that object	CENTRAL
 Mercury_SC_400696	3efa-7e97-63b6-90a3	a handle is used for holding an object	CENTRAL
