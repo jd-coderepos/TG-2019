@@ -393,7 +393,6 @@ Mercury_SC_415072	ac8a-77b3-7190-7751	camouflage is used for protection or hidin
 Mercury_SC_415072	44d7-fef6-90ef-75aa	a rabbit is a kind of animal	GROUNDING
 Mercury_SC_415072	9714-412f-bfe4-c7ab	a fox is a kind of animal	GROUNDING
 Mercury_SC_415072	578b-10b3-d171-7b7c	to protect means to make safe	LEXGLUE
-Mercury_SC_415072	f3bd-0290-ae95-8e0a	--[NOT FOUND]--	CENTRAL
 Mercury_SC_415072	7e81-184a-3132-e57b	the arctic environment is white in color from being covered in snow	CENTRAL
 Mercury_SC_405233	8cd7-84f7-76a1-1ba5	a deer is a kind of animal	GROUNDING
 Mercury_SC_405233	7dad-ddaa-4996-88bd	if a habitat is destroyed then that habitat can not support animals	CENTRAL
@@ -3913,7 +3912,6 @@ CSZ_2008_5_CSZ10022	070a-2fde-af8a-62a6	a continent is a kind of large land mass
 MDSA_2007_5_50	27d4-eb24-0630-19ed	trees are a renewable resource	ROLE
 MDSA_2007_5_50	7599-58ef-3f3c-3428	coal is used for generating heat by burning	CENTRAL
 MDSA_2007_5_50	cf2f-78eb-312b-8a6f	burning wood is used to produce heat	CENTRAL
-MDSA_2007_5_50	5124-b03e-ff20-b4d6	--[NOT FOUND]--	CENTRAL
 MDSA_2007_5_50	bcc7-8811-5dcd-6e0f	a tree contains wood	CENTRAL
 MDSA_2007_5_50	f024-43c1-e400-3c3d	generate means produce	LEXGLUE
 Mercury_SC_409264	eb81-1c0b-6039-ee96	a computer is used for communication or finding information	CENTRAL
@@ -5232,7 +5230,6 @@ CSZ20146	328a-8d46-1485-c3c3	a desert is a kind of environment	GROUNDING
 Mercury_SC_400189	0da1-2296-dfe8-6873	wind is a renewable resource	ROLE
 Mercury_SC_400189	8c18-c36b-a89a-60ec	oil is a nonrenewable resource	ROLE
 Mercury_SC_400189	4cbb-5f96-4d29-b4f5	natural gas is a nonrenewable resource	ROLE
-Mercury_SC_400189	5124-b03e-ff20-b4d6	--[NOT FOUND]--	NEG
 Mercury_SC_400189	3033-d050-eb10-b696	renewable is the opposite of nonrenewable	CENTRAL
 Mercury_SC_409578	32c6-adaa-af1c-f49f	winter in a hemisphere occurs when the Pole located in that hemisphere is tilted away from the Sun	CENTRAL
 Mercury_SC_409578	cf90-582c-6769-2d0a	The North Pole is located in the northern hemisphere	CENTRAL
