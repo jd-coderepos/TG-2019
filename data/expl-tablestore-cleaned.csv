@@ -892,7 +892,7 @@ ad2f-c1c6-5368-4fcd	coloration is a kind of adaptation for hiding or camouflage	
 c391-0831-1f0b-44bd	thunder is loud	PROTO-PROPERTIES-THINGS
 5611-cf44-6cd6-2aed	bacteria or viruses cause food poisoning	CAUSE
 10a8-eeb5-10c6-369a	different materials usually have different properties	PROTO-PROPERTIES-THINGS
-ca59-5c7a-3f3d-6f48	light is a kind of energy	KINDOF
+f742-384b-744c-10a9	light is a kind of energy	KINDOF
 ea4f-ca58-7c19-5dba	breaking a part of the body means breaking a bone in that part of the body	SYNONYMY
 95c4-ec5e-bce9-afd8	metal is a kind of material	KINDOF
 cdba-a39e-8a33-7324	nerves are made of nerve cells	MADEOF
@@ -1323,7 +1323,7 @@ d683-e74e-6a7d-63ee	Martinique (France) is located in the northern hemisphere	PR
 dc80-6330-427e-36ff	copper is always nonmagnetic	MAGNETISM
 3c75-b926-aee0-0ac4	Huntingdonshire is a county located in England	PROTO-SUBDIVISION-COUNTRY
 e069-66e7-52de-03e7	blubber is often a part of sea mammals for keeping warm by providing thermal insulation	PARTOF
-8ee9-0f70-2826-d99c	an eagle is a kind of bird	KINDOF
+b528-99f7-f98d-4a09	an eagle is a kind of bird	KINDOF
 fecb-89ad-bb4e-7a8b	if a living thing is destroyed then the resources used by that living thing will become available	PROTO-IF-THEN
 68ec-4e68-cb4d-7da1	if an animal's fur is a certain color then the skin of that animal is probably that same color	PROTO-IF-THEN
 3f3f-f2cb-ae3d-f238	summer is a kind of season	KINDOF
@@ -1496,7 +1496,6 @@ b695-f668-1dec-659c	the amount of daylight is least in the winter	PROP-QUANTITY-
 0b8a-d16a-4a24-14c5	a greenhouse is used to protect plants from the cold	USEDFOR
 d0f6-3d4b-e8bf-dcf4	an octopus is a kind of animal	KINDOF
 fddd-e3d7-b93b-187c	deeper means greater in depth	ATTRIBUTE-VALUE-RANGE
-38db-5b79-b0cf-2898	hail is a kind of precipitation	KINDOF
 5db9-95b3-3826-14c0	milk is a kind of food	KINDOF
 1ec2-4fac-096f-d2fc	inhibitor means something that prevents something from happening	SYNONYMY
 72a7-76e4-7f5d-03ab	earthquakes cause rock layers to fold on top of each other	CAUSE
@@ -1795,7 +1794,7 @@ d576-0ead-0543-9136	a wire is a kind of object	KINDOF
 a67b-fecc-2c14-cefb	a rough surface is a part of sandpaper	PARTOF
 6699-e590-cde9-3908	lightning occurs during lightning storms	PROTO-DURING
 e239-f208-23e0-a9cb	heat and pressure change the remains of prehistoric living things into natural gas	CHANGE
-b880-7186-8fd7-c440	a field is a kind of environment	KINDOF
+2a18-601d-51f0-3abc	a field is a kind of environment	KINDOF
 bc70-82f8-3ab8-89f4	as the number of sources of food increase in an environment , the population of the organisms will increase in that environment	COUPLEDRELATIONSHIP
 ff6d-7abf-97c5-a9c3	An example of reproduction is laying eggs	EXAMPLES
 a352-bde5-b854-f460	Earth is the planet that is third closest to the Sun	PROP-REL-DIST
@@ -2041,7 +2040,7 @@ ba30-2a8a-fe88-bca0	grouping means putting or placing in different groups	SYNONY
 bb4d-ea33-08e1-7106	iron is a kind of element	KINDOF
 5455-fa26-7125-455e	Chromferide is always magnetic	MAGNETISM
 f32e-0424-d7c1-e558	water contains dissolved oxygen	CONTAINS
-0bc0-31f6-513b-ff06	a fish is a kind of animal	KINDOF
+9526-aecc-22b2-4b6a	a fish is a kind of animal	KINDOF
 6a9e-f4d8-755c-81d3	if a habitat can no longer support animals then those animals will move to another area	PROTO-IF-THEN
 7cee-45d4-aa3a-ca19	a simple machine is a kind of tool	KINDOF
 6d06-fb02-635a-de64	Bolivia is located in the southern hemisphere	PROTO-COUNTRY-HEMISPHERE
@@ -2441,7 +2440,6 @@ fcce-8881-7921-d9d2	plasma is a kind of state of matter	KINDOF
 33f1-c7fb-094b-0129	wind means moving air	SYNONYMY
 089e-dcd5-b124-189c	a plain is a kind of landform	KINDOF
 4923-b78f-3eee-3a79	North Dakota is a state located in the United States of America	PROTO-SUBDIVISION-COUNTRY
-ba09-b38e-44af-2b6c	a gill is a kind of organ	KINDOF
 3db5-e122-e506-93c3	South Carolina is a state located in the United States of America	PROTO-SUBDIVISION-COUNTRY
 d470-e585-c801-a97d	a mammal is warm-blooded	PROTO-PROP-WARM-COLD-BLOODED
 ca03-f52b-b637-957b	spotted is a kind of color pattern	KINDOF
@@ -2999,7 +2997,7 @@ e70b-e515-02a3-8958	the moon revolving around or orbiting the Earth causes the p
 8f95-5431-bea6-4649	a sharp sense is an enhanced sense	SYNONYMY
 9f4c-5487-7b35-f049	a chair is a kind of object	KINDOF
 5029-9d16-9c77-acf3	a sheet of paper is a kind of object	KINDOF
-569d-9ee4-d775-7874	the tundra is very cold in temperature	PROP-ENVIRONMENTATTRIB
+2409-b366-fcf7-eb7b	the tundra is very cold in temperature	PROP-ENVIRONMENTATTRIB
 5bed-2cfd-fe4d-324e	function means job	SYNONYMY
 d2f9-367f-2c90-fbcd	a gram is a kind of unit for measuring mass	KINDOF
 24c1-678f-d0a3-2af7	soil contains water or humus or weathered rocks	CONTAINS
@@ -3216,7 +3214,7 @@ c390-00e1-36dd-2ae2	the shape of body parts is an inherited characteristic	PROP-
 d1f5-66f7-d352-a42b	heating salt water causes the water to evaporate while the salt remains	CAUSE
 66b8-769e-1915-e8a1	the Arctic Ocean is a kind of ocean	KINDOF
 3145-65d7-0fa3-5857	a carbonated beverage contains dissolved carbon dioxide	CONTAINS
-eb58-30d7-0fc1-e38a	survive means live	SYNONYMY
+5e5f-d2d7-bb79-193c	survive means live	SYNONYMY
 bde3-2540-817a-ddf2	snowstorm is a kind of weather	KINDOF
 c9e0-141e-88fa-2c43	if a thermal conductor or an object is exposed to a source of heat then that conductor or that object may become hot or warm	PROTO-IF-THEN
 1c78-f04e-5974-e03c	snow falls during the winter in some environments	PROTO-DURING
@@ -3240,7 +3238,7 @@ f461-ef68-36cf-0f91	water vapor cooling causes that water vapor to condense	CAUS
 e576-3be7-5e76-3b07	blood is a part of the circulatory system	PARTOF
 8c18-c36b-a89a-60ec	oil is a nonrenewable resource	PROP-RESOURCES-RENEWABLE
 b872-e845-39f5-5b25	carbon dioxide is colorless	PROTO-PROPERTIES-THINGS
-348b-f9ad-c079-e044	rattle is a kind of motion	KINDOF
+c946-7dd2-7e3b-c4b7	rattle is a kind of motion	KINDOF
 3dc6-ceb8-e305-24f4	the Alps were formed by rock folding	PROTO-FORMEDBY
 a15a-56e5-208f-ea91	Bedfordshire is a county located in England	PROTO-SUBDIVISION-COUNTRY
 a885-71a9-2e19-c391	arteries or veins transport nutrients or water or minerals throughout the body	PROTO-ACTION
@@ -3739,7 +3737,7 @@ e729-2ae7-04b3-9240	a pencil is a kind of object	KINDOF
 10c6-c21e-e54b-036e	painting an object a color causes that object to be that color	CAUSE
 5c52-4f26-3883-a4ef	color is a property of an object or a material	PROPERTIES-GENERIC
 3648-f2f7-ae08-d6f7	algae is found in bodies of water	PROTO-LOCATIONS
-1a6d-a427-8ac0-28bf	Earth is a kind of planet	KINDOF
+e473-7297-61c1-56fa	Earth is a kind of planet	KINDOF
 2b0c-392f-5a90-0854	as the thickness of an object increases , the resistance to tearing or to breaking will increase	COUPLEDRELATIONSHIP
 77c0-d908-7692-6b85	Burundi is located in the southern hemisphere	PROTO-COUNTRY-HEMISPHERE
 a09d-a196-028f-72ba	State of Palestine is located in the northern hemisphere	PROTO-COUNTRY-HEMISPHERE
@@ -3878,7 +3876,7 @@ df67-2c42-2ea5-500d	touch can be used for detecting texture	USEDFOR
 5457-5b8e-eb6c-aea1	another means different	SYNONYMY
 9d6f-0411-6644-656e	a droplet is a small amount of liquid	PROTO-PROPERTIES-THINGS
 08ea-2bfc-e6e1-9c7d	a lever is used for lifting or moving heavy objects	USEDFOR
-376c-0550-d351-b87d	a rock is a kind of object	KINDOF
+7c8b-3728-1d36-f922	a rock is a kind of object	KINDOF
 e112-616e-e25b-4a79	a circuit is a kind of electrical component	KINDOF
 5961-40f8-e1b9-e456	riding something is to move that thing over a surface	PROTO-ACTION
 f40e-296d-660b-f8df	a kangaroo is a kind of animal	KINDOF
@@ -4111,7 +4109,7 @@ f653-454d-6b95-5714	the small intestine is a part of the digestive system	PARTOF
 c097-1dcb-a31f-8800	a blue object reflects only blue light	PROTO-ACTION
 1dba-dc42-8ca9-0ab2	climate is the usual kind of weather in a location	PROTO-MEASUREMENTS
 9a54-fdc1-b863-633a	winter is when a hemisphere is tilted away from the sun	PROTO-ACTION
-ffc8-91cc-45f1-f4b1	a lever is a kind of simple machine	KINDOF
+9d48-4f8c-09fc-ea0d	a lever is a kind of simple machine	KINDOF
 f53d-9bc7-b622-1a58	Inverness-shire is a county located in Scotland	PROTO-SUBDIVISION-COUNTRY
 723a-5193-2766-0065	vanilla has a strong odor	PROTO-PROPERTIES-THINGS
 061d-1ec6-4a7a-9f63	a full moon is a kind of phase of the moon	KINDOF
@@ -4421,7 +4419,7 @@ e1d3-5fb3-b1c4-5332	specialized tissues at the ends of plant stems are used for 
 a52a-1b59-1f8c-028e	flowing is a kind of motion	KINDOF
 5720-208c-fea0-628e	weight is a kind of property	KINDOF
 3b23-bc5c-3332-4508	growing is a kind of activity	KINDOF
-7076-a98b-7c81-2cae	a plant is a kind of living thing	KINDOF
+2e89-d8e8-a8fb-9acc	a plant is a kind of living thing	KINDOF
 4b08-9460-5cec-02ba	making something requires resources	REQUIRES
 ea91-5664-cefc-e7ee	a mushroom is a kind of fungus	KINDOF
 4aca-cf16-fcc6-1f79	An example of mechanical energy is an object in motion	EXAMPLES
@@ -4732,7 +4730,7 @@ e5c0-79e6-37a7-4b77	larger or bigger is the opposite of smaller	PROTO-OPPOSITES
 02a0-8f5c-4e3a-a064	an oak is a kind of tree	KINDOF
 0439-8c06-da63-6721	metal is a thermal or thermal energy conductor	PROP-CONDUCTIVITY
 f4f1-8d09-36bb-8db5	if an animal's skin looks like something then that animal looks like that something	PROTO-IF-THEN
-7779-45c7-0fb8-b534	oil is a kind of liquid	KINDOF
+2eff-c9c0-c7aa-f4b2	oil is a kind of liquid	KINDOF
 c734-55b0-6cf4-c9d9	nearly all fossils are found in sedimentary rock	PROTO-LOCATIONS
 56e3-240f-2f97-378b	down is part of a young bird	PARTOF
 69d1-9751-6050-3017	an instrument is a piece of equipment	SYNONYMY

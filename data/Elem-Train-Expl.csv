@@ -965,7 +965,7 @@ AIMS_2009_4_18	360a-b24c-3306-9b73	protecting something means preventing harm to
 AIMS_2009_4_18	ba9c-311b-f2d0-caa9	killing means changing a living thing from alive to dead by harming	LEXGLUE
 AIMS_2009_4_18	42ee-7009-131f-4719	dead means not alive	LEXGLUE
 AIMS_2009_4_18	5235-918a-6a82-0d1a	live means to be alive	LEXGLUE
-AIMS_2009_4_18	eb58-30d7-0fc1-e38a	survive means live	LEXGLUE
+AIMS_2009_4_18	5e5f-d2d7-bb79-193c	survive means live	LEXGLUE
 NYSEDREGENTS_2007_4_1	95f7-f635-f0ef-b67c	if something contains a large amount of magnetic material then that something will attract magnets	CENTRAL
 NYSEDREGENTS_2007_4_1	178a-9dd1-8569-86f1	a magnet attracts magnetic metals or ferromagnetic metals through magnetism	CENTRAL
 NYSEDREGENTS_2007_4_1	47eb-c4e4-e924-7160	metal is sometimes magnetic	GROUNDING
@@ -1702,7 +1702,7 @@ NYSEDREGENTS_2004_4_13	e58f-f348-e54d-38fe	a rabbit is a kind of mammal	GROUNDIN
 NYSEDREGENTS_2009_4_5	f297-a722-c60d-7be0	meters ( m ) are a unit used for measuring length or distance generally used for values between 1 and 1000	CENTRAL
 NYSEDREGENTS_2009_4_5	7579-287a-1bb4-c6c7	meters or centimeters or kilometers are used to describe distance or describe length	CENTRAL
 NYSEDREGENTS_2009_4_5	5a08-2415-0853-06c5	measuring is used for describing an object	CENTRAL
-AKDE&ED_2008_4_36	0bc0-31f6-513b-ff06	a fish is a kind of animal	ROLE
+AKDE&ED_2008_4_36	9526-aecc-22b2-4b6a	a fish is a kind of animal	ROLE
 Mercury_SC_401210	80e7-ecfd-5d68-a0d3	a ruler is used for measuring the length of an object	CENTRAL
 Mercury_SC_401210	8c47-06f1-9f0f-10c4	diameter is a measure of length through the center of a circle	CENTRAL
 Mercury_SC_401210	a429-ec06-2e2a-f6f9	a ruler is a kind of tool for measuring length	CENTRAL
@@ -2394,7 +2394,7 @@ NYSEDREGENTS_2009_4_23	29be-69ad-17f4-11f0	the color of or coloration of fur is 
 NYSEDREGENTS_2009_4_23	ca03-f52b-b637-957b	spotted is a kind of color pattern	GROUNDING
 NYSEDREGENTS_2009_4_23	ec67-fb28-a332-b260	coloration means a pattern of colors	LEXGLUE
 NYSEDREGENTS_2009_4_23	ee78-0795-be47-6ad8	inheriting is when a inherited characteristic is copied or is passed from parent to offspring by genetics or DNA	CENTRAL
-NYSEDREGENTS_2009_4_23	274e-7aef-1e26-6b3c	a baby is the offspring of a parent	LEXGLUE
+NYSEDREGENTS_2009_4_23	75d4-1f81-cb21-f793	a baby is the offspring of a parent	LEXGLUE
 NYSEDREGENTS_2009_4_23	102a-fa79-43cd-e9a4	the colors of the parts of an organism are inherited characteristics	GROUNDING
 NYSEDREGENTS_2009_4_23	c963-24b2-f50d-a21d	a dog is a kind of animal	GROUNDING
 NYSEDREGENTS_2009_4_23	bb63-bcc5-0cd8-72db	an animal is a kind of living thing	GROUNDING
@@ -3454,7 +3454,7 @@ OHAT_2008_5_18	eea5-0a22-fd84-0a3b	sea means ocean	LEXGLUE
 OHAT_2008_5_18	b80f-f372-967d-6ac4	an aquatic animal is a kind of animal	GROUNDING
 OHAT_2008_5_18	dfda-0bf5-6a91-6d09	aquatic animal means water animal	LEXGLUE
 OHAT_2008_5_18	3f9d-8b3a-54b5-6a3c	a body of water is a kind of environment	GROUNDING
-OHAT_2008_5_18	965d-32ef-32f1-71b5	tropical environments usually have warm temperatures	BACKGROUND
+OHAT_2008_5_18	0a7a-e005-a69f-d3e8	a tropical environment usually has warm temperatures	BACKGROUND
 Mercury_SC_400200	e474-2a11-6e7b-ae8b	water is in the gas state , called water vapor , for temperatures between 373 or 212 or 100 and 100000000000 K or F or C	CENTRAL
 Mercury_SC_400200	29a1-5acf-45b5-3b06	state means form	LEXGLUE
 MCAS_2008_5_5647	1f6a-7744-7f91-26b5	a tape measure is used to measure length or distance	CENTRAL
@@ -3711,7 +3711,7 @@ MCAS_2009_5_6515	3dd5-2225-75cc-e350	revolving around something means orbiting t
 Mercury_SC_402631	46e9-7c6d-a71b-e151	the breaking down of food into simple substances occurs in the digestive system	CENTRAL
 Mercury_SC_401292	7c65-e5ab-1f92-0c39	a snail is a kind of animal	GROUNDING
 Mercury_SC_401292	e4da-e98f-0e23-2742	a shell is a part of a snail for protecting the snail	CENTRAL
-Mercury_SC_401292	b9a7-e1c0-9960-d0c6	an animal's shell is usually hard for protection	CENTRAL
+Mercury_SC_401292	9dc0-0ba6-dbb6-4ff7	an animal's shell is usually hard for protection	CENTRAL
 Mercury_SC_401292	773a-31a5-f976-927c	something hard or something strong can be used for protection	CENTRAL
 Mercury_SC_401292	c905-3709-1ccb-3bb6	being used for is similar to providing	LEXGLUE
 Mercury_SC_415409	fa6f-ce79-52bc-2ba1	a delta is formed by deposition of sediment at the mouth of a river by water fanning out	CENTRAL
@@ -4385,7 +4385,7 @@ Mercury_SC_401284	b5b8-ce64-6568-4a6c	helping something has a positive impact on
 Mercury_SC_401284	a6f0-93ef-5850-b78f	avoiding predators has a positive impact on prey's or an organism's survival or health or ability to reproduce	CENTRAL
 Mercury_SC_401284	10ce-c060-90b9-b748	an animal is a kind of organism	GROUNDING
 Mercury_SC_402262	fdba-70d0-fcc6-e529	eyes can sense or detect light energy for seeing	CENTRAL
-Mercury_SC_402262	ca59-5c7a-3f3d-6f48	light is a kind of energy	CENTRAL
+Mercury_SC_402262	f742-384b-744c-10a9	light is a kind of energy	CENTRAL
 Mercury_SC_402262	4201-f5ef-6bd3-f5b4	light means light energy	LEXGLUE
 Mercury_SC_402262	3ed8-5fde-3b7b-6513	a student is a kind of human	GROUNDING
 Mercury_SC_402262	4253-4b9e-1e5f-1742	a human is a kind of animal	GROUNDING

@@ -892,7 +892,7 @@ ad2f-c1c6-5368-4fcd	coloration/coloration/NN/O/Abstract is/be/VBZ/O/Abstract a/a
 c391-0831-1f0b-44bd	thunder/thunder/NN/O/Concrete is/be/VBZ/O/Abstract loud/loud/JJ/O/Focus
 5611-cf44-6cd6-2aed	bacteria/bacterium/NNS/O/Focus or/or/CC/O/NA viruses/virus/NNS/O/NA cause/cause/VBP/O/Abstract food/food/NN/O/Concrete poisoning/poisoning/NN/CAUSE_OF_DEATH/Focus
 10a8-eeb5-10c6-369a	different/different/JJ/O/Abstract materials/material/NNS/O/NA usually/usually/RB/O/Abstract have/have/VBP/O/Abstract different/different/JJ/O/Abstract properties/property/NNS/O/NA
-ca59-5c7a-3f3d-6f48	light/light/NN/O/Concrete is/be/VBZ/O/Abstract a/a/DT/O/NA kind/kind/NN/O/Abstract of/of/IN/O/NA energy/energy/NN/O/Focus
+f742-384b-744c-10a9	light/light/NN/O/Concrete is/be/VBZ/O/Abstract a/a/DT/O/NA kind/kind/NN/O/Abstract of/of/IN/O/NA energy/energy/NN/O/Focus
 ea4f-ca58-7c19-5dba	breaking/break/VBG/O/Focus a/a/DT/O/NA part/part/NN/O/Focus of/of/IN/O/NA the/the/DT/O/NA body/body/NN/O/Concrete means/mean/VBZ/O/Abstract breaking/break/VBG/O/Focus a/a/DT/O/NA bone/bone/NN/O/Concrete in/in/IN/O/NA that/that/DT/O/NA part/part/NN/O/Focus of/of/IN/O/NA the/the/DT/O/NA body/body/NN/O/Concrete
 95c4-ec5e-bce9-afd8	metal/metal/NN/O/Concrete is/be/VBZ/O/Abstract a/a/DT/O/NA kind/kind/NN/O/Abstract of/of/IN/O/NA material/material/NN/O/Concrete
 cdba-a39e-8a33-7324	nerves/nerve/NNS/O/NA are/be/VBP/O/Abstract made/make/VBN/O/Abstract of/of/IN/O/NA nerve/nerve/NN/O/Focus cells/cell/NNS/O/NA
@@ -1323,7 +1323,7 @@ d683-e74e-6a7d-63ee	Martinique/Martinique/NNP/O/NA -LRB-/-lrb-/-LRB-/O/NA France
 dc80-6330-427e-36ff	copper/copper/NN/O/Concrete is/be/VBZ/O/Abstract always/always/RB/O/Abstract nonmagnetic/nonmagnetic/JJ/O/Focus
 3c75-b926-aee0-0ac4	Huntingdonshire/Huntingdonshire/NNP/O/NA is/be/VBZ/O/Abstract a/a/DT/O/NA county/county/NN/O/Focus located/located/JJ/O/NA in/in/IN/O/NA England/England/NNP/COUNTRY/NA
 e069-66e7-52de-03e7	blubber/blubber/NN/O/Focus is/be/VBZ/O/Abstract often/often/RB/O/Abstract a/a/DT/O/NA part/part/NN/O/Focus of/of/IN/O/NA sea/sea/NN/O/Concrete mammals/mammal/NNS/O/NA for/for/IN/O/NA keeping/keep/VBG/O/Abstract warm/warm/JJ/O/Focus by/by/IN/O/NA providing/provide/VBG/O/Abstract thermal/thermal/JJ/O/Focus insulation/insulation/NN/O/Concrete
-8ee9-0f70-2826-d99c	an/a/DT/O/NA eagle/eagle/NN/O/Concrete is/be/VBZ/O/Abstract a/a/DT/O/NA kind/kind/NN/O/Abstract of/of/IN/O/NA bird/bird/NN/O/Concrete
+b528-99f7-f98d-4a09	an/a/DT/O/NA eagle/eagle/NN/O/Concrete is/be/VBZ/O/Abstract a/a/DT/O/NA kind/kind/NN/O/Abstract of/of/IN/O/NA bird/bird/NN/O/Concrete
 fecb-89ad-bb4e-7a8b	if/if/IN/O/NA a/a/DT/O/NA living/living/NN/O/Focus thing/thing/NN/O/Focus is/be/VBZ/O/Abstract destroyed/destroy/VBN/O/NA then/then/RB/O/Abstract the/the/DT/O/NA resources/resource/NNS/O/NA used/use/VBN/O/Abstract by/by/IN/O/NA that/that/DT/O/NA living/live/VBG/O/Focus thing/thing/NN/O/Focus will/will/MD/O/NA become/become/VB/O/Abstract available/available/JJ/O/Abstract
 68ec-4e68-cb4d-7da1	if/if/IN/O/NA an/a/DT/O/NA animal/animal/NN/O/Concrete 's/'s/POS/O/NA fur/fur/NN/O/Concrete is/be/VBZ/O/Abstract a/a/DT/O/NA certain/certain/JJ/O/Abstract color/color/NN/O/Focus then/then/RB/O/Abstract the/the/DT/O/NA skin/skin/NN/O/Concrete of/of/IN/O/NA that/that/DT/O/NA animal/animal/NN/O/Concrete is/be/VBZ/O/Abstract probably/probably/RB/O/Abstract that/that/IN/O/NA same/same/JJ/O/Abstract color/color/NN/O/Focus
 3f3f-f2cb-ae3d-f238	summer/summer/NN/O/Focus is/be/VBZ/O/Abstract a/a/DT/O/NA kind/kind/NN/O/Abstract of/of/IN/O/NA season/season/NN/O/Focus
@@ -1496,7 +1496,6 @@ b695-f668-1dec-659c	the/the/DT/O/NA amount/amount/NN/O/Abstract of/of/IN/O/NA da
 0b8a-d16a-4a24-14c5	a/a/DT/O/NA greenhouse/greenhouse/NN/O/Concrete is/be/VBZ/O/Abstract used/use/VBN/O/Abstract to/to/TO/O/NA protect/protect/VB/O/Abstract plants/plant/NNS/O/NA from/from/IN/O/NA the/the/DT/O/NA cold/cold/NN/O/Focus
 d0f6-3d4b-e8bf-dcf4	an/a/DT/O/NA octopus/octopus/NN/O/Concrete is/be/VBZ/O/Abstract a/a/DT/O/NA kind/kind/NN/O/Abstract of/of/IN/O/NA animal/animal/NN/O/Concrete
 fddd-e3d7-b93b-187c	deeper/deeper/JJR/O/NA means/means/NNS/O/Abstract greater/greater/JJR/O/Abstract in/in/IN/O/NA depth/depth/NN/O/Focus
-38db-5b79-b0cf-2898	hail/hail/NN/O/Concrete is/be/VBZ/O/Abstract a/a/DT/O/NA kind/kind/NN/O/Abstract of/of/IN/O/NA precipitation/precipitation/NN/O/Focus
 5db9-95b3-3826-14c0	milk/milk/NN/O/Concrete is/be/VBZ/O/Abstract a/a/DT/O/NA kind/kind/NN/O/Abstract of/of/IN/O/NA food/food/NN/O/Concrete
 1ec2-4fac-096f-d2fc	inhibitor/inhibitor/NN/O/Abstract means/mean/VBZ/O/Abstract something/something/NN/O/Abstract that/that/WDT/O/NA prevents/prevent/VBZ/O/NA something/something/NN/O/Abstract from/from/IN/O/NA happening/happen/VBG/O/Abstract
 72a7-76e4-7f5d-03ab	earthquakes/earthquake/NNS/CAUSE_OF_DEATH/NA cause/cause/VBP/O/Abstract rock/rock/NN/O/Concrete layers/layer/NNS/O/NA to/to/TO/O/NA fold/fold/VB/O/Focus on/on/IN/O/NA top/top/NN/O/Focus of/of/IN/O/NA each/each/DT/O/NA other/other/JJ/O/Abstract
@@ -1795,7 +1794,7 @@ d576-0ead-0543-9136	a/a/DT/O/NA wire/wire/NN/O/Concrete is/be/VBZ/O/Abstract a/a
 a67b-fecc-2c14-cefb	a/a/DT/O/NA rough/rough/JJ/O/Focus surface/surface/NN/O/Concrete is/be/VBZ/O/Abstract a/a/DT/O/NA part/part/NN/O/Focus of/of/IN/O/NA sandpaper/sandpaper/NN/O/Concrete
 6699-e590-cde9-3908	lightning/lightning/NN/CAUSE_OF_DEATH/Concrete occurs/occur/VBZ/O/NA during/during/IN/O/NA lightning/lightning/NN/CAUSE_OF_DEATH/Concrete storms/storm/NNS/CAUSE_OF_DEATH/NA
 e239-f208-23e0-a9cb	heat/heat/NN/O/Focus and/and/CC/O/NA pressure/pressure/NN/O/Focus change/change/VBP/O/Abstract the/the/DT/O/NA remains/remains/NNS/O/Focus of/of/IN/O/NA prehistoric/prehistoric/JJ/O/Abstract living/living/NN/O/Focus things/thing/NNS/O/NA into/into/IN/O/NA natural/natural/JJ/O/Abstract gas/gas/NN/O/Concrete
-b880-7186-8fd7-c440	a/a/DT/O/NA field/field/NN/O/Concrete is/be/VBZ/O/Abstract a/a/DT/O/NA kind/kind/NN/O/Abstract of/of/IN/O/NA environment/environment/NN/O/Focus
+2a18-601d-51f0-3abc	a/a/DT/O/NA field/field/NN/O/Concrete is/be/VBZ/O/Abstract a/a/DT/O/NA kind/kind/NN/O/Abstract of/of/IN/O/NA environment/environment/NN/O/Focus
 bc70-82f8-3ab8-89f4	as/as/IN/O/NA the/the/DT/O/NA number/number/NN/O/Focus of/of/IN/O/NA sources/source/NNS/O/NA of/of/IN/O/NA food/food/NN/O/Concrete increase/increase/NN/O/Abstract in/in/IN/O/NA an/a/DT/O/NA environment/environment/NN/O/Focus ,/,/,/O/NA the/the/DT/O/NA population/population/NN/O/Focus of/of/IN/O/NA the/the/DT/O/NA organisms/organism/NNS/O/NA will/will/MD/O/NA increase/increase/VB/O/Abstract in/in/IN/O/NA that/that/IN/O/NA environment/environment/NN/O/Focus
 ff6d-7abf-97c5-a9c3	An/a/DT/O/NA example/example/NN/O/Focus of/of/IN/O/NA reproduction/reproduction/NN/O/Abstract is/be/VBZ/O/Abstract laying/lay/VBG/O/Focus eggs/egg/NNS/O/NA
 a352-bde5-b854-f460	Earth/Earth/NNP/O/Concrete is/be/VBZ/O/Abstract the/the/DT/O/NA planet/planet/NN/O/Concrete that/that/WDT/O/NA is/be/VBZ/O/Abstract third/third/JJ/ORDINAL/Focus closest/closest/JJS/O/NA to/to/TO/O/NA the/the/DT/O/NA Sun/Sun/NNP/O/Concrete
@@ -2041,7 +2040,7 @@ ba30-2a8a-fe88-bca0	grouping/group/VBG/O/Focus means/means/NNS/O/Abstract puttin
 bb4d-ea33-08e1-7106	iron/iron/NN/O/Concrete is/be/VBZ/O/Abstract a/a/DT/O/NA kind/kind/NN/O/Abstract of/of/IN/O/NA element/element/NN/O/Focus
 5455-fa26-7125-455e	Chromferide/Chromferide/NNP/O/NA is/be/VBZ/O/Abstract always/always/RB/O/Abstract magnetic/magnetic/JJ/O/Focus
 f32e-0424-d7c1-e558	water/water/NN/O/Concrete contains/contain/VBZ/O/NA dissolved/dissolve/VBN/O/NA oxygen/oxygen/NN/O/Focus
-0bc0-31f6-513b-ff06	a/a/DT/O/NA fish/fish/NN/O/Concrete is/be/VBZ/O/Abstract a/a/DT/O/NA kind/kind/NN/O/Abstract of/of/IN/O/NA animal/animal/NN/O/Concrete
+9526-aecc-22b2-4b6a	a/a/DT/O/NA fish/fish/NN/O/Concrete is/be/VBZ/O/Abstract a/a/DT/O/NA kind/kind/NN/O/Abstract of/of/IN/O/NA animal/animal/NN/O/Concrete
 6a9e-f4d8-755c-81d3	if/if/IN/O/NA a/a/DT/O/NA habitat/habitat/NN/O/Focus can/can/MD/O/NA no/no/RB/O/Abstract longer/longer/RB/O/Abstract support/support/VBP/O/Abstract animals/animal/NNS/O/NA then/then/RB/O/Abstract those/those/DT/O/NA animals/animal/NNS/O/NA will/will/MD/O/NA move/move/VB/O/Focus to/to/TO/O/NA another/another/DT/O/NA area/area/NN/O/Focus
 7cee-45d4-aa3a-ca19	a/a/DT/O/NA simple/simple/JJ/O/Abstract machine/machine/NN/O/Concrete is/be/VBZ/O/Abstract a/a/DT/O/NA kind/kind/NN/O/Abstract of/of/IN/O/NA tool/tool/NN/O/Concrete
 6d06-fb02-635a-de64	Bolivia/Bolivia/NNP/COUNTRY/NA is/be/VBZ/O/Abstract located/located/JJ/O/NA in/in/IN/O/NA the/the/DT/O/NA southern/southern/JJ/O/Abstract hemisphere/hemisphere/NN/O/Focus
@@ -2441,7 +2440,6 @@ fcce-8881-7921-d9d2	plasma/plasma/NN/O/Focus is/be/VBZ/O/Abstract a/a/DT/O/NA ki
 33f1-c7fb-094b-0129	wind/wind/NN/O/Focus means/mean/VBZ/O/Abstract moving/move/VBG/O/Focus air/air/NN/O/Focus
 089e-dcd5-b124-189c	a/a/DT/O/NA plain/plain/NN/O/Abstract is/be/VBZ/O/Abstract a/a/DT/O/NA kind/kind/NN/O/Abstract of/of/IN/O/NA landform/landform/NN/O/Concrete
 4923-b78f-3eee-3a79	North/North/NNP/STATE_OR_PROVINCE/Focus Dakota/Dakota/NNP/STATE_OR_PROVINCE/NA is/be/VBZ/O/Abstract a/a/DT/O/NA state/state/NN/O/Focus located/located/JJ/O/NA in/in/IN/O/NA the/the/DT/O/NA United/United/NNP/COUNTRY/Abstract States/States/NNPS/COUNTRY/NA of/of/IN/COUNTRY/NA America/America/NNP/COUNTRY/NA
-ba09-b38e-44af-2b6c	a/a/DT/O/NA gill/gill/NN/O/Concrete is/be/VBZ/O/Abstract a/a/DT/O/NA kind/kind/NN/O/Abstract of/of/IN/O/NA organ/organ/NN/O/Concrete
 3db5-e122-e506-93c3	South/South/NNP/STATE_OR_PROVINCE/Focus Carolina/Carolina/NNP/STATE_OR_PROVINCE/NA is/be/VBZ/O/Abstract a/a/DT/O/NA state/state/NN/O/Focus located/located/JJ/O/NA in/in/IN/O/NA the/the/DT/O/NA United/United/NNP/COUNTRY/Abstract States/States/NNPS/COUNTRY/NA of/of/IN/COUNTRY/NA America/America/NNP/COUNTRY/NA
 d470-e585-c801-a97d	a/a/DT/O/NA mammal/mammal/NN/O/Concrete is/be/VBZ/O/Abstract warm-blooded/warm-blooded/JJ/O/NA
 ca03-f52b-b637-957b	spotted/spotted/JJ/O/Focus is/be/VBZ/O/Abstract a/a/DT/O/NA kind/kind/NN/O/Abstract of/of/IN/O/NA color/color/NN/O/Focus pattern/pattern/NN/O/Focus
@@ -2999,7 +2997,7 @@ e70b-e515-02a3-8958	the/the/DT/O/NA moon/moon/NN/O/Concrete revolving/revolve/VB
 8f95-5431-bea6-4649	a/a/DT/O/NA sharp/sharp/JJ/O/Focus sense/sense/NN/O/Abstract is/be/VBZ/O/Abstract an/a/DT/O/NA enhanced/enhance/VBN/O/Abstract sense/sense/NN/O/Abstract
 9f4c-5487-7b35-f049	a/a/DT/O/NA chair/chair/NN/O/Concrete is/be/VBZ/O/Abstract a/a/DT/O/NA kind/kind/NN/O/Abstract of/of/IN/O/NA object/object/NN/O/Focus
 5029-9d16-9c77-acf3	a/a/DT/O/NA sheet/sheet/NN/O/Concrete of/of/IN/O/NA paper/paper/NN/O/Concrete is/be/VBZ/O/Abstract a/a/DT/O/NA kind/kind/NN/O/Abstract of/of/IN/O/NA object/object/NN/O/Focus
-569d-9ee4-d775-7874	the/the/DT/O/NA tundra/tundra/NN/O/Concrete is/be/VBZ/O/Abstract very/very/RB/O/Abstract cold/cold/JJ/O/Focus in/in/IN/O/NA temperature/temperature/NN/O/Focus
+2409-b366-fcf7-eb7b	the/the/DT/O/NA tundra/tundra/NN/O/Concrete is/be/VBZ/O/Abstract very/very/RB/O/Abstract cold/cold/JJ/O/Focus in/in/IN/O/NA temperature/temperature/NN/O/Focus
 5bed-2cfd-fe4d-324e	function/function/NN/O/Abstract means/mean/VBZ/O/Abstract job/job/NN/O/Focus
 d2f9-367f-2c90-fbcd	a/a/DT/O/NA gram/gram/NN/O/Focus is/be/VBZ/O/Abstract a/a/DT/O/NA kind/kind/NN/O/Abstract of/of/IN/O/NA unit/unit/NN/O/Focus for/for/IN/O/NA measuring/measure/VBG/O/Focus mass/mass/NN/O/Focus
 24c1-678f-d0a3-2af7	soil/soil/NN/O/Concrete contains/contain/VBZ/O/NA water/water/NN/O/Concrete or/or/CC/O/NA humus/humus/NN/O/NA or/or/CC/O/NA weathered/weathered/JJ/O/Focus rocks/rock/NNS/O/NA
@@ -3216,7 +3214,7 @@ c390-00e1-36dd-2ae2	the/the/DT/O/NA shape/shape/NN/O/Focus of/of/IN/O/NA body/bo
 d1f5-66f7-d352-a42b	heating/heating/NN/O/Focus salt/salt/NN/O/Concrete water/water/NN/O/Concrete causes/cause/VBZ/O/NA the/the/DT/O/NA water/water/NN/O/Concrete to/to/TO/O/NA evaporate/evaporate/VB/O/Focus while/while/IN/O/NA the/the/DT/O/NA salt/salt/NN/O/Concrete remains/remain/VBZ/O/Focus
 66b8-769e-1915-e8a1	the/the/DT/O/NA Arctic/Arctic/NNP/ORGANIZATION/Focus Ocean/Ocean/NNP/ORGANIZATION/Concrete is/be/VBZ/O/Abstract a/a/DT/O/NA kind/kind/NN/O/Abstract of/of/IN/O/NA ocean/ocean/NN/O/Concrete
 3145-65d7-0fa3-5857	a/a/DT/O/NA carbonated/carbonated/JJ/O/NA beverage/beverage/NN/O/Concrete contains/contain/VBZ/O/NA dissolved/dissolve/VBN/O/NA carbon/carbon/NN/O/Concrete dioxide/dioxide/NN/O/Abstract
-eb58-30d7-0fc1-e38a	survive/survive/VB/O/Abstract means/means/NNS/O/Abstract live/live/VB/O/Focus
+5e5f-d2d7-bb79-193c	survive/survive/VB/O/Abstract means/means/NNS/O/Abstract live/live/VB/O/Focus
 bde3-2540-817a-ddf2	snowstorm/snowstorm/NN/O/Concrete is/be/VBZ/O/Abstract a/a/DT/O/NA kind/kind/NN/O/Abstract of/of/IN/O/NA weather/weather/NN/O/Focus
 c9e0-141e-88fa-2c43	if/if/IN/O/NA a/a/DT/O/NA thermal/thermal/JJ/O/Focus conductor/conductor/NN/TITLE/Concrete or/or/CC/O/NA an/a/DT/O/NA object/object/NN/O/Focus is/be/VBZ/O/Abstract exposed/expose/VBN/O/Abstract to/to/TO/O/NA a/a/DT/O/NA source/source/NN/O/Abstract of/of/IN/O/NA heat/heat/NN/O/Focus then/then/RB/O/Abstract that/that/IN/O/NA conductor/conductor/NN/TITLE/Concrete or/or/CC/O/NA that/that/IN/O/NA object/object/NN/O/Focus may/may/MD/O/NA become/become/VB/O/Abstract hot/hot/JJ/O/Concrete or/or/CC/O/NA warm/warm/JJ/O/Focus
 1c78-f04e-5974-e03c	snow/snow/NN/O/Concrete falls/fall/VBZ/O/NA during/during/IN/O/NA the/the/DT/O/NA winter/winter/NN/O/Focus in/in/IN/O/NA some/some/DT/O/NA environments/environment/NNS/O/NA
@@ -3240,7 +3238,7 @@ f461-ef68-36cf-0f91	water/water/NN/O/Concrete vapor/vapor/NN/O/Focus cooling/coo
 e576-3be7-5e76-3b07	blood/blood/NN/O/Concrete is/be/VBZ/O/Abstract a/a/DT/O/NA part/part/NN/O/Focus of/of/IN/O/NA the/the/DT/O/NA circulatory/circulatory/JJ/O/Focus system/system/NN/O/Abstract
 8c18-c36b-a89a-60ec	oil/oil/NN/O/Concrete is/be/VBZ/O/Abstract a/a/DT/O/NA nonrenewable/nonrenewable/JJ/O/Abstract resource/resource/NN/O/Abstract
 b872-e845-39f5-5b25	carbon/carbon/NN/O/Concrete dioxide/dioxide/NN/O/Abstract is/be/VBZ/O/Abstract colorless/colorless/JJ/O/Focus
-348b-f9ad-c079-e044	rattle/rattle/VB/O/Focus is/be/VBZ/O/Abstract a/a/DT/O/NA kind/kind/NN/O/Abstract of/of/IN/O/NA motion/motion/NN/O/Focus
+c946-7dd2-7e3b-c4b7	rattle/rattle/VB/O/Focus is/be/VBZ/O/Abstract a/a/DT/O/NA kind/kind/NN/O/Abstract of/of/IN/O/NA motion/motion/NN/O/Focus
 3dc6-ceb8-e305-24f4	the/the/DT/O/NA Alps/Alps/NNP/O/NA were/be/VBD/O/Abstract formed/form/VBN/O/Focus by/by/IN/O/NA rock/rock/NN/O/Concrete folding/folding/JJ/O/Focus
 a15a-56e5-208f-ea91	Bedfordshire/Bedfordshire/NNP/O/NA is/be/VBZ/O/Abstract a/a/DT/O/NA county/county/NN/O/Focus located/located/JJ/O/NA in/in/IN/O/NA England/England/NNP/COUNTRY/NA
 a885-71a9-2e19-c391	arteries/artery/NNS/O/NA or/or/CC/O/NA veins/vein/NNS/O/NA transport/transport/NN/O/Focus nutrients/nutrient/NNS/O/NA or/or/CC/O/NA water/water/NN/O/Concrete or/or/CC/O/NA minerals/mineral/NNS/O/NA throughout/throughout/IN/O/NA the/the/DT/O/NA body/body/NN/O/Concrete
@@ -3739,7 +3737,7 @@ e729-2ae7-04b3-9240	a/a/DT/O/NA pencil/pencil/NN/O/Concrete is/be/VBZ/O/Abstract
 10c6-c21e-e54b-036e	painting/paint/VBG/O/Concrete an/a/DT/O/NA object/object/NN/O/Focus a/a/DT/O/NA color/color/NN/O/Focus causes/cause/VBZ/O/NA that/that/IN/O/NA object/object/NN/O/Focus to/to/TO/O/NA be/be/VB/O/Abstract that/that/IN/O/NA color/color/NN/O/Focus
 5c52-4f26-3883-a4ef	color/color/NN/O/Focus is/be/VBZ/O/Abstract a/a/DT/O/NA property/property/NN/O/Focus of/of/IN/O/NA an/a/DT/O/NA object/object/NN/O/Focus or/or/CC/O/NA a/a/DT/O/NA material/material/NN/O/Concrete
 3648-f2f7-ae08-d6f7	algae/algae/NN/O/Concrete is/be/VBZ/O/Abstract found/find/VBN/O/Abstract in/in/IN/O/NA bodies/body/NNS/O/NA of/of/IN/O/NA water/water/NN/O/Concrete
-1a6d-a427-8ac0-28bf	Earth/Earth/NNP/O/Concrete is/be/VBZ/O/Abstract a/a/DT/O/NA kind/kind/NN/O/Abstract of/of/IN/O/NA planet/planet/NN/O/Concrete
+e473-7297-61c1-56fa	Earth/Earth/NNP/O/Concrete is/be/VBZ/O/Abstract a/a/DT/O/NA kind/kind/NN/O/Abstract of/of/IN/O/NA planet/planet/NN/O/Concrete
 2b0c-392f-5a90-0854	as/as/IN/O/NA the/the/DT/O/NA thickness/thickness/NN/O/Focus of/of/IN/O/NA an/a/DT/O/NA object/object/NN/O/Focus increases/increase/VBZ/O/NA ,/,/,/O/NA the/the/DT/O/NA resistance/resistance/NN/O/Abstract to/to/TO/O/NA tearing/tear/VBG/O/Focus or/or/CC/O/NA to/to/TO/O/NA breaking/break/VBG/O/Focus will/will/MD/O/NA increase/increase/VB/O/Abstract
 77c0-d908-7692-6b85	Burundi/Burundi/NNP/COUNTRY/NA is/be/VBZ/O/Abstract located/located/JJ/O/NA in/in/IN/O/NA the/the/DT/O/NA southern/southern/JJ/O/Abstract hemisphere/hemisphere/NN/O/Focus
 a09d-a196-028f-72ba	State/state/NN/O/Focus of/of/IN/O/NA Palestine/Palestine/NNP/O/NA is/be/VBZ/O/Abstract located/located/JJ/O/NA in/in/IN/O/NA the/the/DT/O/NA northern/northern/JJ/O/Focus hemisphere/hemisphere/NN/O/Focus
@@ -3878,7 +3876,7 @@ df67-2c42-2ea5-500d	touch/touch/NN/O/Focus can/can/MD/O/NA be/be/VB/O/Abstract u
 5457-5b8e-eb6c-aea1	another/another/DT/O/NA means/mean/VBZ/O/Abstract different/different/JJ/O/Abstract
 9d6f-0411-6644-656e	a/a/DT/O/NA droplet/droplet/NN/O/Concrete is/be/VBZ/O/Abstract a/a/DT/O/NA small/small/JJ/O/Focus amount/amount/NN/O/Abstract of/of/IN/O/NA liquid/liquid/NN/O/Concrete
 08ea-2bfc-e6e1-9c7d	a/a/DT/O/NA lever/lever/NN/O/Concrete is/be/VBZ/O/Abstract used/use/VBN/O/Abstract for/for/IN/O/NA lifting/lifting/NN/O/Focus or/or/CC/O/NA moving/move/VBG/O/Focus heavy/heavy/JJ/O/Focus objects/object/NNS/O/NA
-376c-0550-d351-b87d	a/a/DT/O/NA rock/rock/NN/O/Concrete is/be/VBZ/O/Abstract a/a/DT/O/NA kind/kind/NN/O/Abstract of/of/IN/O/NA object/object/NN/O/Focus
+7c8b-3728-1d36-f922	a/a/DT/O/NA rock/rock/NN/O/Concrete is/be/VBZ/O/Abstract a/a/DT/O/NA kind/kind/NN/O/Abstract of/of/IN/O/NA object/object/NN/O/Focus
 e112-616e-e25b-4a79	a/a/DT/O/NA circuit/circuit/NN/O/Focus is/be/VBZ/O/Abstract a/a/DT/O/NA kind/kind/NN/O/Abstract of/of/IN/O/NA electrical/electrical/JJ/O/Focus component/component/NN/O/Focus
 5961-40f8-e1b9-e456	riding/ride/VBG/O/Focus something/something/NN/O/Abstract is/be/VBZ/O/Abstract to/to/TO/O/NA move/move/VB/O/Focus that/that/IN/O/NA thing/thing/NN/O/Focus over/over/IN/O/NA a/a/DT/O/NA surface/surface/NN/O/Concrete
 f40e-296d-660b-f8df	a/a/DT/O/NA kangaroo/kangaroo/NN/O/Concrete is/be/VBZ/O/Abstract a/a/DT/O/NA kind/kind/NN/O/Abstract of/of/IN/O/NA animal/animal/NN/O/Concrete
@@ -4111,7 +4109,7 @@ f653-454d-6b95-5714	the/the/DT/O/NA small/small/JJ/O/Focus intestine/intestine/N
 c097-1dcb-a31f-8800	a/a/DT/O/NA blue/blue/JJ/O/Focus object/object/NN/O/Focus reflects/reflect/VBZ/O/NA only/only/RB/O/Abstract blue/blue/JJ/O/Focus light/light/NN/O/Concrete
 1dba-dc42-8ca9-0ab2	climate/climate/NN/O/Focus is/be/VBZ/O/Abstract the/the/DT/O/NA usual/usual/JJ/O/Abstract kind/kind/NN/O/Abstract of/of/IN/O/NA weather/weather/NN/O/Focus in/in/IN/O/NA a/a/DT/O/NA location/location/NN/O/Focus
 9a54-fdc1-b863-633a	winter/winter/NN/O/Focus is/be/VBZ/O/Abstract when/when/WRB/O/Abstract a/a/DT/O/NA hemisphere/hemisphere/NN/O/Focus is/be/VBZ/O/Abstract tilted/tilted/JJ/O/NA away/away/RB/O/Abstract from/from/IN/O/NA the/the/DT/O/NA sun/sun/NN/O/Concrete
-ffc8-91cc-45f1-f4b1	a/a/DT/O/NA lever/lever/NN/O/Concrete is/be/VBZ/O/Abstract a/a/DT/O/NA kind/kind/NN/O/Abstract of/of/IN/O/NA simple/simple/JJ/O/Abstract machine/machine/NN/O/Concrete
+9d48-4f8c-09fc-ea0d	a/a/DT/O/NA lever/lever/NN/O/Concrete is/be/VBZ/O/Abstract a/a/DT/O/NA kind/kind/NN/O/Abstract of/of/IN/O/NA simple/simple/JJ/O/Abstract machine/machine/NN/O/Concrete
 f53d-9bc7-b622-1a58	Inverness-shire/inverness-shire/NN/O/NA is/be/VBZ/O/Abstract a/a/DT/O/NA county/county/NN/O/Focus located/located/JJ/O/NA in/in/IN/O/NA Scotland/Scotland/NNP/COUNTRY/NA
 723a-5193-2766-0065	vanilla/vanilla/NN/O/Concrete has/have/VBZ/O/NA a/a/DT/O/NA strong/strong/JJ/O/Focus odor/odor/NN/O/Focus
 061d-1ec6-4a7a-9f63	a/a/DT/O/NA full/full/JJ/O/Focus moon/moon/NN/O/Concrete is/be/VBZ/O/Abstract a/a/DT/O/NA kind/kind/NN/O/Abstract of/of/IN/O/NA phase/phase/NN/O/Abstract of/of/IN/O/NA the/the/DT/O/NA moon/moon/NN/O/Concrete
@@ -4421,7 +4419,7 @@ e1d3-5fb3-b1c4-5332	specialized/specialized/JJ/O/Abstract tissues/tissue/NNS/O/N
 a52a-1b59-1f8c-028e	flowing/flow/VBG/O/Abstract is/be/VBZ/O/Abstract a/a/DT/O/NA kind/kind/NN/O/Abstract of/of/IN/O/NA motion/motion/NN/O/Focus
 5720-208c-fea0-628e	weight/weight/NN/O/Focus is/be/VBZ/O/Abstract a/a/DT/O/NA kind/kind/NN/O/Abstract of/of/IN/O/NA property/property/NN/O/Focus
 3b23-bc5c-3332-4508	growing/grow/VBG/O/Abstract is/be/VBZ/O/Abstract a/a/DT/O/NA kind/kind/NN/O/Abstract of/of/IN/O/NA activity/activity/NN/O/Abstract
-7076-a98b-7c81-2cae	a/a/DT/O/NA plant/plant/NN/O/Concrete is/be/VBZ/O/Abstract a/a/DT/O/NA kind/kind/NN/O/Abstract of/of/IN/O/NA living/live/VBG/O/Focus thing/thing/NN/O/Focus
+2e89-d8e8-a8fb-9acc	a/a/DT/O/NA plant/plant/NN/O/Concrete is/be/VBZ/O/Abstract a/a/DT/O/NA kind/kind/NN/O/Abstract of/of/IN/O/NA living/live/VBG/O/Focus thing/thing/NN/O/Focus
 4b08-9460-5cec-02ba	making/make/VBG/O/Abstract something/something/NN/O/Abstract requires/require/VBZ/O/NA resources/resource/NNS/O/NA
 ea91-5664-cefc-e7ee	a/a/DT/O/NA mushroom/mushroom/NN/O/Concrete is/be/VBZ/O/Abstract a/a/DT/O/NA kind/kind/NN/O/Abstract of/of/IN/O/NA fungus/fungus/NN/O/Concrete
 4aca-cf16-fcc6-1f79	An/a/DT/O/NA example/example/NN/O/Focus of/of/IN/O/NA mechanical/mechanical/JJ/O/Focus energy/energy/NN/O/Focus is/be/VBZ/O/Abstract an/a/DT/O/NA object/object/NN/O/Focus in/in/IN/O/NA motion/motion/NN/O/Focus
@@ -4732,7 +4730,7 @@ e5c0-79e6-37a7-4b77	larger/larger/JJR/O/NA or/or/CC/O/NA bigger/bigger/JJR/O/Foc
 02a0-8f5c-4e3a-a064	an/a/DT/O/NA oak/oak/NN/O/Concrete is/be/VBZ/O/Abstract a/a/DT/O/NA kind/kind/NN/O/Abstract of/of/IN/O/NA tree/tree/NN/O/Concrete
 0439-8c06-da63-6721	metal/metal/NN/O/Concrete is/be/VBZ/O/Abstract a/a/DT/O/NA thermal/thermal/JJ/O/Focus or/or/CC/O/NA thermal/thermal/JJ/O/Focus energy/energy/NN/O/Focus conductor/conductor/NN/TITLE/Concrete
 f4f1-8d09-36bb-8db5	if/if/IN/O/NA an/a/DT/O/NA animal/animal/NN/O/Concrete 's/'s/POS/O/NA skin/skin/NN/O/Concrete looks/look/VBZ/O/Abstract like/like/IN/O/NA something/something/NN/O/Abstract then/then/RB/O/Abstract that/that/IN/O/NA animal/animal/NN/O/Concrete looks/look/VBZ/O/Abstract like/like/IN/O/NA that/that/DT/O/NA something/something/NN/O/Abstract
-7779-45c7-0fb8-b534	oil/oil/NN/O/Concrete is/be/VBZ/O/Abstract a/a/DT/O/NA kind/kind/NN/O/Abstract of/of/IN/O/NA liquid/liquid/NN/O/Concrete
+2eff-c9c0-c7aa-f4b2	oil/oil/NN/O/Concrete is/be/VBZ/O/Abstract a/a/DT/O/NA kind/kind/NN/O/Abstract of/of/IN/O/NA liquid/liquid/NN/O/Concrete
 c734-55b0-6cf4-c9d9	nearly/nearly/RB/O/Abstract all/all/DT/O/NA fossils/fossil/NNS/O/NA are/be/VBP/O/Abstract found/find/VBN/O/Abstract in/in/IN/O/NA sedimentary/sedimentary/JJ/O/Abstract rock/rock/NN/O/Concrete
 56e3-240f-2f97-378b	down/down/RB/O/Focus is/be/VBZ/O/Abstract part/part/NN/O/Focus of/of/IN/O/NA a/a/DT/O/NA young/young/JJ/O/Focus bird/bird/NN/O/Concrete
 69d1-9751-6050-3017	an/a/DT/O/NA instrument/instrument/NN/O/Concrete is/be/VBZ/O/Abstract a/a/DT/O/NA piece/piece/NN/O/Focus of/of/IN/O/NA equipment/equipment/NN/O/Concrete
