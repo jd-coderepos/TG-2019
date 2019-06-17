@@ -1,5 +1,4 @@
 ec0a-ecbf-8142-bbe8	a rod is a kind of object	KINDOF
-ebd5-35a8-c591-ca03	carbohydrates are used for storing;transporting energy	USEDFOR
 b94c-5bde-8d46-29de	a factor impacts something	PROTO-ACTION
 4dc0-19c7-104a-0ddf	both means two	SYNONYMY
 1946-b43f-82d5-547d	rubber is a kind of material	KINDOF
@@ -59,7 +58,6 @@ f7cb-5d13-2753-d89d	a demonstration is similar to an example	SYNONYMY
 1e0d-885b-8ca3-3c13	taking is the opposite of leaving	PROTO-OPPOSITES
 7892-f43a-8f12-2a8d	black is a kind of color	KINDOF
 48ed-395e-8d30-edb4	assembling means putting together	SYNONYMY
-7579-287a-1bb4-c6c7	meters;centimeters;kilometers are used to describe distance or describe length	USEDFOR
 6656-785f-dbd2-4c9b	a bubble is a kind of object	KINDOF
 a8e1-376d-a65c-d56c	to help or to benefit means to be of use	SYNONYMY
 8958-fc28-d9ce-a1d6	a leaf performs photosynthesis or gas exchange	PROTO-ACTION
@@ -132,6 +130,7 @@ b22e-a262-859f-aa35	the sun is the largest celestial body in our solar system	PR
 8cef-917a-e2d3-335e	a shout is a kind of sound	KINDOF
 320f-f77c-6715-1abc	Paraguay is located in the southern hemisphere	PROTO-COUNTRY-HEMISPHERE
 6b27-6dff-3eef-6ffc	if an animal hatches from an egg then that animal is born	PROTO-IF-THEN
+a6aa-97ee-2e4a-a9ad	birds sometimes eat berries or seeds	PROTO-CONSUMERS
 d1c9-6993-fd7a-b8e9	the lungs are a part of the body of an animal used for breathing air	PARTOF
 4ba5-ce2c-afde-ac24	some hares live in fields	PROTO-HABITAT
 fb9d-3818-fb1e-48de	refractions of light can be used to help a person see	USEDFOR
@@ -154,7 +153,6 @@ a2f5-52da-5487-7e66	a part of a process means a stage in a process	SYNONYMY
 e4d7-20bc-aa47-3dd9	a floodplain is a kind of land or landform	KINDOF
 b32c-707d-1991-3722	if the surface of an object contains something then that object is covered with that something	PROTO-IF-THEN
 5645-74d9-19c8-9dc4	sediment is formed by weathering	PROTO-FORMEDBY
-a6aa-97ee-2e4a-a9ad	birds sometimes eat berries;seeds	PROTO-CONSUMERS
 6239-5408-630b-6f9d	the earth has more mass than the moon	PROTO-ACTION
 5885-720b-5386-fb1c	Kyrgyzstan is located in the northern hemisphere	PROTO-COUNTRY-HEMISPHERE
 45f8-aa77-a322-62d5	a rubber eraser is made of rubber	MADEOF
@@ -192,6 +190,7 @@ d368-8580-5479-5c8b	Quebec is a province located in Canada	PROTO-SUBDIVISION-COU
 66c7-4db4-da79-6ae9	animals inhale air into their lungs	TRANSFER
 d839-570a-60f4-5bc9	history occurred a long time ago	PROTO-DURING
 f1f5-5322-705e-a4c4	Ontario is a province located in Canada	PROTO-SUBDIVISION-COUNTRY
+6a0e-b352-1831-e2b8	snowing is when snow fall from clouds to the Earth or ground	TRANSFER
 fb40-15de-e88b-9743	waves are made of moving water	MADEOF
 bc41-0b7c-641f-c419	rest means sleep	SYNONYMY
 9349-71b6-e9b8-fd21	a drinking straw is a kind of object	KINDOF
@@ -252,6 +251,7 @@ c6ad-76f9-7f5c-33e0	camouflage is a kind of adaptation for hiding in an environm
 6e3f-b470-4e29-ec6f	to bang means to hit	SYNONYMY
 330a-482c-2f0d-0d81	humans discarding waste in an environment causes harm to that environment	CAUSE
 f128-d566-1e55-83b4	containing something is similar to holding something	SYNONYMY
+74d3-98e4-9bf5-7aa1	steam or water vapor is a kind of water above 100 degrees celsius	KINDOF
 7427-b4fb-4ccb-66bb	talc is a kind of mineral	KINDOF
 f8a6-912e-89fb-2613	influence means impact	SYNONYMY
 3e34-7133-f645-504b	the skeletal system is a kind of body system	KINDOF
@@ -262,6 +262,7 @@ afdd-eda7-b0e6-ad1a	an animal being born or being hatched when temperatures are 
 330c-b2e7-f883-13e6	soup is a kind of food	KINDOF
 49a0-acc7-6fce-867f	the Earth contains many ecosystems	CONTAINS
 ab25-5770-3344-605e	wearing safety goggles is a kind of safe practice in a laboratory	KINDOF
+ebd5-35a8-c591-ca03	carbohydrates are used for storing or transporting energy	USEDFOR
 e1e4-0797-e545-e336	hunting is when an animal kills another animal to eat that animal	PROTO-ACTION
 ab30-97e0-586f-d18a	society is made of humans	MADEOF
 7f82-8a0b-a3e0-26c5	having a variety of foods available has a positive impact on people's lives	AFFECT
@@ -391,7 +392,6 @@ a2d0-fb25-9c0c-89c4	some animals live in zoo exhibits	PROTO-HABITAT
 49fd-6aeb-83eb-c25c	contain is similar to store	SYNONYMY
 bf07-ffd0-f0cf-8f16	hiding can be used for avoiding predators	USEDFOR
 ac96-5db5-366c-b342	a doorbell is a kind of electric device	KINDOF
-a955-8642-4044-5a48	pot;pan;frying pan is made of metal for cooking	MADEOF
 09b1-d7da-1e41-3064	muscle cells are a part of muscles	PARTOF
 bfe6-d06b-d8bf-a2c1	trees of different species have differently shaped leaves	PROTO-PROPERTIES-THINGS
 34e8-e10d-e464-de1f	cold temperatures or cool temperatures cause animals to shiver	CAUSE
@@ -401,6 +401,7 @@ b199-e899-31a4-afb8	life means living things	SYNONYMY
 69cc-d300-368f-169b	eating prey requires catching prey	REQUIRES
 0bc5-e416-87f9-8adc	Egypt is located in the southern hemisphere	PROTO-COUNTRY-HEMISPHERE
 5e8b-5290-a9f9-d771	dairy is a source of Vitamin D	SOURCEOF
+4347-84dc-10ce-8007	precipitation is when rain or snow or hail fall from clouds to the Earth or ground	TRANSFER
 32b9-45a7-7e74-12c2	to be dependent on something means to depend on that something	SYNONYMY
 d5a9-c02e-a6e4-392f	studying moving habits requires knowing location	REQUIRES
 0cfa-af72-38ef-3394	baby animals become adult animals	PROTO-ACTION
@@ -445,8 +446,8 @@ cbf9-c0cb-677f-ddce	a window is a part of a house	PARTOF
 9012-e8ac-14df-5227	a chicken weighs, on average 2 kg	PROTO-AVG-WEIGHT
 16b8-4881-cbed-004f	a mineral usually has a crystal structure	PROTO-PROPERTIES-THINGS
 c9d3-5f71-de10-2716	fresh food is usually safe to eat	PROTO-PROPERTIES-THINGS
+69bc-91ee-2371-c804	providing something means making or delivering something	SYNONYMY
 0f01-9270-d298-1254	if two objects are apart from each other then matter is between those two objects	PROTO-IF-THEN
-08ea-2bfc-e6e1-9c7d	a lever is used for lifting;moving heavy objects	USEDFOR
 0a57-0832-1b47-30d7	to a human a air or environment temperature of 21 C to 28 C is considered warm	PROTO-PERCEPTIONS
 fece-0edb-14bf-0a34	water is a kind of matter	KINDOF
 2fa6-223b-ad1e-c3a8	a star is usually larger than a planet	PROTO-PROPERTIES-THINGS
@@ -548,7 +549,6 @@ ef31-4d23-6b78-5f80	exhaling is when an animal expels air from the lungs	PROTO-A
 6937-c405-6853-efb2	a population is made of one type of organism in an area	MADEOF
 53ec-933f-7116-dcaf	to decline means to decrease	SYNONYMY
 7747-2a9d-897d-f11c	a window is a kind of object	KINDOF
-69bc-91ee-2371-c804	providing something means making;delivering something	SYNONYMY
 e682-f47d-cc9c-a67c	a complete revolution of the Earth around the sun takes 1 or one year or solar year or Earth year	PROP-ORBITAL-ROT
 4850-3bd5-960b-0b9a	more likely means increased likelihood	SYNONYMY
 363a-2bcb-006a-ecd5	the moon rising occurs once per day	FREQUENCY
@@ -583,6 +583,7 @@ dcd7-6da5-3ef6-3998	fake plants use less water than real plants	PROTO-ACTION
 7e0c-4aad-052d-7c9c	carpooling is a kind of activity	KINDOF
 90c5-2559-60d6-ec29	a road is a kind of location	KINDOF
 50a8-996b-b8bf-e107	a toaster is a kind of electrical device	KINDOF
+57f8-2232-d549-6dbc	crumple means change shape from smooth into compacted or irregular by physical force	CHANGE
 d825-1694-54c8-7842	a rabbit is a kind of herbivore	XIVORE
 40b8-086d-439a-c9ba	to recycle means return	SYNONYMY
 e36b-5464-c253-5b04	damage means harm	SYNONYMY
@@ -700,7 +701,6 @@ b346-9120-f053-18eb	shorter means smaller or less in height	ATTRIBUTE-VALUE-RANG
 8fd1-cc47-8c1f-bbdb	Westmoreland is a county located in England	PROTO-SUBDIVISION-COUNTRY
 4c9d-d504-1080-1e84	if something transports something else then that something removes that something else from a place	PROTO-IF-THEN
 c388-ad58-2f0e-74b4	destruction means loss	SYNONYMY
-5e75-4bbb-dae0-311f	soil erosion means soil loss through wind;water or animals	CHANGE-VEC
 cafd-1d6e-a47f-022b	comparing requires observing that something	REQUIRES
 0d35-1653-d1f5-29f2	a predator is a kind of enemy to its prey	KINDOF
 063d-b437-ec5f-4fbf	if something is a source of something else then that something usually contains that something else	PROTO-IF-THEN
@@ -824,18 +824,17 @@ e4d1-f502-402f-4ce9	dumping something in an environment means adding that someth
 c807-08b5-6f5d-e86a	an adaptation is an advantage	SYNONYMY
 c1cd-99dc-b931-3a4f	cellular respiration is when cells break down food to produce energy	PROTO-ACTION
 1758-a1b7-4083-9e99	matter or materials or substances are made of atoms or particles	MADEOF
-bfd4-dd07-9a84-6de0	fans are used for cooling humans;rooms	USEDFOR
 4539-85f1-57c0-5e89	a region is a kind of location	KINDOF
 18c9-8e1d-c07f-850a	the cell membrane is a part of a cell	PARTOF
 4215-7e38-54ca-e2fa	sunlight shining means sunlight is provided	SYNONYMY
 2ede-65e6-e727-d345	cellular respiration is cellular digestion	SYNONYMY
 24ac-6c7a-db37-64ad	seals every year return to the same beaches to give birth	PROTO-ACTION
+5e75-4bbb-dae0-311f	soil erosion means soil loss through wind or water or animals	CHANGE-VEC
 e5ad-f4c8-aca4-466f	fruit is a part of a plant or tree	PARTOF
 73df-7e6e-db00-ae55	some adult animals lay eggs	PROTO-ACTION
 59ad-9f17-fe18-43c6	if something no longer exists or ceases to exist then the space occupied by that something is free now	PROTO-IF-THEN
 4184-5780-8914-8264	animal cells can not perform photosynthesis	AFFORDANCES
 b5d1-0f14-f32e-c6b4	a forest is a kind of environment	KINDOF
-a7f1-5498-c4dd-7392	usually craters on planets or craters on moons are formed by asteroids;meteoroids impacting that planet or moon's surface	PROTO-FORMEDBY
 a529-d2e9-6c62-5e4a	if seeds stick to the fur of an animal then that seed will be transported by the animal	PROTO-IF-THEN
 b7ab-4872-8563-4b31	to cause the formation of means to form	SYNONYMY
 f294-6f62-2e34-4af0	a mineral is a kind of solid or natural material	KINDOF
@@ -888,6 +887,7 @@ ba0a-4b3e-ff60-ec49	a stopwatch is a kind of tool for measuring time	KINDOF
 5023-29ed-9f25-f7cf	a living thing surviving has a positive impact on that living thing's ability to compete for resources	AFFECT
 d709-d70e-7d0f-3f54	glass is a kind of object	KINDOF
 b393-8aa8-f654-e6a9	recyclability is a property of a material and includes ordered values of nonrecyclable or recyclable	PROPERTIES-GENERIC
+ad2f-c1c6-5368-4fcd	coloration is a kind of adaptation for hiding or camouflage	KINDOF
 8c18-8f91-c1ab-742b	a bacterium is a kind of decomposer	KINDOF
 c391-0831-1f0b-44bd	thunder is loud	PROTO-PROPERTIES-THINGS
 5611-cf44-6cd6-2aed	bacteria or viruses cause food poisoning	CAUSE
@@ -935,9 +935,9 @@ e9a8-4601-fa95-20fe	Flintshire is a county located in Wales	PROTO-SUBDIVISION-CO
 ed93-78bd-8d20-1b58	a seashell is sometimes a part of a water animal	PARTOF
 4e11-ed6b-eba8-a1e4	a camera is used for recording images	USEDFOR
 68fe-16bc-d67a-41b9	pounds ( lb ) are a unit used for measuring mass or weight generally used for values between 1 and 50000000	UNIT
-5c76-a005-e9c2-354a	a balance is used for measuring mass;weight of an object or of a substance	USEDFOR
 e0fe-14d9-9d28-87bb	touch is a kind of sense	KINDOF
 9fa0-9f6a-3b04-00f8	habitat destruction causes animals to move to find shelter in another habitat	CAUSE
+9939-7d13-b72f-2674	winter has cold temperatures or weather	PROTO-PROPERTIES-THINGS
 f873-b72a-39bf-0deb	tying back long hair is a kind of safe practice in a laboratory	KINDOF
 16ea-bfa4-07c6-c55d	cure means solution to being sick	SYNONYMY
 cf37-a1ef-e60b-f8e7	close means low in distance	ATTRIBUTE-VALUE-RANGE
@@ -969,6 +969,7 @@ a3c6-f26b-2009-9503	months are a kind of unit for measuring time	KINDOF
 39ec-9974-829d-ba5e	warm or becoming warm means heat is added	CHANGE-VEC
 ee81-d31b-b856-0729	chlorophyll is a kind of pigment	KINDOF
 8854-3e45-f39e-81a8	left out of means moved from	SYNONYMY
+f4dc-5030-6255-a1f8	humans changing ecosystems or environments usually has a negative impact on an ecosystem or organisms living in an ecosystem	AFFECT
 85c8-f683-bc89-7bc5	drying means amount of water or amount of liquid or wetness decreases	CHANGE-VEC
 6637-e41b-2d15-bfdc	a ceiling fan is a kind of fan	KINDOF
 86ed-0d8e-531e-34e3	fishing is when a human kills or catches fish for food	PROTO-ACTION
@@ -982,7 +983,6 @@ bdbf-34c0-8ec2-7e7a	the ground is at the bottom of an area	PROTO-LOCATIONS
 d042-a628-d170-532f	flying a kite requires wind	REQUIRES
 55a5-70f3-961c-a142	a telescope is a kind of instrument for observing celestial objects or observing the sky	KINDOF
 c130-54eb-43da-154f	eating a monarch butterfly causes a predator to become sick	CAUSE
-6a0e-b352-1831-e2b8	snowing is when snow fall from clouds to the Earth;ground	TRANSFER
 29a8-8ae2-e41b-b230	as light pollution increases , seeing the stars will be harder	COUPLEDRELATIONSHIP
 4aff-d072-35cc-3ebe	liters ( L ) is a unit used for measuring volume generally used for values between 1 and 50000000	UNIT
 2aff-8cb6-a4f9-5fd9	staying warm has a positive impact on an animal's survival or health	AFFECT
@@ -995,7 +995,6 @@ f5ca-b95b-fd83-47d8	seasons cause change to the environment	CAUSE
 541c-2eac-6ed4-ea6a	producing is a kind of function	KINDOF
 1eef-7771-64a6-1d93	to hover means to stay in place in the air	SYNONYMY
 2bf5-43b2-828d-7991	tea is usually hot or warm	PROTO-INSTANCES
-a18a-21be-3303-f9b8	a pan;frying pan is a kind of container for cooking or food	KINDOF
 9e69-51bc-d488-fd6e	staying cool has a positive impact on a human's comfort	AFFECT
 201e-3e95-e41a-672d	asphalt is a smooth surface	PROTO-PROPERTIES-THINGS
 7b38-a486-3dc5-7abe	Pitcairn Islands (United Kingdom) is located in the southern hemisphere	PROTO-COUNTRY-HEMISPHERE
@@ -1146,7 +1145,6 @@ f6fb-5aa7-3464-c565	sense is a kind of characteristic of an animal	KINDOF
 b517-b6f1-1943-b4dc	Cape Verde is located in the southern hemisphere	PROTO-COUNTRY-HEMISPHERE
 a5ac-815e-8402-d5f8	some humans live in houses	PROTO-HABITAT
 ce92-ccfe-ccdf-061f	a tripe in a vehicle requires using that vehicle	REQUIRES
-57f8-2232-d549-6dbc	crumple means change shape from smooth into compacted;irregular by physical force	CHANGE
 b7b3-2705-8edd-318a	human waste often causes harm to an environment	CAUSE
 ffc7-259e-e733-5c0c	the Great Lakes were formed by glaciers moving over the ground	PROTO-FORMEDBY
 0d5b-f3fe-5534-5799	as temperature during the day increases , the temperature in an environment will increase	COUPLEDRELATIONSHIP
@@ -1156,7 +1154,6 @@ ed1d-c1cf-76c9-eed3	a thunderstorm is a kind of storm	KINDOF
 c227-44da-44a9-1d09	the body of a warm-blooded animal is usually warm in temperature	PROTO-PROPERTIES-THINGS
 69c1-2991-2421-ce63	classifying means grouping objects or materials by their properties	PROTO-ACTION
 3a09-2b75-9bf0-dd93	nature means a natural environment	SYNONYMY
-4aa6-0eac-9f6d-0d0b	as the size of an object appears larger , that object will be seen;be observed more easily or better	COUPLEDRELATIONSHIP
 ba0c-9558-8ad1-d90d	a black-eyed Susan wildflower is a kind of flower	KINDOF
 1af6-b1e2-ade4-b6af	skidding causes speed to decrease	CAUSE
 26cb-7582-a17c-a0d6	friction causes the temperature of an object to increase	CAUSE
@@ -1179,7 +1176,6 @@ ccc1-d499-e74c-1b92	Veracruz is a state located in Mexico	PROTO-SUBDIVISION-COUN
 e9d9-d1ad-bd2f-0776	if something has no impact on something else then that something else stays the same	PROTO-IF-THEN
 3c44-d616-941a-c427	if battery in an electromagnet is active then the nail in the electromagnet will become magnetic	PROTO-IF-THEN
 38e7-c5c0-194b-1ed6	a planet is exposed to the heat of the star around which it revolves	PROTO-ACTION
-244b-03a0-929e-0095	eating;digestion is when an organism takes in nutrients from food into itself by eating	TRANSFER
 b5a3-4425-bd82-8dcb	United Arab Emirates is located in the northern hemisphere	PROTO-COUNTRY-HEMISPHERE
 9f23-854a-7dc0-c22e	motion is a source of kinetic energy in an object	SOURCEOF
 a6ed-d678-af19-2281	gravity means gravitational pull or gravitational energy	SYNONYMY
@@ -1240,6 +1236,7 @@ dcc6-24bd-da16-1dd3	New Hampshire is a state located in the United States of Ame
 eb11-ce60-5982-6b34	a seismograph is used for measuring the size of an earthquake	USEDFOR
 4eac-892f-ecd2-6e0d	a living thing is a kind of object	KINDOF
 2c1e-d35c-e708-676c	a stove is used for cooking by generating heat	USEDFOR
+563d-53cc-0a8a-e8da	a watch or clock or stopwatch is used for measuring time	USEDFOR
 e6a7-0f6f-8904-60da	phase changes do not change mass	CHANGE
 1505-53ee-1d64-b11d	water is a kind of medium for light	KINDOF
 3bc7-74c9-307f-6f56	a type of something is a kind of property of that something	KINDOF
@@ -1468,7 +1465,6 @@ db0d-0439-58f8-16c8	CuraÃ§ao is located in the northern hemisphere	PROTO-COUNT
 cb9d-9db9-4d61-d79f	a electromagnet is formed by attaching an iron nail wrapped in a copper wire to a circuit	PROTO-FORMEDBY
 f3f5-fefd-3507-4a59	death means to die	SYNONYMY
 fb00-41ad-f198-b5ac	predators eat prey	PROTO-CONSUMERS
-fdba-70d0-fcc6-e529	eyes can sense;detect light energy for seeing	AFFORDANCES
 3961-d09c-4b9a-a6f7	water is a kind of liquid	KINDOF
 f5fb-4734-09f4-62e7	to belong to a class means to be a kind of something	SYNONYMY
 d495-e54a-9fd2-0acc	land is a kind of landform	KINDOF
@@ -1487,13 +1483,13 @@ fdf9-ea9d-ca52-43bb	as the distance of a location from the North Pole becomes sm
 782c-5d2a-36fe-5676	nature is the source of natural resources	SOURCEOF
 599e-347c-567c-1fb2	as mileage per galon of gasoline increases , the amount of gasoline used will decrease	COUPLEDRELATIONSHIP
 c340-79fe-20a6-026a	spring has warm temperatures or weather	PROTO-PROPERTIES-THINGS
-9773-5df7-84db-74b3	gravity;gravitational force causes objects that have mass or substances to be pulled down or to fall on a planet	CAUSE
 dc03-9737-bee3-4b58	pints ( pt ) is a unit used for measuring volume generally used for values between 1 and 2	UNIT
 d620-5b2c-05de-c4ce	Montserrat (UK) is located in the northern hemisphere	PROTO-COUNTRY-HEMISPHERE
 a0de-6074-3154-0632	summer has the most sunlight	PROTO-PROPERTIES-THINGS
 de82-6668-2baf-1817	removing waste is a kind of function	KINDOF
 8158-a40a-af21-cc53	volume or sound intensity is a property of sound or sound energy and includes ordered values of quiet or normal or loud	PROPERTIES-GENERIC
 4eea-4745-39cb-2779	a microorganism is a part of a compost pile	PARTOF
+a0b2-a45f-01e1-4bf4	boiling or evaporation means change from a liquid into a gas by adding heat energy	CHANGE
 b695-f668-1dec-659c	the amount of daylight is least in the winter	PROP-QUANTITY-DATE
 78eb-a786-7eb2-983b	Aruba is located in the northern hemisphere	PROTO-COUNTRY-HEMISPHERE
 91cc-2488-b3f3-beac	a region is similar to an environment	SYNONYMY
@@ -1512,7 +1508,6 @@ b1a0-6972-4391-5b8c	Anguilla (UK) is located in the northern hemisphere	PROTO-CO
 cc92-3103-fbe1-a87a	how long something takes is a kind of measurement of time	KINDOF
 b545-b586-fd95-b2af	rolling is a kind of motion	KINDOF
 852a-f5d6-a737-525f	a plant light is used for help plants by mimicking sunlight	USEDFOR
-15b7-2dad-aa86-409b	growing means a plant's height;mass;size increase	CHANGE-VEC
 760c-5c54-3992-66a4	Tonga is located in the southern hemisphere	PROTO-COUNTRY-HEMISPHERE
 7ca2-740e-37f4-0a9e	a bat is a kind of animal	KINDOF
 b525-3c38-249c-23da	ice wedging is a kind of mechanical weathering	KINDOF
@@ -1648,7 +1643,6 @@ fc64-bcd7-4282-619e	good means positive	SYNONYMY
 f39e-99d0-faec-c532	an airplane is fast in speed	PROTO-PROPERTIES-THINGS
 9633-63de-89db-ce0e	a trunk is a source of support for a tree	SOURCEOF
 33d5-8204-256d-5641	North Korea is located in the northern hemisphere	PROTO-COUNTRY-HEMISPHERE
-4383-694e-b4d4-cd5d	a telescope is used for observing stars;planets;moons;distant objects or the sky or celestial objects	USEDFOR
 e856-9caa-346e-b925	a chloroplast contains chlorophyll	CONTAINS
 50a6-138c-0abe-6496	the winter solstice is on December 21st in the northern hemisphere	PROTO-DURING
 c755-1627-f4a5-1c08	An example of movement is washing away	EXAMPLES
@@ -1736,9 +1730,11 @@ c0ad-4856-2d41-4fa9	oceans contains most of earth's water	CONTAINS
 2f53-db43-c6e9-95bc	greater means higher or more in value	ATTRIBUTE-VALUE-RANGE
 18c4-e5f9-2e96-516d	windy means high wind speeds	ATTRIBUTE-VALUE-RANGE
 8848-4ca5-92b5-6607	walking is a kind of motion	KINDOF
+d28f-0727-460f-5ab6	hawks or eagles eat snakes or lizards	PROTO-CONSUMERS
 a659-d135-c6bf-7724	night is low in light or in visibility	PROTO-PROPERTIES-THINGS
 0fda-acea-84f6-b616	the nervous system is a kind of body system	KINDOF
 7272-bf77-2331-1b55	cellular respiration is when a cell converts from oxygen and carbohydrates into carbon dioxide, water, and energy	CHANGE
+a3c3-47f1-32ba-5c7f	the sun transfers solar energy or light energy or heat energy from itself to the planets or Earth through sunlight	TRANSFER
 6d76-78fa-27cd-ed39	Greece is located in the northern hemisphere	PROTO-COUNTRY-HEMISPHERE
 cd92-04a0-8f80-387c	the respiratory system transfers oxygen to the circulatory system	TRANSFER
 713f-c921-0aa1-83b1	a beach is usually part of an island	PARTOF
@@ -1767,6 +1763,7 @@ a907-41bb-20dc-dd95	Ningxia or Ningxia Autonomous Region is a autonomous region 
 7955-b33e-9357-33b7	identifying is similar to determining	SYNONYMY
 b913-a040-66e7-599a	a mirror is used for reflecting light	USEDFOR
 e65a-df84-fcd2-733c	fertilizers have a negative impact on the environment or natural resources	AFFECT
+a7f1-5498-c4dd-7392	usually craters on planets or craters on moons are formed by asteroids or meteoroids impacting that planet or moon's surface	PROTO-FORMEDBY
 842b-2665-a2a2-db2a	mineral graphite is used for making pencil lead	USEDFOR
 9173-8e98-619e-64bd	QuerÃ©taro is a state located in Mexico	PROTO-SUBDIVISION-COUNTRY
 a047-3def-21a6-4a8e	a ship is used for moving people or products across bodies of water	USEDFOR
@@ -1820,7 +1817,6 @@ e901-c400-086c-8302	a motion is a kind of event or action	KINDOF
 5661-379f-7e61-6d32	An electrical conductor is a vehicle for the flow of electricity	VEHICLE
 6d4f-15e5-fadf-6159	as distance from an object decreases , that object will appear larger	COUPLEDRELATIONSHIP
 7740-696e-1fd8-35b8	a compost pile is used for recycling plants	USEDFOR
-7345-c073-962f-2597	shedding is when an animal loses hair;fur;skin	CHANGE
 dfda-0bf5-6a91-6d09	aquatic animal means water animal	SYNONYMY
 a989-b05f-cf6d-e8ee	place or location is synonymous with position	SYNONYMY
 ed71-4003-23bd-6b98	north is a kind of direction	KINDOF
@@ -1870,7 +1866,6 @@ f376-a289-163b-6641	if something exists on a surface then that surface contains 
 ddb0-b569-92c2-503c	once per means every	SYNONYMY
 2729-44c9-6c43-99ee	a canyon forming occurs over a period of millions of years	PROTO-DURATIONS
 c59e-0070-96f7-48b8	soil is formed by rocks eroding	PROTO-FORMEDBY
-a3c3-47f1-32ba-5c7f	the sun transfers solar energy or light energy or heat energy from itself to the planets;Earth through sunlight	TRANSFER
 ecd5-7900-cafd-a816	an inherited characteristic is an acquired characteristic	SYNONYMY
 ad73-5c93-32aa-6f1f	a waning crescent is a kind of phase of the moon	KINDOF
 26fe-ab70-b4a4-fe79	chlorophyll is used for absorbing light energy by plants	USEDFOR
@@ -1892,6 +1887,7 @@ efd2-9d11-3f32-24cc	roots anchor plants into the soil	PROTO-ACTION
 b3d3-c3da-3c51-659e	a nail is a kind of object	KINDOF
 10d3-297c-e0e5-8531	a component means a part of	SYNONYMY
 2999-5991-d180-65c1	as dryness increases in an environment , the available water in that environment will decrease	COUPLEDRELATIONSHIP
+244b-03a0-929e-0095	eating or digestion is when an organism takes in nutrients from food into itself by eating	TRANSFER
 cd45-3b6d-c0bd-d377	strength is a kind of property	KINDOF
 163a-1ae9-b8d6-c3ab	as the population of plants decreases , carbon in the atmosphere will increase	COUPLEDRELATIONSHIP
 1975-c17f-560c-aa4c	usually people learn how to read and write in school	PROTO-ACTION
@@ -1910,7 +1906,6 @@ e1cb-6dbd-0bf8-8d18	a flashlight requires a source of electricity to produce lig
 c477-accc-502e-618d	lack is similar to low or little	SYNONYMY
 0ad2-7d4f-40c4-13c5	staying means not changing	SYNONYMY
 4706-54ea-c8d6-bedd	elements are a kind of substance	KINDOF
-6567-a1de-cf55-de30	poor health;bad health;unhealthy is the opposite of good health;healthy	PROTO-OPPOSITES
 083b-d47a-2d98-7325	brass is always nonmagnetic	MAGNETISM
 e883-d258-546b-7207	identical twins have all of the same inherited characteristics	PROTO-PROPERTIES-THINGS
 6c20-4dbe-71da-0428	a magnet contains a north pole or south pole	CONTAINS
@@ -2013,7 +2008,6 @@ b47e-30f2-aa9b-999f	temperature drop means temperature decrease	SYNONYMY
 d8a3-10bb-9aea-178a	motion or movement means moving or to move	SYNONYMY
 a6e1-01e9-def3-d510	the increase of something required by an organism has a positive impact on that organism's survival	AFFECT
 7cde-90a8-51f7-762f	Uzbekistan is located in the northern hemisphere	PROTO-COUNTRY-HEMISPHERE
-74d3-98e4-9bf5-7aa1	steam;water vapor is a kind of water above 100 degrees celsius	KINDOF
 a328-84da-ecad-102f	an otter is a kind of aquatic animal	KINDOF
 20a3-dcb5-8ce4-ae5c	predators or carnivores or omnivores eat other animals	PROTO-CONSUMERS
 4a85-2fef-539d-2162	the day time is part of one day	PARTOF
@@ -2031,7 +2025,6 @@ d3bf-8edc-c2a9-df49	animals usually require removing salt from water for drinkin
 46bc-bca8-b945-8327	mL means milliliters	SYNONYMY
 4d82-5c75-1ac1-abdd	polluting means something poisonous is added to an environment	CHANGE-VEC
 fa71-3061-1c31-cead	the smell of rotting meat attracts flies	PROTO-ACTION
-03c0-59bd-bf14-aaa0	transpiration is when water vapor moves from plants;leaves into the atmosphere	CHANGE
 f178-8a67-81c1-e3fb	cutting down trees has a negative impact on an ecosystem or organisms living in an ecosystem	AFFECT
 e7fa-9330-c636-73e3	increase is similar to extend	SYNONYMY
 7058-f855-3d78-7d7f	the floating arrow on a compass always points towards the north	PROTO-ACTION
@@ -2089,6 +2082,7 @@ f917-eb1c-9469-7341	a labybug has a small size	PROTO-PROPERTIES-THINGS
 2851-a2b0-f5df-dae7	if something is a raw material in a process then that something is required for that process	PROTO-IF-THEN
 fc5c-acec-f27b-efbd	downhill is a kind of direction	KINDOF
 92e5-34ee-da79-3c25	shape is a property of the appearance of an object	PROPERTIES-GENERIC
+fdba-70d0-fcc6-e529	eyes can sense or detect light energy for seeing	AFFORDANCES
 c4c0-a68c-9040-c9fb	equatorial regionial Guinea is located in the southern hemisphere	PROTO-COUNTRY-HEMISPHERE
 9ecf-063e-892a-c7fa	emit means produce	SYNONYMY
 9cdf-f5b2-8eba-bfd3	An example of using tools is a chimpanzee digging for insects with a stick	EXAMPLES
@@ -2253,6 +2247,7 @@ d02f-8790-4fd9-da49	a dessert is a kind of food	KINDOF
 e9ec-d6ef-e1a0-97fd	butter is a kind of solid below 32 degrees celsius	KINDOF
 133f-8977-dfd9-c969	an eagle is a kind of animal	KINDOF
 3c2b-e899-b881-c544	Ayrshire is a county located in Scotland	PROTO-SUBDIVISION-COUNTRY
+4aa6-0eac-9f6d-0d0b	as the size of an object appears larger , that object will be seen or be observed more easily or better	COUPLEDRELATIONSHIP
 cf49-1b7a-89f0-41f5	solid is a kind of state of matter	KINDOF
 7289-5346-1246-0060	reproduction is a stage in the life cycle process	STAGE-IN-PROCESS
 643f-7227-2e92-b2b1	to belong to a group means to be a kind of something	SYNONYMY
@@ -2261,6 +2256,7 @@ efea-6011-c202-2cc0	as the distance of a location from the North Pole becomes sm
 dc7e-8241-c2cf-b10a	clearing a forest means humans cutting down the trees	SYNONYMY
 65d2-8c35-9f57-0830	a channel contains moving water	CONTAINS
 38cf-fa0e-9514-ca94	Greenland (Denmark) is located in the northern hemisphere	PROTO-COUNTRY-HEMISPHERE
+4383-694e-b4d4-cd5d	a telescope is used for observing stars or planets or moons or distant objects or the sky or celestial objects	USEDFOR
 7cc7-9198-9358-fdf5	aluminum is always nonmagnetic	MAGNETISM
 0c89-cc86-5c75-810c	lightning causes thunder	CAUSE
 91b9-6388-d5b8-58b6	distance is a property of space and includes ordered values of close or far	PROPERTIES-GENERIC
@@ -2311,7 +2307,6 @@ aacf-3442-3b46-b964	the sun rising and setting causes cycles of day and night	CA
 cb34-8d7a-925d-de4d	the Moon is Earth's moon	SYNONYMY
 7591-45d8-5f0a-2875	Zimbabwe is located in the southern hemisphere	PROTO-COUNTRY-HEMISPHERE
 83fc-2b11-a88e-56cd	to inhibit means to prevent	SYNONYMY
-ee78-0795-be47-6ad8	inheriting is when a inherited characteristic is copied or is passed from parent to offspring by genetics;DNA	TRANSFER
 a8c3-f9b0-6fbf-1116	a stinger is used for defense or stinging by a wasp or a bee	USEDFOR
 fcf3-cad2-b199-4da1	harming an environment causes harm to the living things or to the organisms in that environment	CAUSE
 f158-a131-1234-57bc	British Columbia is a province located in Canada	PROTO-SUBDIVISION-COUNTRY
@@ -2323,12 +2318,12 @@ e215-a276-5a10-38a1	completing a circuit causes electricity or electric current 
 c41d-9ce9-3d44-e24a	conductivity is a kind of physical property	KINDOF
 36f6-e94f-8780-1897	melting is a kind of process	KINDOF
 331a-fc1c-2a90-be69	cracking something usually has a negative impact on that something	AFFECT
-c1bf-db54-7c40-a799	storms;rain cause bodies of water to increase amount of water they contain	CAUSE
 0e47-2c50-6be2-5375	burning a living thing usually causes harm to that living thing	CAUSE
 367d-8192-f22d-fdb1	RÃ©union (France) is located in the southern hemisphere	PROTO-COUNTRY-HEMISPHERE
 9710-2f26-70ba-a122	plastic is a kind of electrical insulator	KINDOF
 0fb6-3ecf-eb41-0b84	ounces ( oz ) are a unit used for measuring weight generally used for values between 1 and 16	UNIT
 10c2-8847-99e1-057b	consumers eat other organisms	PROTO-CONSUMERS
+4842-3518-d7ab-f670	eating or taking in food is used to get nutrients or energy by animals or living things	USEDFOR
 bb18-f19f-69ba-8bc6	freezing point means temperature at which a liquid freezes or below which a liquid freezes	SYNONYMY
 e931-7db5-7b7d-6c1a	to remain means to not change	SYNONYMY
 ae9e-abc3-9cb3-216c	the moon is the celestial object that is closest to the Earth	PROP-REL-DIST
@@ -2359,7 +2354,6 @@ bb76-5bf9-7c9a-e096	condition is a property of an environment	PROPERTIES-GENERIC
 7f16-3900-214b-cfcc	spring follows winter	PROTO-ACTION
 61b2-4ff2-b8e9-53b7	Alabama is a state located in the United States of America	PROTO-SUBDIVISION-COUNTRY
 c4f5-f802-6c1a-1448	place means area	SYNONYMY
-f4dc-5030-6255-a1f8	humans changing ecosystems;environments usually has a negative impact on an ecosystem or organisms living in an ecosystem	AFFECT
 1d88-121f-5fd2-6ed8	composition is a property of an object or matter	PROPERTIES-GENERIC
 5b47-bd0e-73fe-67d6	a wire is usually made of metal	MADEOF
 a5ab-7b37-388a-1cd3	a burner is a kind of object or surface	KINDOF
@@ -2379,6 +2373,7 @@ d6ad-b5b4-1186-0117	a container with air holes in the top is a kind of tool	KIND
 4df6-1a70-4364-cd87	a walrus is a kind of sea mammal	KINDOF
 ac0c-d155-9d22-c9f9	Suffolk is a county located in England	PROTO-SUBDIVISION-COUNTRY
 eb10-2b77-ec8b-34ca	Oregon is a state located in the United States of America	PROTO-SUBDIVISION-COUNTRY
+799b-aef6-8f37-da4b	purple or violet or magenta is a kind of color	KINDOF
 63f8-0c28-2691-5e74	a turtle is a kind of reptile	KINDOF
 2e40-b4c8-727f-c33f	light means low in weight	ATTRIBUTE-VALUE-RANGE
 1700-a363-df25-ad34	a cat is a kind of animal	KINDOF
@@ -2403,7 +2398,6 @@ add6-007e-31dc-2dda	a physicist is a kind of scientist	KINDOF
 779a-4a82-66a1-2ce6	dead organisms are the source of nutrients for decomposers	SOURCEOF
 a288-7e08-49cc-7661	fertilizer contains chemicals	CONTAINS
 7854-76a6-6501-4b8f	as heat increases , a flexible container containing gas will expand	COUPLEDRELATIONSHIP
-489e-9103-cfb3-9d2e	shelter can protect animals;humans from weather	AFFORDANCES
 1d43-ce6e-b5c5-c568	the thickness of the parts of an organism is an inherited characteristic	PROP-INHERITEDLEARNED
 4483-54ea-1288-2d72	coat means fur coat	SYNONYMY
 b85c-d197-cb03-a4f1	a can is a kind of object	KINDOF
@@ -2416,7 +2410,6 @@ b73d-f638-b1f4-580c	a pesticide is used for protecting plants by killing insects
 9ed1-18d0-0ac0-c299	a natural ecosystem contains native living things only	CONTAINS
 77dc-05da-a205-2af9	shale is a kind of sedimentary rock	KINDOF
 11f2-4ff8-e494-7018	a maple tree is a kind of tree	KINDOF
-9f4e-2412-59cc-3383	loud means high in sound energy;sound intensity	ATTRIBUTE-VALUE-RANGE
 95aa-eaf8-1c9b-066b	pasteurization causes bacteria in milk to be reduced	CAUSE
 7a68-d438-ce92-5fb1	an anemometer is used to measure wind speed	USEDFOR
 fe0e-38e0-f82f-e92a	a nest is a kind of resource for a bird	KINDOF
@@ -2485,6 +2478,7 @@ c1b8-6b6a-cfa4-5354	a airplane is used for moving people or products across bodi
 9793-b861-bc67-0e67	frying food is a kind of cooking	KINDOF
 e57b-18c2-73ff-869b	to be found in means to be contained in	SYNONYMY
 0b7b-cf23-e64f-4200	the Earth being tilted on its axis causes seasons	CAUSE
+0962-4a47-4e17-ce97	photosynthesis means producers or green plants convert from carbon dioxide, water, and solar energy into carbohydrates or food or oxygen for themselves	CHANGE
 7b54-c9f1-86da-860b	Earth is made of rock	MADEOF
 e9db-4122-22ea-1d50	if a spoon or an object is used to stir a liquid or mixture then that spoon or that object is touching that liquid or that mixture	PROTO-IF-THEN
 b52b-5ade-22b4-b42f	juice is a kind of solution	KINDOF
@@ -2499,6 +2493,7 @@ a4a0-25e7-ae9c-5654	incomplete metamorphosis is when an insect reaches the adult
 4e56-9d2d-b627-f9b1	history means the past	SYNONYMY
 5949-8ca0-0ddf-811b	summer is when a hemisphere is tilted towards the sun	PROTO-ACTION
 8703-6690-788f-1592	Slovakia is located in the northern hemisphere	PROTO-COUNTRY-HEMISPHERE
+489e-9103-cfb3-9d2e	shelter can protect animals or humans from weather	AFFORDANCES
 98b6-2bc9-0f82-84f9	flexible means high flexibility	ATTRIBUTE-VALUE-RANGE
 6aab-57ff-4d45-9ebf	an animal being born or being hatched when food is available has a positive impact on that animal's survival or health	AFFECT
 d2a9-aacc-9543-82f5	Puerto Rico (US) is located in the northern hemisphere	PROTO-COUNTRY-HEMISPHERE
@@ -2537,6 +2532,7 @@ c170-8ed0-d311-238e	vaccines can help prevent illness	AFFORDANCES
 fff8-5c88-0710-70ae	ice is found in arctic environments	PROTO-LOCATIONS
 393b-f9b6-0519-c483	An example of conservation is avoiding waste	EXAMPLES
 6c6f-b690-6b57-aab6	gas is a kind of substance	KINDOF
+db87-215c-3f42-5a04	carbohydrates are a vehicle for storing or transporting energy	VEHICLE
 8697-ef37-f85f-edcd	using sturdy materials to build furniture has a positive impact on the use of that furniture	AFFECT
 c09a-e652-5f1c-1517	tea sometimes is a source of heat	SOURCEOF
 2edb-1e09-a137-4362	the circulatory system brings oxygen from the lungs to the rest of the body	PROTO-ACTION
@@ -2564,6 +2560,7 @@ ce9f-df71-559f-c21a	South Georgia and the South Sandwich Islands (UK) is located
 105a-5720-e63b-0413	if a plant is planted or growing somewhere then that plant is located there	PROTO-IF-THEN
 9218-9ed1-8bb7-6d03	a prism is used for refracting light	USEDFOR
 d067-f0ea-b5ff-d34e	motion is when moves an object or something to a direction	TRANSFER
+7579-287a-1bb4-c6c7	meters or centimeters or kilometers are used to describe distance or describe length	USEDFOR
 824e-1bf6-29b5-9624	the sun causes water to evaporate more quickly by adding heat	CAUSE
 af26-8083-b908-7d3b	the Sun is a kind of star	KINDOF
 e235-691b-277c-0115	some dogs are trained to bark when they want to go outside	PROTO-ACTION
@@ -2574,6 +2571,7 @@ bbf1-262a-c774-3f47	the sun is the source of energy for physical cycles on Earth
 32f6-7c3e-e2cd-2bd0	fur is usually part of a mammal	PARTOF
 cdb8-46e7-0df7-0a20	evaporation causes amount of water to decrease	CAUSE
 75d4-d09a-466c-e258	skin is a part of an animal	PARTOF
+8a51-fb44-d9d2-73ae	growth means size or number or value or strength increases	CHANGE-VEC
 c75e-3346-5e3e-1b26	replace means change from one thing into another	CHANGE
 8aaf-28c3-9099-96b9	a swamp is a kind of environment	KINDOF
 e4f6-cdf7-74e3-8c27	an owl is a kind of predator	XIVORE
@@ -2608,6 +2606,7 @@ ed29-4e9b-989d-bae0	a sticky tongue is a kind of adaptation for catching insects
 4c74-590e-8dfe-012b	seasonal changes are made in response to changes in the environment	PROTO-ACTION
 9bcc-b632-9e13-d930	as distance to an ocean decreases , the temperature the temperature will decrease	COUPLEDRELATIONSHIP
 7a4e-445e-25de-5994	playing music causes sound to be produced	CAUSE
+e98a-5e1d-e825-0c47	shelter is a kind of place or building or structure for protection	KINDOF
 4b24-4db5-ec89-d94c	as flatness of a leaf increases , the amount of sunlight that leaf can absorb will increase	COUPLEDRELATIONSHIP
 be5f-56dc-4b83-3d4a	shaking is a kind of motion	KINDOF
 b901-aa66-c858-54e7	a glacier is made of ice	MADEOF
@@ -2629,6 +2628,7 @@ f616-ce95-c8c4-6ece	mica has a nonmetallic luster	PROTO-PROPERTIES-THINGS
 700b-a6df-26e1-165b	a carbon monoxide detector is used for warning people that carbon monoxide is present in a building	USEDFOR
 c8ef-6a8e-579f-4e86	if something is dropped into a container of something else then that something is touching that something else	PROTO-IF-THEN
 c082-5c74-d788-63a8	can be means able to be	SYNONYMY
+3c39-efea-ce7b-afa8	growing is when an animal's height or mass or size increase	CHANGE-VEC
 ff5e-bb4f-4d6f-449d	a weather report describes weather	PROTO-ACTION
 4b4a-63a2-a913-8b18	tidal range is a measure of the vertical distance from high tide to low tide	PROTO-MEASUREMENTS
 9568-cc75-424d-e775	atmosphere means air	SYNONYMY
@@ -2730,7 +2730,6 @@ ddeb-76ec-5c86-8b15	Hebei is a province located in the People's Republic of Chin
 4ed1-58db-05c6-ad49	a windmill does not create pollution	PROTO-ACTION
 cf70-3fdf-c124-a754	spices are a kind of material	KINDOF
 f2a1-5807-2b1e-fef3	rainfall is the amount of rain an area receives	PROTO-MEASUREMENTS
-33c7-1992-4659-d284	a pan;frying pan is used for cooking food by heating food in it on a stove	USEDFOR
 4915-3ab4-00ec-853a	plants are a source of biofuel	SOURCEOF
 0514-7919-c1bf-6188	a leaf absorbs sunlight to perform photosynthesis	PROTO-ACTION
 a53c-6387-9cc9-d3e1	cooking food to proper temperatures protects against food poisoning by killing bacteria and viruses	PROTO-ACTION
@@ -2847,6 +2846,7 @@ e6a3-b433-9d25-fd98	to change means to have an effect	SYNONYMY
 9511-f01b-f849-79ca	a prism is a kind of object	KINDOF
 3234-2820-f7a1-4074	a road is a kind of object	KINDOF
 d21d-46cd-1480-2250	a sign of something is evidence of that something	SYNONYMY
+22ce-038b-ff4f-c5ba	electrical conduction is when metals or electrical conductors conduct electricity through a wire or electrical conductor or metal	TRANSFER
 2d70-7bf6-5bc2-e3f2	appliance is similar to technology	SYNONYMY
 d3de-4860-7a6f-d01d	to emit means to release	SYNONYMY
 0f7c-2e77-a9d4-cce4	Tunisia is located in the southern hemisphere	PROTO-COUNTRY-HEMISPHERE
@@ -2866,6 +2866,7 @@ d4b3-702a-31e7-3f17	hitting an object causes the particles in that object to vib
 236b-7456-aa80-d1b2	pumice is a kind of igneous rock	KINDOF
 e96f-ee38-cd01-3368	Antarctica is located in the southern hemisphere	PROTO-COUNTRY-HEMISPHERE
 f0a6-ff41-4499-55a5	warm up means increase temperature	SYNONYMY
+b4bc-3e75-5b39-8122	raining is when rain falls from clouds to the Earth or ground as a liquid	TRANSFER
 546f-b1fd-1583-d394	the esophagus is a part of the body	PARTOF
 7fb4-c254-3d90-1dad	pushing a button sometimes completes a circuit	PROTO-ACTION
 8fe8-675d-6005-472c	some flowers become fruits	CHANGE
@@ -2912,7 +2913,6 @@ d9d2-f2b1-7891-153d	a computer controlling a robot is similar to a brain control
 edb7-8723-f5ce-c5d8	removing an inhibitor of a process causes that process	CAUSE
 6349-70d1-a00d-308e	the afternoon is a part of the day	PARTOF
 7855-8a61-a859-05ab	something that contains air is usually buoyant	PROTO-PROPERTIES-THINGS
-9939-7d13-b72f-2674	winter has cold temperatures;weather	PROTO-PROPERTIES-THINGS
 efca-82f8-2845-8de5	an electromagnet is a kind of electric magnet	KINDOF
 39ca-a831-8d1a-babd	sight is a kind of sense	KINDOF
 a6e0-b058-5e81-743d	panting is when an animal's body is cooled by hanging out their tongue	CHANGE-VEC
@@ -2934,13 +2934,13 @@ ae2c-3485-b503-7d22	scales are a covering around the body of a scaled animal	PRO
 ab06-c1d9-7d2f-2f01	to work means to function	SYNONYMY
 83a6-a1ca-cb77-fc0a	as kinetic energy increases , the potential energy will decrease	COUPLEDRELATIONSHIP
 3762-b90b-1f83-4068	buildings collapsing often cause death	CAUSE
-22ce-038b-ff4f-c5ba	electrical conduction is when metals or electrical conductors conduct electricity through a wire;electrical conductor;metal	TRANSFER
 3740-c11d-832c-96f2	an amphibian is a kind of animal	KINDOF
 f34d-332a-9caa-46f3	UV mean ultraviolet	SYNONYMY
 4a2b-185c-d16f-361d	birds with beaks of different shapes eat different foods	PROTO-ACTION
 f06d-9af1-c14f-fb25	people usually only play on the beach when the temperature is hot	PROTO-ACTION
 bb0f-d314-23b2-c929	Falkland Islands (UK) is located in the southern hemisphere	PROTO-COUNTRY-HEMISPHERE
 24c1-532c-1322-2dc3	to happen means to occur	SYNONYMY
+7345-c073-962f-2597	shedding is when an animal loses hair or fur or skin	CHANGE
 3b7d-6a35-e182-1176	beads of water are formed by water vapor condensing	PROTO-FORMEDBY
 d1eb-53c2-e0c6-1431	a reflector is used to reflect light especially on vehicles	USEDFOR
 b19d-b086-7090-2115	a producer is a source of energy for consumers	SOURCEOF
@@ -2988,6 +2988,7 @@ b018-4375-d391-cb98	the Earth revolving around the sun causes stars to appear in
 bfeb-fb56-8937-91c9	evaporation is a kind of process	KINDOF
 f249-a34c-12c4-3aa1	a flower's petals often are bright in color to attract pollinators	PROTO-PROPERTIES-THINGS
 eaf4-5337-8873-bbfd	become warm means get warm	SYNONYMY
+33c7-1992-4659-d284	a pan or frying pan is used for cooking food by heating food in it on a stove	USEDFOR
 0f0d-2cc5-fcc1-3c1f	chemical reactions cause chemical change	CAUSE
 2ff2-399d-eb8c-61a3	Mexico City or Mexico, D.F. is a federal district located in Mexico	PROTO-SUBDIVISION-COUNTRY
 67f2-f904-7ad8-4aa6	Republic of the Congo is located in the equatorial region	PROTO-COUNTRY-HEMISPHERE
@@ -2999,7 +3000,6 @@ e70b-e515-02a3-8958	the moon revolving around or orbiting the Earth causes the p
 9f4c-5487-7b35-f049	a chair is a kind of object	KINDOF
 5029-9d16-9c77-acf3	a sheet of paper is a kind of object	KINDOF
 569d-9ee4-d775-7874	the tundra is very cold in temperature	PROP-ENVIRONMENTATTRIB
-27ab-3140-60ab-8b03	humans move waste to a landfill for disposal;storage	TRANSFER
 5bed-2cfd-fe4d-324e	function means job	SYNONYMY
 d2f9-367f-2c90-fbcd	a gram is a kind of unit for measuring mass	KINDOF
 24c1-678f-d0a3-2af7	soil contains water or humus or weathered rocks	CONTAINS
@@ -3024,7 +3024,6 @@ bffa-0cd0-0745-6d03	moisture means liquid or liquid water	SYNONYMY
 f2a0-5d6b-ff93-de36	Jonny is a name for a	NAMES
 01a2-8e37-b59a-23e3	a chick is a kind of young or baby chicken	KINDOF
 6ed2-789b-e3f7-91fa	opacity is a property of an object and includes ordered values of opaque or translucent or transparent	PROPERTIES-GENERIC
-0962-4a47-4e17-ce97	photosynthesis means producers or green plants convert from carbon dioxide, water, and solar energy into carbohydrates;food;oxygen for themselves	CHANGE
 84cd-6cd8-331b-f869	vibration is a kind of motion	KINDOF
 cc3c-b438-6a44-57f6	the tide cycle regularly occurs twice per day	FREQUENCY
 7f54-4f3b-f1fc-91aa	a warm environment usually has more food than a cold environment	PROTO-PROPERTIES-THINGS
@@ -3052,6 +3051,7 @@ dae9-e208-58cd-a9d8	a softball bat is a kind of lever	KINDOF
 fd56-73df-1f6f-e1bc	exercise means physical fitness	SYNONYMY
 9de6-eb30-5159-2eef	as the number of pollinators attracted to a flower increases , the ability of that flower to reproduce will increase	COUPLEDRELATIONSHIP
 03e0-14b7-ecf9-28e4	warm means warm temperature	SYNONYMY
+eba3-d0ec-be26-0d48	hailing is when hail fall from clouds to the Earth or ground	TRANSFER
 ac8a-77b3-7190-7751	camouflage is used for protection or hiding by prey or animals against predators or from predators	USEDFOR
 2e26-d568-7d5a-f4be	as the size of a cloud increases , the amount of precipitation contained in that cloud will increase	COUPLEDRELATIONSHIP
 22a2-1029-702e-a29a	a planet is a kind of celestial object or body	KINDOF
@@ -3087,7 +3087,6 @@ c2ef-566c-c356-778f	a bird is a kind of living thing	KINDOF
 d9aa-4785-cdb4-ac25	igneous rocks or minerals are formed from magma or lava cooling	PROTO-FORMEDBY
 a572-f4b2-3087-9d8f	Yunnan is a province located in the People's Republic of China	PROTO-SUBDIVISION-COUNTRY
 f06b-ece5-aa6c-f069	a vehicle is used for travel	USEDFOR
-a4f8-5748-0846-cb45	In the food chain process an animal has the role of consumer which eats producers;other animals for food	PROCESSROLES
 6b40-586e-0a5e-459b	Christmas Island (Australia) is located in the southern hemisphere	PROTO-COUNTRY-HEMISPHERE
 aadc-bc4f-81be-06ac	An example of playing a musical instrument is hitting the keys of a piano	EXAMPLES
 9e89-73fd-66d5-18e2	a frog is a kind of animal	KINDOF
@@ -3156,6 +3155,7 @@ f26a-3bae-a5e0-ed8a	not allowed to means can not	SYNONYMY
 2827-1a44-52ad-a63e	shiny things or objects reflect light	PROTO-ACTION
 2355-0cfa-86f8-5767	natural gas is a kind of fuel	KINDOF
 0fbb-a8c2-9806-8d0d	Northamptonshire is a county located in England	PROTO-SUBDIVISION-COUNTRY
+9773-5df7-84db-74b3	gravity or gravitational force causes objects that have mass or substances to be pulled down or to fall on a planet	CAUSE
 166f-d4e8-1bed-b031	debris can cause harm to an organism	CAUSE
 6583-a76d-4f3f-b4f0	flammability is a kind of chemical property	KINDOF
 5639-8136-4788-3ee6	a bear is a kind of animal	KINDOF
@@ -3175,6 +3175,7 @@ f672-4bbb-6fff-373c	sound can travel through air	AFFORDANCES
 39b9-9637-538d-0d33	camouflage is a kind of protection against predators or from predators or against consumers	KINDOF
 1e73-7f0f-13b5-1523	coral is a kind of aquatic animal	KINDOF
 9a8e-ea9a-3158-05d6	most animals avoid bad odors	PROTO-ACTION
+6567-a1de-cf55-de30	poor health or bad health or unhealthy is the opposite of good health or healthy	PROTO-OPPOSITES
 95f4-0f32-02aa-0af2	Magnetoplumbite is always magnetic	MAGNETISM
 ba38-575d-6353-ec1a	place is synonymous with location	SYNONYMY
 4dc5-13bf-3c46-af74	fire causes burning	CAUSE
@@ -3234,7 +3235,6 @@ a948-3b4d-ac8c-27e6	sound can be used for communication by animals	USEDFOR
 7717-15e3-f50d-464a	answering questions requires information	REQUIRES
 7dcd-a12c-54b1-a787	crops or farming cause nutrients in the soil to decrease	CAUSE
 799d-7170-d15d-812f	transferring is moving from one place to another place	TRANSFER
-4842-3518-d7ab-f670	eating or taking in food is used to get nutrients;energy by animals or living things	USEDFOR
 f461-ef68-36cf-0f91	water vapor cooling causes that water vapor to condense	CAUSE
 2863-93fe-ff62-7b41	if a mineral can be scratched by a fingernail then that mineral is soft	PROTO-IF-THEN
 e576-3be7-5e76-3b07	blood is a part of the circulatory system	PARTOF
@@ -3317,7 +3317,6 @@ e4ff-648c-242b-c15f	a raccoon is a kind of animal	KINDOF
 d916-5924-be80-0d88	the cell nucleus controls many of the functions of the cell	PROTO-ACTION
 9bdc-0291-3f7e-751d	a predator eats other animals for food	PROTO-ACTION
 2b10-bf90-0fbc-acca	Senegal is located in the southern hemisphere	PROTO-COUNTRY-HEMISPHERE
-563d-53cc-0a8a-e8da	a watch;clock;stopwatch is used for measuring time	USEDFOR
 90f7-2aac-1033-925c	An example of a mixture is sand or clay or soil mixed together	EXAMPLES
 9f32-c759-d73a-9bf2	sand is nonmagnetic	MAGNETISM
 933d-6b9a-7b84-d664	freezing point is similar to melting point	SYNONYMY
@@ -3521,6 +3520,7 @@ dfac-2e1a-b8b3-fa9a	Berwickshire is a county located in Scotland	PROTO-SUBDIVISI
 7ef1-c28b-22e3-3edc	ice is a kind of solid	KINDOF
 b97c-e53f-7627-7e7e	nest building is a kind of adaptation	KINDOF
 55de-6e39-fe84-2395	often is similar to likely	SYNONYMY
+03c0-59bd-bf14-aaa0	transpiration is when water vapor moves from plants or leaves into the atmosphere	CHANGE
 0db5-f9d6-7b0f-b515	if something causes an increase in something else then that something produces that something else	PROTO-IF-THEN
 4ee7-8c52-99b5-7674	runoff is when cropland water enters or runs off into bodies of water	PROTO-ACTION
 6082-9118-c751-6e77	the continental shelf is made of sediment	MADEOF
@@ -3531,6 +3531,7 @@ d24e-3153-b652-ccfa	to cause means to make	SYNONYMY
 945f-acde-29f3-d573	a hot plate is a source of heat	SOURCEOF
 0e02-5e2b-3793-96d3	a mountain is a kind of landform	KINDOF
 3470-556f-94c8-3297	sticky is similar to moist	SYNONYMY
+15b7-2dad-aa86-409b	growing means a plant's height or mass or size increase	CHANGE-VEC
 60d1-d074-940b-f067	something that contains water is similar to a body of water	SYNONYMY
 614f-48c8-755b-db8d	as the mass of an object increases , the force required to push that object will increase	COUPLEDRELATIONSHIP
 046d-7605-f4cd-1f97	flatness is a property of a surface or the shape of an object and includes ordered values of uneven or flat	PROPERTIES-GENERIC
@@ -3555,7 +3556,6 @@ f36d-af5b-a0d8-d15b	Denmark is located in the northern hemisphere	PROTO-COUNTRY-
 a580-1b9e-6ec9-a275	aluminum is a kind of metal	KINDOF
 b02a-dae3-93ce-c2b7	a tree is a source of shelter or food for birds or animals in an ecosystem	SOURCEOF
 a3a3-2470-8532-b386	measuring is a kind of science skill	KINDOF
-4347-84dc-10ce-8007	precipitation is when rain;snow;hail fall from clouds to the Earth;ground	TRANSFER
 7c08-d816-b5ae-fb99	looking directly at an eclipse of the Sun causes harm to the eyes	CAUSE
 4517-3252-bc68-8040	as ability to transport food increases around the world , the available types of food in distant locations will increase	COUPLEDRELATIONSHIP
 c13a-75d9-afb9-ad21	the lunar surface or moon's surface contains many craters	CONTAINS
@@ -3656,7 +3656,6 @@ a502-7c47-c997-f99a	Saint Martin (France) is located in the northern hemisphere	
 7e26-1fd1-3e55-4816	a plant requires space to grow	REQUIRES
 a7a5-0519-c54b-1f3a	lunch is a kind of meal	KINDOF
 ef09-d826-3c2b-205c	a riverbank is made of soil	MADEOF
-3c39-efea-ce7b-afa8	growing is when an animal's height;mass;size increase	CHANGE-VEC
 2b90-a4f5-326a-d34f	seed dispersal is when the seeds of a plant are moved from the plant to a new environment	CHANGE
 214a-9ca3-2983-aa79	rain is a kind of water	KINDOF
 4c78-546e-273d-30c8	sleeping requires less energy than being awake	REQUIRES
@@ -3724,7 +3723,6 @@ f390-e545-13bc-42de	as heat and moisture increases , the strength of a hurricane
 b18d-21e4-cd6b-fc65	a person requires instructions to assemble a kit or something	REQUIRES
 a972-0cbb-3c14-b098	cycles of day and night occur once per day	FREQUENCY
 2475-8eec-dc25-695b	animals taste flavors	PROTO-ACTION
-a0b2-a45f-01e1-4bf4	boiling;evaporation means change from a liquid into a gas by adding heat energy	CHANGE
 5d42-f489-fc8e-6263	if an object undergoes chemical change then that object will have new chemical properties	PROTO-IF-THEN
 3c62-b180-5494-ab94	Virginia is a state located in the United States of America	PROTO-SUBDIVISION-COUNTRY
 4867-4ad0-0164-d368	temperature rise means become warmer	SYNONYMY
@@ -3783,7 +3781,6 @@ ad2f-42da-43e2-dbf3	batteries convert chemical energy to electrical energy	TRANS
 9d7a-3ad1-561c-deae	a worm is a kind of animal	KINDOF
 d567-d49e-293e-95bf	a star is a source of light or light energy through nuclear reactions	SOURCEOF
 ccdf-7e78-c469-dc95	sediment is a kind of matter	KINDOF
-8a51-fb44-d9d2-73ae	growth means size;number;value;strength increases	CHANGE-VEC
 b912-4b52-7e9c-0d4c	a city is a kind of location	KINDOF
 e189-7b50-e22f-29e3	tall means great in height	ATTRIBUTE-VALUE-RANGE
 77f9-749f-9394-ae34	coal is a nonrenewable resource	PROP-RESOURCES-RENEWABLE
@@ -3832,6 +3829,7 @@ ac3a-0599-cef5-f015	tadpole changes into a frog	CHANGE
 7a75-f74f-4c98-0f01	an ecosystem contains a large community of or large numbers of living organisms in a particular place	CONTAINS
 709d-6f18-874c-f16a	panting is when an animal hangs its tongue out of its mouth to adjust to hot temperatures	PROTO-ACTION
 53ef-434c-c465-3752	literacy is a kind of skill for reading and writing	KINDOF
+a4f8-5748-0846-cb45	In the food chain process an animal has the role of consumer which eats producers or other animals for food	PROCESSROLES
 b42b-3273-90bc-24a0	positively impacting an organism's survival increases the likelihood of survival of that organism	CHANGE-VEC
 b789-c5df-3b5c-272b	June is during the summer in the northern hemisphere	PROTO-DURING
 509c-64c9-84f2-42ff	a string is usually small in diameter	PROTO-PROPERTIES-THINGS
@@ -3845,11 +3843,11 @@ c814-78ab-6951-9f93	plant requires seed dispersal for reproduction	REQUIRES
 74d9-e91b-c38a-b5d2	riding is a kind of motion	KINDOF
 93cb-4c9a-59c2-2cd0	a classroom is a kind of a room	KINDOF
 46cd-dec2-14f6-b382	transporting nutrients, water, and minerals is a kind of function	KINDOF
-db87-215c-3f42-5a04	carbohydrates are a vehicle for storing;transporting energy	VEHICLE
 449d-a453-1f89-a84a	Hungary is located in the northern hemisphere	PROTO-COUNTRY-HEMISPHERE
 23c9-3f7c-a84e-f188	Lesotho is located in the southern hemisphere	PROTO-COUNTRY-HEMISPHERE
 c03d-b40e-6fdb-52e0	the vanes rotating in an electric fan causes air to move	CAUSE
 b241-1f01-1b84-2601	a fence is a kind of object	KINDOF
+9f4e-2412-59cc-3383	loud means high in sound energy or sound intensity	ATTRIBUTE-VALUE-RANGE
 292e-d25a-73fe-1e95	live birth means developing inside the mother instead of an egg	PROTO-ACTION
 a7fc-71a9-609d-ae33	pollution is a source of pollutants	SOURCEOF
 b776-8099-262d-4b06	the solar system contains the moon	CONTAINS
@@ -3879,6 +3877,7 @@ df67-2c42-2ea5-500d	touch can be used for detecting texture	USEDFOR
 3605-d626-ee3a-e15f	living in an environment causes an organism to adapt to that environment	CAUSE
 5457-5b8e-eb6c-aea1	another means different	SYNONYMY
 9d6f-0411-6644-656e	a droplet is a small amount of liquid	PROTO-PROPERTIES-THINGS
+08ea-2bfc-e6e1-9c7d	a lever is used for lifting or moving heavy objects	USEDFOR
 376c-0550-d351-b87d	a rock is a kind of object	KINDOF
 e112-616e-e25b-4a79	a circuit is a kind of electrical component	KINDOF
 5961-40f8-e1b9-e456	riding something is to move that thing over a surface	PROTO-ACTION
@@ -3902,7 +3901,6 @@ e338-c260-8eca-65bc	Cornwall is a county located in England	PROTO-SUBDIVISION-CO
 8726-c09d-4a3b-e814	to restore means to return to a better state	SYNONYMY
 b504-fe0c-2e70-84b4	a source of heat can be used to heat something	USEDFOR
 0610-89d4-acb3-b0dc	to break down means to break into smaller pieces	SYNONYMY
-e98a-5e1d-e825-0c47	shelter is a kind of place;building;structure for protection	KINDOF
 185a-1acc-1d39-1dc0	New York is closer to the North Pole than Florida	PROTO-PROPERTIES-THINGS
 373a-008e-53fc-97d3	Lithuania is located in the northern hemisphere	PROTO-COUNTRY-HEMISPHERE
 c69d-96c7-e62a-386e	when the temperature in a building is cooler than the temperature selected on the thermostat , the furnace will turn on automatically	PROTO-IF-THEN
@@ -3920,7 +3918,6 @@ a2ff-b2c1-f462-2fdb	studying is similar to observing	SYNONYMY
 4a43-f8d5-b9e8-39c8	braking can cause skidding	CAUSE
 2634-87a7-680f-783f	liquid carrying an object means liquid pushing an object	SYNONYMY
 e18f-5f8a-04fd-76f7	an earthquake usually occurs over a period of 10 to 30 seconds	PROTO-DURATIONS
-3a9b-81b5-1a3a-40a0	cooling;colder means removing;reducing;decreasing heat;temperature	CHANGE-VEC
 2ca8-b3c1-6ebc-f1a0	as moisture of an object decreases , the friction of that object against another object will increase	COUPLEDRELATIONSHIP
 e3ac-61ec-4ae4-2d5b	the ground means Earth's surface	SYNONYMY
 082e-a216-f6d1-0120	get rid of means eliminate	SYNONYMY
@@ -3984,7 +3981,6 @@ f33c-7d47-3cf5-ef70	millimeters ( mm ) are a unit used for measuring length or d
 1d10-2a0a-bf2e-7622	radiation is when heat is transferred through waves or particles	TRANSFER
 dfcb-6cbb-85ac-9195	a cow is a kind of herbivore	XIVORE
 9100-1d1a-b26a-7634	when something reaches something else , that something has usually completed its movement	PROTO-IF-THEN
-d28f-0727-460f-5ab6	hawks;eagles eat snakes;lizards	PROTO-CONSUMERS
 a7e7-4c34-fac1-a502	a freezer is cool or cold in temperature	PROTO-PROPERTIES-THINGS
 d68e-b9c5-62d5-f63e	a windmill converts wind energy into electricity	CHANGE
 89d2-2796-1e94-3b10	destroying a forest means cutting down the trees in that forest	SYNONYMY
@@ -4012,7 +4008,6 @@ ddca-37d6-9e7b-d216	the gravitational pull of the Moon on Earth's oceans causes 
 c000-3986-2fd0-ebb0	a radio is a kind of tool	KINDOF
 d013-ec1c-88f4-fae9	evaporation is a stage in the water cycle process	STAGE-IN-PROCESS
 6a7c-945a-f6fc-9043	a satellite orbits a planet	PROTO-ACTION
-eba3-d0ec-be26-0d48	hailing is when hail fall from clouds to the Earth;ground	TRANSFER
 f55b-507a-c8f0-2acf	pollination is a kind of process for plant reproduction	KINDOF
 c487-ace1-e8b8-6158	as the activity of an animal increases , the amount of water in an animal's body in that environment will decrease	COUPLEDRELATIONSHIP
 ab88-7ab1-d6b7-0e6c	a marsh willow herb is a kind of plant	KINDOF
@@ -4037,6 +4032,7 @@ c049-ad89-f8b6-65d5	bone cells are a part of the body	PARTOF
 62fd-87cf-2e18-fdae	a pumpkin is a kind of gourd	KINDOF
 f997-a1ce-5dd5-9716	a drought is a kind of natural event	KINDOF
 c6d0-b0ba-ba3b-db1c	a hit is a kind of touch	KINDOF
+a955-8642-4044-5a48	pot or pan or frying pan is made of metal for cooking	MADEOF
 db62-4c2e-6a9d-8b12	a constellation contains stars	CONTAINS
 518b-ce25-7fb9-adfb	break apart means break down	SYNONYMY
 fe4e-30b4-4a07-3f35	NaCl means sodium chloride	SYNONYMY
@@ -4046,6 +4042,7 @@ f3d7-58e4-df8d-4c5f	a drop is a kind of liquid small amount	KINDOF
 f25a-4bc3-30c4-ec0b	attract a mate means find a mate	SYNONYMY
 dbe8-e776-f804-99a0	a star is a kind of celestial object or celestial body	KINDOF
 524f-527c-c377-46c0	as the weight of an animal decreases , that animal will fly more easily	COUPLEDRELATIONSHIP
+5c76-a005-e9c2-354a	a balance is used for measuring mass or weight of an object or of a substance	USEDFOR
 6a16-9fca-b59e-5353	a centimeter is used for measuring short lengths or short distances	USEDFOR
 9963-e79f-4516-551a	farming is a kind of process	KINDOF
 767b-d14d-c5e5-ba84	if a tree is cut down then that tree will die	PROTO-IF-THEN
@@ -4154,7 +4151,6 @@ b626-264a-fc02-81b7	intense means high in intensity	ATTRIBUTE-VALUE-RANGE
 647c-26b4-292b-4c96	a complete electrical circuit is a source of electrical energy	SOURCEOF
 6a9b-a68f-335c-2a51	the continental shelf is a part of the ocean	PARTOF
 dad1-ceed-5798-500e	burying is a kind of hiding	KINDOF
-b4bc-3e75-5b39-8122	raining is when rain falls from clouds to the Earth;ground as a liquid	TRANSFER
 1f6a-7744-7f91-26b5	a tape measure is used to measure length or distance	USEDFOR
 1f26-9d60-19b5-05d1	sterling silver is a kind of metal	KINDOF
 075f-d7cb-993c-ade1	igneous is a kind of rock	KINDOF
@@ -4183,6 +4179,7 @@ d314-35e4-3e7a-1c39	an object has properties	PROTO-PROPERTIES-THINGS
 26f3-c715-9750-2ff7	blacktop means asphalt	SYNONYMY
 af4f-9f98-18bd-5b14	kg means kilograms	SYNONYMY
 f603-3c96-a570-1918	rotation is a kind of motion	KINDOF
+ee78-0795-be47-6ad8	inheriting is when a inherited characteristic is copied or is passed from parent to offspring by genetics or DNA	TRANSFER
 b569-cef5-65a2-2a57	noise means sound	SYNONYMY
 df95-f9f1-8e21-6054	bringing is a kind of action	KINDOF
 1dda-2bae-9eb8-0622	zinc is always nonmagnetic	MAGNETISM
@@ -4216,7 +4213,7 @@ d716-961b-dfd9-e792	desserts usually have less nutrients than other foods	PROTO-
 1fd0-279c-ed27-afca	salt is a kind of substance	KINDOF
 90e6-7cf1-f97e-8519	a tube is a kind of hollow object	KINDOF
 049d-aaac-9f21-da33	shape is a part of appearance	PARTOF
-ad2f-c1c6-5368-4fcd	coloration is a kind of adaptation for hiding;camouflage	KINDOF
+27ab-3140-60ab-8b03	humans move waste to a landfill for disposal or storage	TRANSFER
 b110-ef2a-6b8e-6d73	loosening means decreases	CHANGE-VEC
 0626-3118-0b06-1fe0	to a human a air or environment temperature of 35 C to 50000000 C is considered very hot	PROTO-PERCEPTIONS
 b356-f5e8-262c-5157	a tadpole is the immature form of a frog	PROTO-INSTANCES
@@ -4227,6 +4224,7 @@ f42f-c815-0b10-13ce	thick fur or thick feathers can be used for keeping warm	USE
 8025-2d3b-7ecb-0aff	gravity pulls objects towards planets	CHANGE-VEC
 7751-b1fd-0582-4f2a	if a plant or crop requires less water then that plant or crop will survive in a drought	PROTO-IF-THEN
 4da2-ef1d-0184-bd32	a thorn is a part of some plants	PARTOF
+3a9b-81b5-1a3a-40a0	cooling or colder means removing or reducing or decreasing heat or temperature	CHANGE-VEC
 3ed3-ffdd-5807-f126	a hummingbird is a kind of bird	KINDOF
 a104-d8c9-efec-46be	salt is a kind of solid	KINDOF
 9217-ec0b-6b84-a4c8	a thing does not exist before there is that thing	PROTO-DURING
@@ -4310,6 +4308,7 @@ cf7f-51fc-f20a-8384	cyan is a kind of color	KINDOF
 b1e5-54e0-a42f-41bb	Michigan is a state located in the United States of America	PROTO-SUBDIVISION-COUNTRY
 123d-9df4-bf21-0c14	planets have cleared their orbits	PROTO-ACTION
 5706-62c6-1f2a-6e18	herbivore means first-level consumer	SYNONYMY
+a18a-21be-3303-f9b8	a pan or frying pan is a kind of container for cooking or food	KINDOF
 7a5a-d5b3-8af9-29c1	a shell is a part of a turtle for protecting the turtle	PARTOF
 51d2-d71a-d3ca-2f10	Paul is a name for a	NAMES
 0fef-7e32-1ffb-c146	endangered means low population	SYNONYMY
@@ -4416,7 +4415,6 @@ c4de-157a-1fb4-0ec8	a human can pedal a bicycle	AFFORDANCES
 a824-aa4b-d228-d7c7	a bottle is a kind of container	KINDOF
 9713-a39a-3a6d-fee6	to combust means to catch fire	SYNONYMY
 e1d3-5fb3-b1c4-5332	specialized tissues at the ends of plant stems are used for growing taller by plants	USEDFOR
-799b-aef6-8f37-da4b	purple;violet;magenta is a kind of color	KINDOF
 4fbb-49e2-aba5-690d	toasting is a kind of cooking	KINDOF
 0f63-0b4e-b0a3-6638	resources becoming available has a positive impact on the things that need those resources	AFFECT
 1015-4572-2293-d185	taking in something means receiving or absorbing or getting something	SYNONYMY
@@ -4692,6 +4690,7 @@ d038-d316-c727-61e8	a user is a kind of person	KINDOF
 e59c-b8d6-ebb0-b796	a horned lizard is a kind of lizard	KINDOF
 2c3e-5dac-b4e5-5bc8	Alexander Graham Bell invented the telephone in Boston	PROTO-ACTION
 a92e-cb62-22ee-5ddf	a multicellular organism is a kind of living thing	KINDOF
+bfd4-dd07-9a84-6de0	fans are used for cooling humans or rooms	USEDFOR
 4159-4c81-0f08-e0d7	smaller means less or lower in size	ATTRIBUTE-VALUE-RANGE
 da68-3173-2681-d90e	a source of something increases the amount of that something	CHANGE-VEC
 7906-b683-f36f-8a3d	as the number of offspring an animal has increases , the number of offspring that survive will increase	COUPLEDRELATIONSHIP
@@ -4739,6 +4738,7 @@ c734-55b0-6cf4-c9d9	nearly all fossils are found in sedimentary rock	PROTO-LOCAT
 69d1-9751-6050-3017	an instrument is a piece of equipment	SYNONYMY
 cd43-008a-9891-6a35	MichoacÃ¡n is a state located in Mexico	PROTO-SUBDIVISION-COUNTRY
 f8c4-7d15-e2a3-e3c2	Quintana Roo is a state located in Mexico	PROTO-SUBDIVISION-COUNTRY
+c1bf-db54-7c40-a799	storms or rain cause bodies of water to increase amount of water they contain	CAUSE
 ac44-1bc1-1c8d-6525	a carrion flower has a carrion-like smell	PROTO-PROPERTIES-THINGS
 0bbd-c06e-f04f-4a91	variety means different kinds or different types	SYNONYMY
 9ed5-6b4a-3667-0b43	Niger is located in the southern hemisphere	PROTO-COUNTRY-HEMISPHERE
