@@ -1,5 +1,7 @@
 data/resources/
 output/
+software/
 .zip
 .gz
 GoogleNews-vectors-negative300.bin.gz
+/src/java/QAExplainSVMRank/nbproject/private/
