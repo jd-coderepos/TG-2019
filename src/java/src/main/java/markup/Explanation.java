@@ -17,10 +17,10 @@ public class Explanation {
     }
 
     public void setTokens(String[] line) {
-        this.id = line[0];
         this.sentence = new Sentence();
         this.sentence.setTokens(line);
-        this.source = line[2];
+        this.sentence.setInBetweenPatterns();
+        this.sentence.setAggregateFeatures();
     }
 
     public String getId() {
