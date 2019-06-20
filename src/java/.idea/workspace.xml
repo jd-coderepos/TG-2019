@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45865c0a-ca09-40d6-91f1-909d5af1b1e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Dev.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/SvmRankFeatures1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/Select.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/expl-tablestore-cleaned-ling.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/expl-tablestore-cleaned-ling.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/expl-tablestore-cleaned.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/expl-tablestore-cleaned.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/expl-tablestore-exceptions.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/expl-tablestore-final.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/expl-tablestore-final.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/expl-tablestore.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../conceptnet/query.py" beforeDir="false" afterPath="$PROJECT_DIR$/../conceptnet/query.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ling/Features.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ling/Lemma.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ling/TableStore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ling/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/expl-tablestore-cleaned-ling.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/expl-tablestore-cleaned.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" afterDir="false" />
@@ -22,22 +17,23 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Train.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Train.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Dev.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Train.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/ling/SvmRankFeatures.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ling/SvmRankFeatures.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ling/SvmRankFeatures1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ling/SvmRankFeatures1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/markup/Explanation.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/markup/Explanation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/markup/QA.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/markup/QA.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/markup/Sentence.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/markup/Sentence.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/markup/Token.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/markup/Token.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/utils/NLP.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/utils/NLP.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Train.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Train.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Dev.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Dev.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Train.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Train.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ling/SvmRankFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ling/SvmRankFeatures.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ling/SvmRankFeatures1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ling/SvmRankFeatures1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/markup/Explanation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/markup/Explanation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/markup/QA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/markup/QA.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/markup/Sentence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/markup/Sentence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/markup/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/markup/Token.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/NLP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/NLP.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -59,48 +55,74 @@
     </projectState>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ling/SvmRankFeatures.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/markup/Sentence.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" selection-start-line="16" selection-end-line="359" selection-end-column="55" />
+            <state relative-caret-position="351">
+              <caret line="58" column="50" selection-start-line="58" selection-start-column="50" selection-end-line="58" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#247#3565#0" />
-                <element signature="e#596#630#0" />
-                <element signature="e#2978#4812#0" />
-                <element signature="e#5457#5530#1" />
-                <element signature="e#5541#5542#0" expanded="true" />
-                <element signature="e#1470#1583#0" />
-                <element signature="e#6850#7419#0" />
-                <element signature="e#6548#6775#0" />
-                <element signature="e#7907#8081#0" />
-                <element signature="e#6257#6267#0" />
+                <element signature="method#Sentence#0;class#Sentence#0" />
+                <element signature="e#3562#3563#0" expanded="true" />
+                <element signature="e#3630#3631#0" expanded="true" />
+                <element signature="e#3700#3701#0" expanded="true" />
+                <element signature="e#3772#3773#0" expanded="true" />
+                <element signature="e#3856#3857#0" expanded="true" />
+                <element signature="e#3934#3935#0" expanded="true" />
+                <element signature="e#4018#4019#0" expanded="true" />
+                <element signature="e#4092#4093#0" expanded="true" />
+                <element signature="e#4176#4177#0" expanded="true" />
+                <element signature="e#4252#4253#0" expanded="true" />
+                <element signature="e#4338#4339#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ling/SvmRankFeatures1.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/markup/Explanation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1519">
-              <caret line="77" column="49" lean-forward="true" selection-start-line="77" selection-start-column="49" selection-end-line="77" selection-end-column="49" />
+            <state relative-caret-position="293">
+              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3238#3239#0" expanded="true" />
-                <element signature="e#3310#3311#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/main/Train.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="28" column="39" lean-forward="true" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+            <state relative-caret-position="309">
+              <caret line="107" column="59" selection-start-line="107" selection-start-column="59" selection-end-line="107" selection-end-column="59" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#writeSelectedInstances#0;class#Train#0" />
+                <element signature="method#writeOutput#0;class#Train#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/main/Dev.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="199">
+              <caret line="96" column="130" selection-start-line="96" selection-start-column="130" selection-end-line="96" selection-end-column="130" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ling/Utils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -109,19 +131,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
+        <entry file="file://$PROJECT_DIR$/src/main/java/main/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Train.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1156">
-              <caret line="68" column="54" lean-forward="true" selection-start-line="68" selection-start-column="54" selection-end-line="68" selection-end-column="54" />
+            <state relative-caret-position="237">
+              <caret line="69" column="11" selection-start-line="69" selection-start-column="11" selection-end-line="69" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -130,14 +143,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Dev.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/markup/QA.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="932">
-              <caret line="79" column="18" selection-start-line="79" selection-start-column="18" selection-end-line="79" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#writeSelectedInstances#0;class#Dev#0" />
-              </folding>
+            <state relative-caret-position="287">
+              <caret line="28" column="12" lean-forward="true" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -163,24 +172,40 @@
         <option value="$PROJECT_DIR$/src/main/java/utils/IO.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/NLP.java" />
         <option value="$PROJECT_DIR$/src/main/java/markup/Token.java" />
-        <option value="$PROJECT_DIR$/src/main/java/markup/QA.java" />
-        <option value="$PROJECT_DIR$/src/main/java/markup/Explanation.java" />
-        <option value="$PROJECT_DIR$/src/main/java/markup/Sentence.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/Select.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ling/SvmRankFeatures.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ling/SvmRankFeatures1.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Train.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Dev.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ling/OpenIEFeat.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sim/Similarity.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/ling/SvmRankFeaturesLemma.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ling/SvmRankFeatures.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Dev.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ling/SvmRankFeatures1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ling/Features.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Train.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ling/Lemma.java" />
+        <option value="$PROJECT_DIR$/src/main/java/markup/Sentence.java" />
+        <option value="$PROJECT_DIR$/src/main/java/markup/Explanation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ling/TableStore.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ling/Utils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/markup/QA.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main/Train.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main/Dev.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main/Main.java" />
       </list>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-11" />
-    <option name="y" value="-11" />
-    <option name="width" value="1943" />
-    <option name="height" value="1043" />
+    <option name="x" value="286" />
+    <option name="y" value="45" />
+    <option name="width" value="1593" />
+    <option name="height" value="1029" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -190,6 +215,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -229,18 +256,20 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="explanationgen.svmrankfeatures" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="markup" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -262,7 +291,7 @@
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="MAIN_CLASS_NAME" value="main.Main" />
       <module name="explanationgen.svmrankfeatures.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -297,59 +326,69 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2077607" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19886823" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Build" weight="0.3279003" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.2960993" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.20390071" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.2954955" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36879432" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32978722" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Gradle" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Build" order="10" weight="0.320922" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.32983023" />
+      <window_info anchor="right" id="Gradle" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19886823" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.2960993" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29432625" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32978722" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Build" order="10" weight="0.320922" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Gradle" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+    </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/parser/CoreNLP.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/markup/Ling.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/markup/Ling.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/utils/IO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -377,32 +416,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/markup/Token.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1036">
-          <caret line="82" column="40" selection-start-line="82" selection-start-column="40" selection-end-line="82" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1632#1633#0" expanded="true" />
-            <element signature="e#1663#1664#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/markup/QA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-269">
-          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/utils/Select.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="428">
@@ -417,117 +430,193 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/markup/Sentence.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sim/Similarity.java" />
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+        <state relative-caret-position="323">
+          <caret line="19" column="65" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/parser/CoreNLP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#setTokens#0;class#Sentence#0" />
-            <element signature="method#setInBetweenPatterns#0;class#Sentence#0" />
-            <element signature="method#setInBetweenPattern#0;class#Sentence#0" />
-            <element signature="e#3924#3925#0" expanded="true" />
-            <element signature="e#3964#3965#0" expanded="true" />
-            <element signature="e#4002#4003#0" expanded="true" />
-            <element signature="e#4031#4032#0" expanded="true" />
-            <element signature="e#4663#4664#0" expanded="true" />
-            <element signature="e#4692#4693#0" expanded="true" />
-            <element signature="e#4732#4733#0" expanded="true" />
-            <element signature="e#4762#4763#0" expanded="true" />
-            <element signature="e#4803#4804#0" expanded="true" />
-            <element signature="e#4834#4835#0" expanded="true" />
-            <element signature="e#4881#4882#0" expanded="true" />
-            <element signature="e#4918#4919#0" expanded="true" />
-            <element signature="e#4962#4963#0" expanded="true" />
-            <element signature="e#4996#4997#0" expanded="true" />
-            <element signature="e#5043#5044#0" expanded="true" />
-            <element signature="e#5080#5081#0" expanded="true" />
-            <element signature="e#5122#5123#0" expanded="true" />
-            <element signature="e#5154#5155#0" expanded="true" />
-            <element signature="e#5201#5202#0" expanded="true" />
-            <element signature="e#5238#5239#0" expanded="true" />
-            <element signature="e#5281#5282#0" expanded="true" />
-            <element signature="e#5314#5315#0" expanded="true" />
-            <element signature="e#5362#5363#0" expanded="true" />
-            <element signature="e#5400#5401#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ling/OpenIEFeat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ling/SvmRankFeatures1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3075#3076#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/markup/Token.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-137">
+          <caret line="27" column="25" lean-forward="true" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1632#1633#0" expanded="true" />
+            <element signature="e#1663#1664#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="244" column="18" selection-start-line="244" selection-start-column="18" selection-end-line="244" selection-end-column="18" />
+          <folding>
+            <element signature="e#10225#10226#0" expanded="true" />
+            <element signature="e#10308#10309#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ling/Features.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="89" selection-start-line="18" selection-start-column="89" selection-end-line="18" selection-end-column="89" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/markup/Explanation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="293">
-          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ling/SvmRankFeatures.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" selection-start-line="16" selection-end-line="359" selection-end-column="55" />
+        <state relative-caret-position="190">
+          <caret line="253" column="16" selection-start-line="253" selection-start-column="16" selection-end-line="253" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#247#3565#0" />
-            <element signature="e#596#630#0" />
-            <element signature="e#2978#4812#0" />
-            <element signature="e#5457#5530#1" />
+            <element signature="e#5469#5470#0" expanded="true" />
             <element signature="e#5541#5542#0" expanded="true" />
-            <element signature="e#1470#1583#0" />
-            <element signature="e#6850#7419#0" />
-            <element signature="e#6548#6775#0" />
-            <element signature="e#7907#8081#0" />
-            <element signature="e#6257#6267#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Train.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/markup/Sentence.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="68" column="54" lean-forward="true" selection-start-line="68" selection-start-column="54" selection-end-line="68" selection-end-column="54" />
+        <state relative-caret-position="351">
+          <caret line="58" column="50" selection-start-line="58" selection-start-column="50" selection-end-line="58" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Sentence#0;class#Sentence#0" />
+            <element signature="e#3562#3563#0" expanded="true" />
+            <element signature="e#3630#3631#0" expanded="true" />
+            <element signature="e#3700#3701#0" expanded="true" />
+            <element signature="e#3772#3773#0" expanded="true" />
+            <element signature="e#3856#3857#0" expanded="true" />
+            <element signature="e#3934#3935#0" expanded="true" />
+            <element signature="e#4018#4019#0" expanded="true" />
+            <element signature="e#4092#4093#0" expanded="true" />
+            <element signature="e#4176#4177#0" expanded="true" />
+            <element signature="e#4252#4253#0" expanded="true" />
+            <element signature="e#4338#4339#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ling/TableStore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="38" column="11" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#setUniFeatures#0;class#TableStore#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ling/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Dev.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ling/Lemma.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="932">
-          <caret line="79" column="18" selection-start-line="79" selection-start-column="18" selection-end-line="79" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#writeSelectedInstances#0;class#Dev#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ling/SvmRankFeatures1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1519">
-          <caret line="77" column="49" lean-forward="true" selection-start-line="77" selection-start-column="49" selection-end-line="77" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3238#3239#0" expanded="true" />
-            <element signature="e#3310#3311#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="28" column="39" lean-forward="true" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+        <state relative-caret-position="-245">
+          <caret line="35" column="11" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
+    <entry file="file://$PROJECT_DIR$/src/main/java/markup/QA.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+        <state relative-caret-position="287">
+          <caret line="28" column="12" lean-forward="true" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/Train.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="107" column="59" selection-start-line="107" selection-start-column="59" selection-end-line="107" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#writeSelectedInstances#0;class#Train#0" />
+            <element signature="method#writeOutput#0;class#Train#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/Dev.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="96" column="130" selection-start-line="96" selection-start-column="130" selection-end-line="96" selection-end-column="130" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="69" column="11" selection-start-line="69" selection-start-column="11" selection-end-line="69" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

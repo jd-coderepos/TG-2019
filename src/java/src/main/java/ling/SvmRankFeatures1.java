@@ -36,9 +36,7 @@ public class SvmRankFeatures1 {
 
         end31 = end30+tablestore.size()+1;
 
-        end32 = end31+inBetweenPatterns.size()+1;
-
-        end36 = end32+indepRel.size()+1;
+        end36 = end31+indepRel.size()+1;
 
         end40 = end36+inlemmaDepRel.size()+1;
 
@@ -92,12 +90,6 @@ public class SvmRankFeatures1 {
                 }
             }
         }
-
-        for (String pattern : sentence.getInBetweenPatterns()) {
-            if (inBetweenPatterns.contains(pattern)) continue;
-            inBetweenPatterns.add(pattern);
-        }
-
     }
 
     public static void setTablestore(String source) {
@@ -192,8 +184,7 @@ public class SvmRankFeatures1 {
                         getFeature(end28, uniqueConcrete, getCommon(List.copyOf(correctAns.getConcreteLemmas()), List.copyOf(expl.getConcreteLemmas())), end29) +" "+
                         getFeature(end29, uniqueConcrete, getCommon(getGroup(List.copyOf(question.getConcreteLemmas()), List.copyOf(correctAns.getConcreteLemmas())), List.copyOf(expl.getConcreteLemmas())), end30) +" "+
                         getFeature(end30, tablestore, explSource, end31) +" "+
-                        getFeature(end31, inBetweenPatterns, expl.getInBetweenPatterns(), end32) +" "+
-                        getFeature(end32, indepRel, getCommon(getGroup(List.copyOf(question.getInDepRels()), List.copyOf(correctAns.getInDepRels())), List.copyOf(expl.getInDepRels())), end36) +" "+
+                        getFeature(end31, indepRel, getCommon(getGroup(List.copyOf(question.getInDepRels()), List.copyOf(correctAns.getInDepRels())), List.copyOf(expl.getInDepRels())), end36) +" "+
                         getFeature(end36, inlemmaDepRel, getCommon(getGroup(List.copyOf(question.getInlemmaDepRels()), List.copyOf(correctAns.getInlemmaDepRels())), List.copyOf(expl.getInlemmaDepRels())), end40) +" "+
                         getFeature(end40, outdepRel, getCommon(getGroup(List.copyOf(question.getOutDepRels()), List.copyOf(correctAns.getOutDepRels())), List.copyOf(expl.getOutDepRels())), end44) +" "+
                         getFeature(end44, outlemmaDepRel, getCommon(getGroup(List.copyOf(question.getOutlemmaDepRels()), List.copyOf(correctAns.getOutlemmaDepRels())), List.copyOf(expl.getOutlemmaDepRels())), end48) +" "+
@@ -225,8 +216,6 @@ public class SvmRankFeatures1 {
     public static int end30;    //common Q+A+Expl Concrete
 
     public static int end31;    //source tablestore for Expl
-
-    public static int end32;    //expl inbetween patterns: "is ... preposition" (not > 5 words)
 
     public static int end36;    //Q+A+Expl in dep relations
 

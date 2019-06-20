@@ -1,71 +1,49 @@
 package markup;
 
+import main.Main;
+
 /**
  * @author jld
  */
 public class QA {
 
-    String id;
+    String qaID;
     Sentence question;
-    String correctAns;
-    Sentence optionA;
-    Sentence optionB;
-    Sentence optionC;
-    Sentence optionD;
+    String correctAnsOption;
+    Sentence correctAns;
 
-    public QA(String[] line) {
-        this.id = line[0];
+    public QA(String[] line, boolean train, Main main) {
+        this.qaID = line[0];
+        //System.out.println(line[0]);
         this.question = new Sentence();
-        this.question.setTokens(line[1].split("\\s"));
-        this.question.setAggregateFeatures();
-        this.correctAns = line[2];
-        this.optionA = new Sentence();
-        this.optionA.setTokens(line[3].split("\\s"));
-        this.optionA.setAggregateFeatures();
-        this.optionB = new Sentence();
-        this.optionB.setTokens(line[4].split("\\s"));
-        this.optionB.setAggregateFeatures();
-        if (line.length >= 6) {
-            this.optionC = new Sentence();
-            this.optionC.setTokens(line[5].split("\\s"));
-            this.optionC.setAggregateFeatures();
-        }
-        if (line.length >= 7) {
-            this.optionD = new Sentence();
-            this.optionD.setTokens(line[6].split("\\s"));
-            this.optionD.setAggregateFeatures();
-        }
+        this.question.setTokens(line[1].split("\\s"), train, main);
+        this.correctAnsOption = line[2];
+        this.correctAns = new Sentence();
+        this.correctAns.setTokens(line[getCorrectAns(line)].split("\\s"), train, main);
     }
 
-    public Sentence getCorrectAns() {
-        if (correctAns.equals("A")) return optionA;
-        else if (correctAns.equals("B")) return optionB;
-        else if (correctAns.equals("C")) return optionC;
-        else return optionD;
+    public int getCorrectAns(String[] tokens) {
+        //System.out.println(correctAns);
+        if (correctAnsOption.equals("A")) return 3;
+        else if (correctAnsOption.equals("B")) return 4;
+        else if (correctAnsOption.equals("C")) return 5;
+        else return 6;
     }
 
-    public String getId() {
-        return id;
+    public String getQaID() {
+        return qaID;
     }
 
     public Sentence getQuestion() {
         return question;
     }
 
-    public Sentence getOptionA() {
-        return optionA;
+    public String getCorrectAnsOption() {
+        return correctAnsOption;
     }
 
-    public Sentence getOptionB() {
-        return optionB;
-    }
-
-    public Sentence getOptionC() {
-        return optionC;
-    }
-
-    public Sentence getOptionD() {
-        return optionD;
+    public Sentence getCorrectAns() {
+        return correctAns;
     }
 
 }

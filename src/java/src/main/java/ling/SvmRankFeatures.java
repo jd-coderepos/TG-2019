@@ -54,10 +54,7 @@ public class SvmRankFeatures {
 
         end31 = end30+tablestore.size()+1;
 
-        end32 = end31+inBetweenPatterns.size()+1;
-        //System.out.println("end32:"+end32);
-
-        end33 = end32+indepRel.size()+1;
+        end33 = end31+indepRel.size()+1;
         end34 = end33+indepRel.size()+1;
         end35 = end34+indepRel.size()+1;
         end36 = end35+indepRel.size()+1;
@@ -148,12 +145,6 @@ public class SvmRankFeatures {
                 }
             }
         }
-
-        for (String pattern : sentence.getInBetweenPatterns()) {
-            if (inBetweenPatterns.contains(pattern)) continue;
-            inBetweenPatterns.add(pattern);
-        }
-
     }
 
     public static void setTablestore(String source) {
@@ -184,8 +175,6 @@ public class SvmRankFeatures {
     public static List<String> uniqueConcrete = new ArrayList<>();
 
     public static List<String> tablestore = new ArrayList<>();
-
-    public static List<String> inBetweenPatterns = new ArrayList<>();
 
     public static List<String> indepRel = new ArrayList<>();
     public static List<String> inlemmaDepRel = new ArrayList<>();
@@ -263,7 +252,6 @@ public class SvmRankFeatures {
                 getFeature(end28, uniqueConcrete, getCommon(List.copyOf(correctAns.getConcreteLemmas()), List.copyOf(expl.getConcreteLemmas())), end29) +" "+
                 getFeature(end29, uniqueConcrete, getCommon(getGroup(List.copyOf(question.getConcreteLemmas()), List.copyOf(correctAns.getConcreteLemmas())), List.copyOf(expl.getConcreteLemmas())), end30) +" "+
                 getFeature(end30, tablestore, explSource, end31) +" "+
-                getFeature(end31, inBetweenPatterns, expl.getInBetweenPatterns(), end32) +" "+
                 /*getFeature(end32, indepRel, question.getInDepRels(), end33) +" "+
                 getFeature(end33, indepRel, correctAns.getInDepRels(), end34) +" "+
                 getFeature(end34, indepRel, expl.getInDepRels(), end35) +" "+*/
@@ -328,8 +316,6 @@ public class SvmRankFeatures {
     public static int end30;    //common Q+A+Expl Concrete
 
     public static int end31;    //source tablestore for Expl
-
-    public static int end32;    //expl inbetween patterns: "is ... preposition" (not > 5 words)
 
     public static int end33;    //Q in dep relations
     public static int end34;    //A in dep relations

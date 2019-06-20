@@ -1,5 +1,7 @@
 package markup;
 
+import main.Main;
+
 import java.util.List;
 
 /**
@@ -16,11 +18,10 @@ public class Explanation {
         this.source = source;
     }
 
-    public void setTokens(String[] line) {
+    public void setTokens(String[] line, boolean train, Main main) {
         this.sentence = new Sentence();
-        this.sentence.setTokens(line);
-        this.sentence.setInBetweenPatterns();
-        this.sentence.setAggregateFeatures();
+        this.sentence.setTokens(line, train, main);
+        main.getTs().setTablestore(source);
     }
 
     public String getId() {

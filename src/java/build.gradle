@@ -19,8 +19,4 @@ dependencies {
     // https://mvnrepository.com/artifact/com.opencsv/opencsv
     compile group: 'com.opencsv', name: 'opencsv', version: '4.6'
 
-    // https://mvnrepository.com/artifact/org.allenai.openie/openie
-    compile group: 'org.allenai.openie', name: 'openie_2.11', version: '4.2.6'
-
-
 }
