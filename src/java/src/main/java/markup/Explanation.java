@@ -21,7 +21,9 @@ public class Explanation {
     public void setTokens(String[] line, boolean train, Main main) {
         this.sentence = new Sentence();
         this.sentence.setTokens(line, train, main);
-        main.getTs().setTablestore(source);
+        if (train) {
+            main.getTs().setTablestore(source);
+        }
     }
 
     public String getId() {

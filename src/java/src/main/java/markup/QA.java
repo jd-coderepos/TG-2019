@@ -23,7 +23,6 @@ public class QA {
     }
 
     public int getCorrectAns(String[] tokens) {
-        //System.out.println(correctAns);
         if (correctAnsOption.equals("A")) return 3;
         else if (correctAnsOption.equals("B")) return 4;
         else if (correctAnsOption.equals("C")) return 5;

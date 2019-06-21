@@ -75,6 +75,20 @@ public class Train {
         }
     }
 
+    public void setNegAnn(List<String[]> instances) {
+        for (String[] instance : instances) {
+            String qaID = instance[0];
+            String explID = instance[1];
+
+            List<String> posExplIDs = posAnn.get(qaID);
+            if (posExplIDs.contains(explID)) continue;
+
+            List<String> negExplIDs = negAnn.get(qaID);
+            if (negExplIDs == null) negAnn.put(qaID, negExplIDs = new ArrayList<>());
+            negExplIDs.add(explID);
+        }
+    }
+
     public int iterateExplanations(Integer qid, String qaID, List<String> explIDs, Sentence q, Sentence a, int rank, FileOutputStream output, FileOutputStream idLog) throws IOException {
         for (String explID : explIDs) {
             Explanation expl = idExpl.get(explID);

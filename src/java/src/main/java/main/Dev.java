@@ -80,7 +80,7 @@ public class Dev {
 
             List<String> explIDs = posAnn.get(qaID);
             int rank = explIDs.size()+1;
-            rank = iterateExplanations(qid, qaID, explIDs, quesSent, ansSent, rank, output, null);
+            rank = iterateExplanations(qid, qaID, explIDs, quesSent, ansSent, rank, output, idLog);
 
             if (rank != 1) {
                 System.out.println(qaID);
@@ -98,7 +98,7 @@ public class Dev {
 
                 String outputStr = rank+" qid:"+qid+" "+featureStr;
                 output.write((outputStr+"\n").getBytes());
-                idLog.write((qaID+"\t"+explID+"\n").getBytes());
+                if (idLog != null) idLog.write((qaID+"\t"+explID+"\n").getBytes());
             }
 
             qid++;

@@ -57,6 +57,12 @@ public class Sentence {
 
             if (train) {
                 main.getLemma().setUniFeatures(t);
+                //main.getDep().setUniFeatures(t);
+                //main.getPosTags().setUniFeatures(t);
+                //main.getCon().setUniFeatures(t);
+                //main.getACon().setUniFeatures(t);
+                main.getFCon().setUniFeatures(t);
+                main.getCcon().setUniFeatures(t);
             }
         }
     }

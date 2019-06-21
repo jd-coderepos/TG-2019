@@ -12,15 +12,15 @@ import java.util.List;
  */
 public class Lemma extends Features {
 
-    public int start;
+    int start;
 
-    public int end1;     //non-stop word lemmas in Q
-    public int end2;     //non-stop word lemmas in A
-    public int end3;     //non-stop word lemmas in Expl
+    int end1;     //non-stop word lemmas in Q
+    int end2;     //non-stop word lemmas in A
+    int end3;     //non-stop word lemmas in Expl
 
-    public int end4;     //non-stop word common lemmas in Q+Expl
-    public int end5;     //non-stop word common lemmas in A+Expl
-    public int end6;     //non-stop word common lemmas in Q+A+Expl
+    int end4;     //non-stop word common lemmas in Q+Expl
+    int end5;     //non-stop word common lemmas in A+Expl
+    int end6;     //non-stop word common lemmas in Q+A+Expl
 
     public int getFirstSize() {
         return end1;
