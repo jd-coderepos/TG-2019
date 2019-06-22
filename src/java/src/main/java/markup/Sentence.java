@@ -24,6 +24,13 @@ public class Sentence {
     List<String> outDepRels;
     List<String> outlemmaDepRels;
 
+    List<String> subj_words;
+    List<String> subj_lemmas;
+    List<String> obj_words;
+    List<String> obj_lemmas;
+    List<String> rel_words;
+    List<String> rel_lemmas;
+
     public Sentence() {
         tokens = new ArrayList<>();
         lemmas = new ArrayList<>();
@@ -36,6 +43,13 @@ public class Sentence {
         inlemmaDepRels = new ArrayList<>();
         outDepRels = new ArrayList<>();
         outlemmaDepRels = new ArrayList<>();
+
+        subj_words = new ArrayList<>();
+        subj_lemmas = new ArrayList<>();
+        obj_words = new ArrayList<>();
+        obj_lemmas = new ArrayList<>();
+        rel_words = new ArrayList<>();
+        rel_lemmas = new ArrayList<>();
     }
 
     //set only non-stopword tokens
@@ -57,12 +71,9 @@ public class Sentence {
 
             if (train) {
                 main.getLemma().setUniFeatures(t);
-                //main.getDep().setUniFeatures(t);
+                main.getCon().setUniFeatures(t);
                 //main.getPosTags().setUniFeatures(t);
-                //main.getCon().setUniFeatures(t);
-                //main.getACon().setUniFeatures(t);
-                main.getFCon().setUniFeatures(t);
-                main.getCcon().setUniFeatures(t);
+                main.getDep().setUniFeatures(t);
             }
         }
     }
@@ -101,6 +112,32 @@ public class Sentence {
             for (String outlemmaDepRel : t.getOutLemmaDeprel()) {
                 if (!outlemmaDepRels.contains(outlemmaDepRel)) outlemmaDepRels.add(outlemmaDepRel);
             }
+        }
+    }
+
+    public void setRelations(String stringRel, boolean train, Main main) {
+        if (stringRel == null) return;
+        String[] relations = stringRel.split("/");
+
+        for (String relation : relations) {
+            String[] relComponents = relation.split("\\|");
+            if (relComponents.length == 1) continue;
+
+            //first two subj
+            //if (!subj_words.contains(relComponents[0])) subj_words.add(relComponents[0]);
+            if (!subj_lemmas.contains(relComponents[1])) subj_lemmas.add(relComponents[1]);
+
+            //next two obj
+            //if (!obj_words.contains(relComponents[2])) obj_words.add(relComponents[2]);
+            if (!obj_lemmas.contains(relComponents[3])) obj_lemmas.add(relComponents[3]);
+
+            //next two rel
+            //if (!rel_words.contains(relComponents[4])) rel_words.add(relComponents[4]);
+            if (!rel_lemmas.contains(relComponents[5])) rel_lemmas.add(relComponents[5]);
+
+        }
+        if (train) {
+            main.getOpenRel().setUniFeatures(this);
         }
     }
 
@@ -146,6 +183,30 @@ public class Sentence {
 
     public List<String> getOutlemmaDepRels() {
         return outlemmaDepRels;
+    }
+
+    public List<String> getSubj_words() {
+        return subj_words;
+    }
+
+    public List<String> getSubj_lemmas() {
+        return subj_lemmas;
+    }
+
+    public List<String> getObj_words() {
+        return obj_words;
+    }
+
+    public List<String> getObj_lemmas() {
+        return obj_lemmas;
+    }
+
+    public List<String> getRel_words() {
+        return rel_words;
+    }
+
+    public List<String> getRel_lemmas() {
+        return rel_lemmas;
     }
 
 }

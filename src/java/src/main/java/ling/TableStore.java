@@ -27,7 +27,7 @@ public class TableStore extends Features {
     }
 
     @Override
-    void setUniFeatures(Token token) {
+    public void setUniFeatures(Token token) {
 
     }
 
@@ -42,7 +42,7 @@ public class TableStore extends Features {
     }
 
     @Override
-    String toSVMRankString(Sentence question, Sentence correctAns, Sentence expl) {
+    public String toSVMRankString(Sentence question, Sentence correctAns, Sentence expl) {
         return null;
     }
 

@@ -22,6 +22,7 @@ public class Main {
     AbstractConcepts acon;
     FocusConcepts fcon;
     ConcreteConcepts ccon;
+    OpenIERel openRel;
 
     public Main() {
         lemma = new Lemma();
@@ -32,6 +33,7 @@ public class Main {
         acon = new AbstractConcepts();
         fcon = new FocusConcepts();
         ccon = new ConcreteConcepts();
+        openRel = new OpenIERel();
     }
 
     public Lemma getLemma() {
@@ -66,11 +68,15 @@ public class Main {
         return ccon;
     }
 
+    public OpenIERel getOpenRel() {
+        return openRel;
+    }
+
     public void initDevSetup(String data_dir, String feat_grp) throws IOException {
         Dev dev = new Dev(this);
-        String qa_file = "Elem-Dev-Ling.csv";
+        String qa_file = "Elem-Dev-Rel.csv";
         dev.processQA(IO.readCSV(data_dir+"\\"+qa_file, '\t', 0));
-        String expl_file = "expl-tablestore-ling.csv";
+        String expl_file = "expl-tablestore-rel.csv";
         dev.processExpl(IO.readCSV(data_dir+"\\"+expl_file, '\t', 0));
         String gold_data = "Elem-Dev-Expl.csv";
         dev.processPositiveQAExpl(IO.readCSV(data_dir+"\\"+gold_data, '\t', 0));
@@ -82,18 +88,18 @@ public class Main {
 
     public void initTrainSetup(String data_dir, int numNeg, String feat_grp) throws IOException {
         Train train = new Train(this);
-        String qa_file = "Elem-Train-Ling.csv";
+        //String qa_file = "Elem-Train-Ling.csv";
+        String qa_file = "Elem-Train-Rel.csv";
         train.processQA(IO.readCSV(data_dir+"\\"+qa_file, '\t', 0));
-        String expl_file = "expl-tablestore-ling.csv";
+        //String expl_file = "expl-tablestore-ling.csv";
+        String expl_file = "expl-tablestore-rel.csv";
         train.processExpl(IO.readCSV(data_dir+"\\"+expl_file, '\t', 0));
         lemma.setFeatureSizes(0);
         ts.setFeatureSizes(lemma.getLastSize());
-        //dep.setFeatureSizes(ts.getLastSize());
-        //pt.setFeatureSizes(ts.getLastSize());
-        //con.setFeatureSizes(ts.getLastSize());
-        //acon.setFeatureSizes(ts.getLastSize());
-        fcon.setFeatureSizes(ts.getLastSize());
-        ccon.setFeatureSizes(fcon.getLastSize());
+        con.setFeatureSizes(ts.getLastSize());
+        //pt.setFeatureSizes(con.getLastSize());
+        dep.setFeatureSizes(con.getLastSize());
+        openRel.setFeatureSizes(dep.getLastSize());
 
         System.out.println("Done generating training features!");
 
@@ -105,7 +111,7 @@ public class Main {
         //train.writeOutput(new FileOutputStream(data_dir+"\\"+output_file));
 
         train.setNegAnn(IO.readCSV(data_dir+"\\"+id_file, '\t', 0));
-        //train.generateNegativeQAExpl(numNeg);
+        train.generateNegativeQAExpl(numNeg);
         train.writePosAndNegSelectInstances(new FileOutputStream(data_dir+"\\"+output_file),
                 /*new FileOutputStream(data_dir+"\\"+id_file)*/null);
 
@@ -125,7 +131,7 @@ public class Main {
         NLP.setConcepts(IO.readCSV(data_dir+"\\resources\\concepts.txt", '\t', 0));
 
         Main main = new Main();
-        String feat_grp = "lemmaandfoccoc";
+        String feat_grp = "lemma-con-dep-rel-v2";
         main.initTrainSetup(data_dir, 500, feat_grp);
         main.initDevSetup(data_dir, feat_grp);
     }

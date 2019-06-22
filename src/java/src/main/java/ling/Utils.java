@@ -15,12 +15,10 @@ public class Utils {
     public static String getFeatureStr(Main main, Sentence q, Sentence a, Sentence expl, String source) {
         return main.getLemma().toSVMRankString(q, a, expl)+" "+
                 main.getTs().toSVMRankString(source)+" "+
-                //main.getDep().toSVMRankString(q, a, expl);
+                main.getCon().toSVMRankString(q, a, expl)+" "+
                 //main.getPosTags().toSVMRankString(q, a, expl);
-                //main.getCon().toSVMRankString(q, a, expl);
-                //main.getACon().toSVMRankString(q, a, expl)+" "+
-                main.getFCon().toSVMRankString(q, a, expl)+" "+
-                main.getCcon().toSVMRankString(q, a, expl);
+                main.getDep().toSVMRankString(q, a, expl)+" "+
+                main.getOpenRel().toSVMRankString(q, a, expl);
     }
 
     public static String getFeature(int start, List<String> globalfeatures, List<String> localfeatures, int end) {

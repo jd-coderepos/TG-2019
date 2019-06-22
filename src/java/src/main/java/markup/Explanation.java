@@ -18,9 +18,12 @@ public class Explanation {
         this.source = source;
     }
 
-    public void setTokens(String[] line, boolean train, Main main) {
+    public Explanation(String[] line, boolean train, Main main) {
+        this.id = line[0];
+        this.source = line[2];
         this.sentence = new Sentence();
-        this.sentence.setTokens(line, train, main);
+        this.sentence.setTokens(line[1].split("\\s"), train, main);
+        this.sentence.setRelations(line.length > 3 ? line[3] : null, train, main);
         if (train) {
             main.getTs().setTablestore(source);
         }

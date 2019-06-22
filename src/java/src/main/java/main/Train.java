@@ -32,8 +32,9 @@ public class Train {
 
     public void processExpl(List<String[]> lines) {
         for (String[] line : lines) {
-            Explanation obj = new Explanation(line[0], line[2]);
-            obj.setTokens(line[1].split("\\s"), true, main);
+            Explanation obj = new Explanation(line, true, main);
+            //Explanation obj = new Explanation(line[0], line[2]);
+            //obj.setTokens(line[1].split("\\s"), true, main);
             idExpl.put(line[0], obj);
         }
     }

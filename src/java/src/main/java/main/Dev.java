@@ -32,8 +32,9 @@ public class Dev {
 
     public void processExpl(List<String[]> lines) {
         for (String[] line : lines) {
-            Explanation obj = new Explanation(line[0], line[2]);
-            obj.setTokens(line[1].split("\\s"), false, main);
+            Explanation obj = new Explanation(line, false, main);
+            //Explanation obj = new Explanation(line[0], line[2]);
+            //obj.setTokens(line[1].split("\\s"), false, main);
             idExpl.put(line[0], obj);
         }
     }

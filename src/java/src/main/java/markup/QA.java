@@ -12,7 +12,7 @@ public class QA {
     String correctAnsOption;
     Sentence correctAns;
 
-    public QA(String[] line, boolean train, Main main) {
+    /*public QA(String[] line, boolean train, Main main) {
         this.qaID = line[0];
         //System.out.println(line[0]);
         this.question = new Sentence();
@@ -20,6 +20,50 @@ public class QA {
         this.correctAnsOption = line[2];
         this.correctAns = new Sentence();
         this.correctAns.setTokens(line[getCorrectAns(line)].split("\\s"), train, main);
+    }*/
+
+    public QA(String[] line, boolean train, Main main) {
+        this.qaID = line[0];
+        this.question = new Sentence();
+        this.question.setTokens(line[1].split("\\s"), train, main);
+        this.question.setRelations(line.length > 3 ? line[3] : null, train, main);
+
+        this.correctAns = new Sentence();
+        this.correctAns.setTokens(line[2].split("\\s"), train, main);
+        this.correctAns.setRelations(line.length > 4 ? line[4] : null, train, main);
+
+        /*if (line.length > 3) {
+            String[] quesRels = line[3].split("/");
+            for (String quesRel : quesRels) {
+                String[] relComponents = quesRel.split("\\|");
+
+                //first two subj
+
+
+                //next two obj
+
+                //next two rel
+
+                //next two triple
+
+            }
+
+            if (line.length == 5) {
+                String[] ansRels  = line[4].split("/");
+                for (String ansRel : ansRels) {
+                    String[] relComponents = ansRel.split("\\|");
+
+                    //first two subj
+
+                    //next two obj
+
+                    //next two rel
+
+                    //next two triple
+
+                }
+            }
+        }*/
     }
 
     public int getCorrectAns(String[] tokens) {

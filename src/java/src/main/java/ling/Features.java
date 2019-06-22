@@ -8,14 +8,14 @@ import markup.Token;
  */
 abstract class Features {
 
-    abstract int getFirstSize();
+    public abstract int getFirstSize();
 
-    abstract int getLastSize();
+    public abstract int getLastSize();
 
-    abstract void setUniFeatures(Token token);
+    public abstract void setUniFeatures(Token token);
 
-    abstract void setFeatureSizes(int start);
+    public abstract void setFeatureSizes(int start);
 
-    abstract String toSVMRankString(Sentence question, Sentence correctAns, Sentence expl);
+    public abstract String toSVMRankString(Sentence question, Sentence correctAns, Sentence expl);
 
 }
