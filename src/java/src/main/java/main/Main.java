@@ -16,6 +16,9 @@ public class Main {
     //Features
     Lemma lemma;
     TableStore ts;
+
+    Affix affix;
+
     Dependencies dep;
     PosTags pt;
     Concepts con;
@@ -23,10 +26,21 @@ public class Main {
     FocusConcepts fcon;
     ConcreteConcepts ccon;
     OpenIERel openRel;
+    ConceptNet cn;
+
+    ConceptNetSynonyms cnsyn;
+    ConceptNetIsA cnisa;
+    ConceptNetSimilar cnsim;
+    ConceptNetRelatedTo cnrelto;
+    ConceptNetRelations cnrel;
+    ConceptNetRelatedWordCloud rwc;
 
     public Main() {
         lemma = new Lemma();
         ts = new TableStore();
+
+        affix = new Affix();
+
         dep = new Dependencies();
         pt = new PosTags();
         con = new Concepts();
@@ -34,6 +48,14 @@ public class Main {
         fcon = new FocusConcepts();
         ccon = new ConcreteConcepts();
         openRel = new OpenIERel();
+        cn = new ConceptNet();
+
+        cnsyn = new ConceptNetSynonyms();
+        cnisa = new ConceptNetIsA();
+        cnsim = new ConceptNetSimilar();
+        cnrelto = new ConceptNetRelatedTo();
+        cnrel = new ConceptNetRelations();
+        rwc = new ConceptNetRelatedWordCloud();
     }
 
     public Lemma getLemma() {
@@ -42,6 +64,10 @@ public class Main {
 
     public TableStore getTs() {
         return ts;
+    }
+
+    public Affix getAffix() {
+        return affix;
     }
 
     public Dependencies getDep() {
@@ -72,6 +98,34 @@ public class Main {
         return openRel;
     }
 
+    public ConceptNet getConceptNet() {
+        return cn;
+    }
+
+    public ConceptNetSynonyms getCnsyn() {
+        return cnsyn;
+    }
+
+    public ConceptNetIsA getCnisa() {
+        return cnisa;
+    }
+
+    public ConceptNetSimilar getCnsim() {
+        return cnsim;
+    }
+
+    public ConceptNetRelatedTo getCnrelto() {
+        return cnrelto;
+    }
+
+    public ConceptNetRelations getCnrel() {
+        return cnrel;
+    }
+
+    public ConceptNetRelatedWordCloud getRwc() {
+        return rwc;
+    }
+
     public void initDevSetup(String data_dir, String feat_grp) throws IOException {
         Dev dev = new Dev(this);
         String qa_file = "Elem-Dev-Rel.csv";
@@ -96,10 +150,19 @@ public class Main {
         train.processExpl(IO.readCSV(data_dir+"\\"+expl_file, '\t', 0));
         lemma.setFeatureSizes(0);
         ts.setFeatureSizes(lemma.getLastSize());
-        con.setFeatureSizes(ts.getLastSize());
+        affix.setFeatureSizes(ts.getLastSize());
+        con.setFeatureSizes(affix.getLastSize());
         //pt.setFeatureSizes(con.getLastSize());
-        dep.setFeatureSizes(con.getLastSize());
-        openRel.setFeatureSizes(dep.getLastSize());
+        //dep.setFeatureSizes(con.getLastSize());
+        //openRel.setFeatureSizes(con.getLastSize());
+        //cn.setFeatureSizes(openRel.getLastSize());
+
+        //cnsyn.setFeatureSizes(openRel.getLastSize());
+        //cnisa.setFeatureSizes(openRel.getLastSize());
+        //cnsim.setFeatureSizes(openRel.getLastSize());
+        //cnrelto.setFeatureSizes(cnsim.getLastSize());
+        //cnrel.setFeatureSizes(openRel.getLastSize());
+        //rwc.setFeatureSizes(openRel.getLastSize());
 
         System.out.println("Done generating training features!");
 
@@ -129,9 +192,12 @@ public class Main {
 
         NLP.setStopwords(IO.readFile(data_dir+"\\resources\\stopwords", StandardCharsets.UTF_8).split("\\n"));
         NLP.setConcepts(IO.readCSV(data_dir+"\\resources\\concepts.txt", '\t', 0));
+        //NLP.setConceptRelations(IO.readCSV(data_dir+"\\resources\\conceptnet\\wordlemmatriples.txt", '\t', 0));
+        //NLP.setConceptRelations(IO.readCSV(data_dir+"\\resources\\conceptnet\\wordtriples.txt", '\t', 0));
 
         Main main = new Main();
-        String feat_grp = "lemma-con-dep-rel-v2";
+        //String feat_grp = "lemma-con-dep-rel-v2-cn";
+        String feat_grp = "lemma-affix-con";
         main.initTrainSetup(data_dir, 500, feat_grp);
         main.initDevSetup(data_dir, feat_grp);
     }

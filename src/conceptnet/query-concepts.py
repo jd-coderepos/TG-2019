@@ -3,10 +3,10 @@ import os
 
 RES_DIR = "../../data/resources/conceptnet"
 
-#f = open(os.path.join(RES_DIR, "words.txt"), "r", encoding="utf8")
-f = open(os.path.join(RES_DIR, "wordlemmas.txt"), "r", encoding="utf8")
-#fw = open(os.path.join(RES_DIR, "word-triples.txt"), "w", encoding="utf8")
-fw = open(os.path.join(RES_DIR, "wordlemma-triples.txt"), "w", encoding="utf8")
+f = open(os.path.join(RES_DIR, "new-words.txt"), "r", encoding="utf8")
+#f = open(os.path.join(RES_DIR, "new-wordlemmas.txt"), "r", encoding="utf8")
+fw = open(os.path.join(RES_DIR, "new-word-triples.txt"), "w", encoding="utf8")
+#fw = open(os.path.join(RES_DIR, "new-wordlemma-triples.txt"), "w", encoding="utf8")
 
 for x in f:
 	x = x.strip()
@@ -50,7 +50,8 @@ for x in f:
 	fw.write(x+"\t"+str+"\n")	
 		
 	for rel in relations:
-		fw_rel = open(os.path.join(RES_DIR, "wordlemma-"+rel+".txt"), "a", encoding="utf8")
+		#fw_rel = open(os.path.join(RES_DIR, "wordlemma-"+rel+".txt"), "a", encoding="utf8")
+		fw_rel = open(os.path.join(RES_DIR, rel+".txt"), "a", encoding="utf8")
 		
 		terms = relations[rel]
 		

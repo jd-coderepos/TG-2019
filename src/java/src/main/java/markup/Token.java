@@ -13,6 +13,8 @@ public class Token {
     String pos;
     String concretenessLabel;
     Double concretenessScore;
+    List<String> prefix;
+    List<String> suffix;
     List<String> concepts;
     List<String> outDeprel;
     List<String> outLemmaDeprel;
@@ -25,6 +27,11 @@ public class Token {
         this.pos = p;
         this.concretenessLabel = cl;
         this.concretenessScore = cs;
+
+        this.prefix = new ArrayList<>();
+        this.suffix = new ArrayList<>();
+        setAffix(w);
+
         this.concepts = concepts;
         this.outDeprel = new ArrayList<>();
         this.outLemmaDeprel = new ArrayList<>();
@@ -84,4 +91,33 @@ public class Token {
         return inLemmaDeprel;
     }
 
+    public void setAffix(String word) {
+        String w = word.toLowerCase();
+        int length = w.length() >= 5 ? 5 : w.length() >= 4 ? 4 : w.length() >= 3 ? 3 : 0;
+        setAffix(length, w);
+    }
+
+    public void setAffix(int length, String str) {
+        switch(length) {
+            case 5:
+                if (!prefix.contains(str.substring(0,5))) prefix.add(str.substring(0, 5));
+                if (!suffix.contains(str.substring(str.length()-5))) suffix.add(str.substring(str.length()-5));
+            case 4:
+                if (!prefix.contains(str.substring(0,4))) prefix.add(str.substring(0, 4));
+                if (!suffix.contains(str.substring(str.length()-4))) suffix.add(str.substring(str.length()-4));
+            case 3:
+                if (!prefix.contains(str.substring(0,3))) prefix.add(str.substring(0, 3));
+                if (!suffix.contains(str.substring(str.length()-3))) suffix.add(str.substring(str.length()-3));
+        }
+    }
+
+    public List<String> getPrefix() {
+        return prefix;
+    }
+
+    public List<String> getSuffix() {
+        return suffix;
+    }
+
 }
+

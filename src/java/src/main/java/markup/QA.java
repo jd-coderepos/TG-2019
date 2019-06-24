@@ -31,39 +31,6 @@ public class QA {
         this.correctAns = new Sentence();
         this.correctAns.setTokens(line[2].split("\\s"), train, main);
         this.correctAns.setRelations(line.length > 4 ? line[4] : null, train, main);
-
-        /*if (line.length > 3) {
-            String[] quesRels = line[3].split("/");
-            for (String quesRel : quesRels) {
-                String[] relComponents = quesRel.split("\\|");
-
-                //first two subj
-
-
-                //next two obj
-
-                //next two rel
-
-                //next two triple
-
-            }
-
-            if (line.length == 5) {
-                String[] ansRels  = line[4].split("/");
-                for (String ansRel : ansRels) {
-                    String[] relComponents = ansRel.split("\\|");
-
-                    //first two subj
-
-                    //next two obj
-
-                    //next two rel
-
-                    //next two triple
-
-                }
-            }
-        }*/
     }
 
     public int getCorrectAns(String[] tokens) {

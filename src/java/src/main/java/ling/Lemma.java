@@ -41,7 +41,7 @@ public class Lemma extends Features {
     public void setFeatureSizes(int s) {
         start = s;
 
-        end1 = start+uniqueLemmas.size() + 1;   //lemmas in Q
+        end1 = start + uniqueLemmas.size() + 1;   //lemmas in Q
         end2 = end1 + uniqueLemmas.size() + 1;  //lemmas in A
         end3 = end2 + uniqueLemmas.size() + 1;  //lemmas in Expl
 

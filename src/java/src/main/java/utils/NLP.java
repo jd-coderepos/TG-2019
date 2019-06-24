@@ -34,4 +34,25 @@ public class NLP {
         }
     }
 
+    public static Map<String, Map<String, List<String>>> conceptRelations = new HashMap<>();
+
+    public static void setConceptRelations(List<String[]> lines) {
+        for (String[] line : lines) {
+            if (line.length == 1) continue;
+
+            String term = line[0];
+
+            Map<String, List<String>> relations = conceptRelations.get(term);
+            if (relations == null) conceptRelations.put(term, relations = new HashMap<>());
+
+            for (int i=1; i < line.length; i++) {
+                String[] components = line[i].split("/");
+                List<String> relatedTerms = relations.get(components[1]);
+                if (relatedTerms == null) relations.put(components[1], relatedTerms = new ArrayList<>());
+                if (components[0].equals(term)) relatedTerms.add(components[1]);
+                else if (components[1].equals(term)) relatedTerms.add(components[0]);
+            }
+        }
+    }
+
 }
