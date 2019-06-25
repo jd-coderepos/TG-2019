@@ -65,6 +65,9 @@ public class Affix extends Features {
 
     @Override
     public String toSVMRankString(Sentence question, Sentence correctAns, Sentence expl) {
+
+        //System.out.println("Fetching Lemma String");
+
         return getFeature(this.start, prefix, question.getPrefix(), end11) +" "+
                 getFeature(end11, prefix, correctAns.getPrefix(), end12) +" "+
                 getFeature(end12, prefix, expl.getPrefix(), end13) +" "+

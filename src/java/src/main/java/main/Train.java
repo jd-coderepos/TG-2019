@@ -99,6 +99,9 @@ public class Train {
 
             String outputStr = rank+" qid:"+qid+" "+featureStr;
             output.write((outputStr+"\n").getBytes());
+
+            //System.out.println("written one training instance");
+
             if (idLog != null) idLog.write((qaID+"\t"+explID+"\n").getBytes());
 
             if(rank != 1) rank--;

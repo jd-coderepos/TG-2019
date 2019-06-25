@@ -14,6 +14,7 @@ import java.util.Map;
 public class Sentence {
     List<Token> tokens;
 
+    List<String> words;
     List<String> lemmas;
     List<String> posTags;
     List<String> concepts;
@@ -35,16 +36,18 @@ public class Sentence {
     List<String> rel_words;
     List<String> rel_lemmas;
 
+    List<String> relations;
+
     List<String> synonyms;
     List<String> isA;
     List<String> similar;
     List<String> relatedTo;
 
-    List<String> relations;
     List<String> relatedWordCloud;
 
     public Sentence() {
         tokens = new ArrayList<>();
+        words = new ArrayList<>();
         lemmas = new ArrayList<>();
         posTags = new ArrayList<>();
         concepts = new ArrayList<>();
@@ -99,14 +102,18 @@ public class Sentence {
                 //main.getPosTags().setUniFeatures(t);
                 //main.getDep().setUniFeatures(t);
                 //main.getConceptNet().setUniFeatures(t);
-                //main.getCnsyn().setUniFeatures(t);
-                //main.getCnisa().setUniFeatures(t);
-                //main.getCnsim().setUniFeatures(t);
-                //main.getCnrelto().setUniFeatures(t);
-                //main.getCnrel().setUniFeatures(t);
-                //main.getRwc().setUniFeatures(t);
+                main.getCnsyn().setUniFeatures(t);
+                main.getCnsim().setUniFeatures(t);
+                main.getCnrelto().setUniFeatures(t);
+                main.getRwc().setUniFeatures(t);
             }
         }
+        /*for (Token token : tokens) {
+            String word = token.getWord().toLowerCase();
+
+
+
+        }*/
     }
 
     public void setCumulativeValues(Token t){
@@ -187,8 +194,6 @@ public class Sentence {
 
         for (String relation : relatedTerms.keySet()) {
             if (relation.equals("Synonym") || relation.equals("IsA") || relation.equals("Similar") || relation.equals("RelatedTo")) continue;
-
-            if (!relations.contains(relation)) relations.add(relation);
 
             List<String> terms = relatedTerms.get(relation);
             for (String term : terms) {

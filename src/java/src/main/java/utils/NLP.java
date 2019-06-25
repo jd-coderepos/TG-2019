@@ -55,4 +55,23 @@ public class NLP {
         }
     }
 
+    public static Map<String, Map<String, List<String>>> pairedRelatedWords = new HashMap<>();
+
+    public static void setPairedRelatedWords(List<String[]> lines) {
+        for (String[] line : lines) {
+            if (line.length == 1 || line[0].equals(line[1])) continue;
+
+            List<String> relations = new ArrayList<>();
+            for (int i = 2; i < line.length; i++) {
+                if (line[i].equals("RelatedTo")) continue;
+
+                relations.add(line[i]);
+            }
+
+            Map<String, List<String>> relatedWords = pairedRelatedWords.get(line[0]);
+            if (relatedWords == null) pairedRelatedWords.put(line[0], relatedWords = new HashMap<>());
+            relatedWords.put(line[1], relations);
+        }
+    }
+
 }

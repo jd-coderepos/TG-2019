@@ -5,6 +5,6 @@ package ling;
  */
 public class RelatedPairs {
 
-    
+
 
 }

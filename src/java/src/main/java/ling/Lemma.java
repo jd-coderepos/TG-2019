@@ -30,11 +30,15 @@ public class Lemma extends Features {
         return end6;
     }
 
-    public List<String> uniqueLemmas = new ArrayList<>();
+    List<String> uniqueLemmas = new ArrayList<>();
 
     @Override
     public void setUniFeatures(Token token) {
         if (!uniqueLemmas.contains(token.getLemma())) uniqueLemmas.add(token.getLemma());
+    }
+
+    public void setFeatureIndexes() {
+
     }
 
     @Override

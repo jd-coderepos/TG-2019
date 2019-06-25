@@ -47,6 +47,9 @@ public class TableStore extends Features {
     }
 
     public String toSVMRankString(String source) {
+
+        //System.out.println("Fetching Tablestore String");
+
         return Utils.getFeature(start, tablestore, source, end1);
     }
 

@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45865c0a-ca09-40d6-91f1-909d5af1b1e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/Affix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/ConceptNet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/ConceptNetIsA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/ConceptNetRelatedTo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/ConceptNetRelatedWordCloud.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/ConceptNetRelations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/ConceptNetSimilar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/ConceptNetSynonyms.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/RelatedPairs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/dev-lemma-con-dep-rel-v2.zip.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/train-500-lemma-con-dep-rel-v2.zip.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../conceptnet/query-concepts.py" beforeDir="false" afterPath="$PROJECT_DIR$/../conceptnet/query-concepts.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ling/LemmaTestArr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" afterDir="false" />
@@ -22,18 +12,28 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ling/Affix.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ling/Affix.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ling/ConceptNetRelatedWordCloud.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ling/ConceptNetRelatedWordCloud.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ling/ConceptNetRelations.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ling/Concepts.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ling/Concepts.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ling/Lemma.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ling/Lemma.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ling/TableStore.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ling/TableStore.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/ling/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ling/Utils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/markup/QA.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/markup/QA.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/main/Train.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/main/Train.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/markup/Sentence.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/markup/Sentence.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/markup/Token.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/markup/Token.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/utils/NLP.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/utils/NLP.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ling/Affix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ling/Affix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ling/ConceptNetRelatedWordCloud.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ling/ConceptNetRelatedWordCloud.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ling/ConceptNetRelations.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ling/Concepts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ling/Concepts.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ling/Lemma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ling/Lemma.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ling/RelatedPairs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ling/RelatedPairs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ling/TableStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ling/TableStore.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ling/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ling/Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/markup/QA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/markup/QA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/Train.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Train.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/markup/Sentence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/markup/Sentence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/markup/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/markup/Token.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/utils/NLP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/NLP.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -77,11 +77,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/main/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="152" selection-start-line="152" selection-end-line="152" />
+            <state relative-caret-position="865">
+              <caret line="192" column="53" selection-start-line="192" selection-start-column="53" selection-end-line="192" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#Main#0;class#Main#0" />
                 <element signature="e#1466#1467#0" expanded="true" />
                 <element signature="e#1494#1495#0" expanded="true" />
                 <element signature="e#1931#1932#0" expanded="true" />
@@ -92,8 +91,6 @@
                 <element signature="e#2097#2098#0" expanded="true" />
                 <element signature="e#2144#2145#0" expanded="true" />
                 <element signature="e#2174#2175#0" expanded="true" />
-                <element signature="e#2219#2220#0" expanded="true" />
-                <element signature="e#2247#2248#0" expanded="true" />
                 <element signature="e#2297#2298#0" expanded="true" />
                 <element signature="e#2323#2324#0" expanded="true" />
               </folding>
@@ -101,11 +98,38 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ling/RelatedPairs.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ling/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+            <state relative-caret-position="148">
+              <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ling/Lemma.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="445">
+              <caret line="54" column="5" lean-forward="true" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ling/LemmaTestArr.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -113,8 +137,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ling/Affix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="207">
+              <caret line="68" column="10" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -125,28 +149,28 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/markup/Sentence.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-86">
-              <caret line="104" column="18" selection-start-line="104" selection-start-column="18" selection-end-line="104" selection-end-column="18" />
+            <state relative-caret-position="-964">
+              <caret line="161" lean-forward="true" selection-start-line="161" selection-end-line="161" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#Sentence#0;class#Sentence#0" />
-                <element signature="e#8132#8133#0" expanded="true" />
-                <element signature="e#8200#8201#0" expanded="true" />
-                <element signature="e#8270#8271#0" expanded="true" />
-                <element signature="e#8342#8343#0" expanded="true" />
-                <element signature="e#8426#8427#0" expanded="true" />
-                <element signature="e#8504#8505#0" expanded="true" />
-                <element signature="e#8588#8589#0" expanded="true" />
-                <element signature="e#8662#8663#0" expanded="true" />
-                <element signature="e#8746#8747#0" expanded="true" />
-                <element signature="e#8822#8823#0" expanded="true" />
-                <element signature="e#8908#8909#0" expanded="true" />
-                <element signature="e#8984#8985#0" expanded="true" />
-                <element signature="e#9062#9063#0" expanded="true" />
-                <element signature="e#9136#9137#0" expanded="true" />
-                <element signature="e#9212#9213#0" expanded="true" />
-                <element signature="e#9286#9287#0" expanded="true" />
-                <element signature="e#9362#9363#0" expanded="true" />
+                <element signature="e#8116#8117#0" expanded="true" />
+                <element signature="e#8184#8185#0" expanded="true" />
+                <element signature="e#8254#8255#0" expanded="true" />
+                <element signature="e#8326#8327#0" expanded="true" />
+                <element signature="e#8410#8411#0" expanded="true" />
+                <element signature="e#8488#8489#0" expanded="true" />
+                <element signature="e#8572#8573#0" expanded="true" />
+                <element signature="e#8646#8647#0" expanded="true" />
+                <element signature="e#8730#8731#0" expanded="true" />
+                <element signature="e#8806#8807#0" expanded="true" />
+                <element signature="e#8892#8893#0" expanded="true" />
+                <element signature="e#8968#8969#0" expanded="true" />
+                <element signature="e#9046#9047#0" expanded="true" />
+                <element signature="e#9120#9121#0" expanded="true" />
+                <element signature="e#9196#9197#0" expanded="true" />
+                <element signature="e#9270#9271#0" expanded="true" />
+                <element signature="e#9346#9347#0" expanded="true" />
                 <element signature="e#8585#8586#0" expanded="true" />
                 <element signature="e#8616#8617#0" expanded="true" />
                 <element signature="e#8652#8653#0" expanded="true" />
@@ -169,13 +193,18 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/markup/Token.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/markup/Explanation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="93" selection-start-line="93" selection-end-line="93" />
+            <state relative-caret-position="122">
+              <caret line="27" column="35" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#setDepRel#0;class#Token#0" />
+                <element signature="e#706#707#0" expanded="true" />
+                <element signature="e#731#732#0" expanded="true" />
+                <element signature="e#768#769#0" expanded="true" />
+                <element signature="e#799#800#0" expanded="true" />
+                <element signature="e#832#833#0" expanded="true" />
+                <element signature="e#861#862#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -216,33 +245,34 @@
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/Train.java" />
         <option value="$PROJECT_DIR$/src/main/java/ling/PosTags.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ling/Concepts.java" />
         <option value="$PROJECT_DIR$/src/main/java/ling/AbstractConcepts.java" />
         <option value="$PROJECT_DIR$/src/main/java/ling/FocusConcepts.java" />
         <option value="$PROJECT_DIR$/src/main/java/ling/ConcreteConcepts.java" />
         <option value="$PROJECT_DIR$/src/main/java/ling/Features.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ling/TableStore.java" />
-        <option value="$PROJECT_DIR$/src/main/java/main/Train.java" />
         <option value="$PROJECT_DIR$/src/main/java/markup/Explanation.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/Dev.java" />
         <option value="$PROJECT_DIR$/src/main/java/ling/OpenIERel.java" />
         <option value="$PROJECT_DIR$/src/main/java/ling/Dependencies.java" />
-        <option value="$PROJECT_DIR$/src/main/java/utils/NLP.java" />
         <option value="$PROJECT_DIR$/src/main/java/markup/QA.java" />
         <option value="$PROJECT_DIR$/src/main/java/ling/ConceptNetSynonyms.java" />
         <option value="$PROJECT_DIR$/src/main/java/ling/ConceptNetIsA.java" />
         <option value="$PROJECT_DIR$/src/main/java/ling/ConceptNetSimilar.java" />
         <option value="$PROJECT_DIR$/src/main/java/ling/ConceptNetRelatedTo.java" />
         <option value="$PROJECT_DIR$/src/main/java/ling/ConceptNetRelations.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ling/ConceptNetRelatedWordCloud.java" />
         <option value="$PROJECT_DIR$/src/main/java/ling/ConceptNet.java" />
         <option value="$PROJECT_DIR$/src/main/java/markup/Token.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ling/Lemma.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ling/RelatedPairs.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/NLP.java" />
         <option value="$PROJECT_DIR$/src/main/java/ling/Affix.java" />
-        <option value="$PROJECT_DIR$/src/main/java/main/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ling/TableStore.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ling/Concepts.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main/Train.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ling/ConceptNetRelatedWordCloud.java" />
         <option value="$PROJECT_DIR$/src/main/java/ling/Utils.java" />
         <option value="$PROJECT_DIR$/src/main/java/markup/Sentence.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ling/RelatedPairs.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ling/Lemma.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ling/LemmaTestArr.java" />
       </list>
     </option>
   </component>
@@ -253,10 +283,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="543" />
-    <option name="y" value="52" />
+    <option name="x" value="2140" />
+    <option name="y" value="84" />
     <option name="width" value="1298" />
-    <option name="height" value="1028" />
+    <option name="height" value="1027" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -315,6 +345,14 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="markup" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="explanationgen.svmrankfeatures" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -391,10 +429,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="362" y="35" width="865" height="685" extended-state="0" />
+    <frame x="2140" y="84" width="1298" height="1027" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2503098" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20516963" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -403,7 +441,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.2954955" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.29787233" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2996454" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -566,20 +604,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ling/Concepts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#163#164#0" expanded="true" />
-            <element signature="e#187#188#0" expanded="true" />
-            <element signature="e#226#227#0" expanded="true" />
-            <element signature="e#250#251#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ling/FocusConcepts.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="479">
@@ -624,17 +648,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ling/TableStore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="44" column="11" selection-start-line="44" selection-start-column="11" selection-end-line="44" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#setUniFeatures#0;class#TableStore#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main/Dev.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="282">
@@ -656,56 +669,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/Train.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#writeSelectedInstances#0;class#Train#0" />
-            <element signature="method#writeOutput#0;class#Train#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/markup/Explanation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="24" column="52" lean-forward="true" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#706#707#0" expanded="true" />
-            <element signature="e#731#732#0" expanded="true" />
-            <element signature="e#768#769#0" expanded="true" />
-            <element signature="e#799#800#0" expanded="true" />
-            <element signature="e#832#833#0" expanded="true" />
-            <element signature="e#861#862#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/markup/QA.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="32" column="84" selection-start-line="32" selection-start-column="84" selection-end-line="32" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ling/OpenIERel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="145" selection-start-line="145" selection-end-line="145" selection-end-column="200" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#setUniFeatures#0;class#OpenIERel#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/NLP.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="44" column="45" selection-start-line="44" selection-start-column="45" selection-end-line="44" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -729,26 +696,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ling/ConceptNetRelations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="17" selection-start-line="17" selection-end-line="65" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ling/ConceptNetRelatedWordCloud.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ling/ConceptNetSynonyms.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-283">
@@ -766,26 +713,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ling/ConceptNetIsA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ling/Lemma.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ling/ConceptNet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
@@ -797,30 +724,187 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ling/RelatedPairs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/markup/Token.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="32" column="17" lean-forward="true" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#setDepRel#0;class#Token#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ling/Concepts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="62" column="10" selection-start-line="62" selection-start-column="10" selection-end-line="62" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/Train.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-185">
+          <caret line="102" column="14" selection-start-line="102" selection-start-column="14" selection-end-line="102" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#writeSelectedInstances#0;class#Train#0" />
+            <element signature="method#writeOutput#0;class#Train#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/NLP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1210">
+          <caret line="74" column="5" lean-forward="true" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ling/TableStore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="50" column="10" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#setUniFeatures#0;class#TableStore#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ling/OpenIERel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="141" column="74" selection-start-line="141" selection-start-column="74" selection-end-line="141" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#setUniFeatures#0;class#OpenIERel#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ling/Affix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="68" column="10" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ling/ConceptNetRelatedWordCloud.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="43" column="25" lean-forward="true" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ling/ConceptNetIsA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-61">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ling/ConceptNetRelations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="517">
+          <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="865">
+          <caret line="192" column="53" selection-start-line="192" selection-start-column="53" selection-end-line="192" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1466#1467#0" expanded="true" />
+            <element signature="e#1494#1495#0" expanded="true" />
+            <element signature="e#1931#1932#0" expanded="true" />
+            <element signature="e#1959#1960#0" expanded="true" />
+            <element signature="e#1998#1999#0" expanded="true" />
+            <element signature="e#2026#2027#0" expanded="true" />
+            <element signature="e#2069#2070#0" expanded="true" />
+            <element signature="e#2097#2098#0" expanded="true" />
+            <element signature="e#2144#2145#0" expanded="true" />
+            <element signature="e#2174#2175#0" expanded="true" />
+            <element signature="e#2297#2298#0" expanded="true" />
+            <element signature="e#2323#2324#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ling/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/markup/Explanation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="27" column="35" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#706#707#0" expanded="true" />
+            <element signature="e#731#732#0" expanded="true" />
+            <element signature="e#768#769#0" expanded="true" />
+            <element signature="e#799#800#0" expanded="true" />
+            <element signature="e#832#833#0" expanded="true" />
+            <element signature="e#861#862#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/markup/Sentence.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-86">
-          <caret line="104" column="18" selection-start-line="104" selection-start-column="18" selection-end-line="104" selection-end-column="18" />
+        <state relative-caret-position="-964">
+          <caret line="161" lean-forward="true" selection-start-line="161" selection-end-line="161" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#Sentence#0;class#Sentence#0" />
-            <element signature="e#8132#8133#0" expanded="true" />
-            <element signature="e#8200#8201#0" expanded="true" />
-            <element signature="e#8270#8271#0" expanded="true" />
-            <element signature="e#8342#8343#0" expanded="true" />
-            <element signature="e#8426#8427#0" expanded="true" />
-            <element signature="e#8504#8505#0" expanded="true" />
-            <element signature="e#8588#8589#0" expanded="true" />
-            <element signature="e#8662#8663#0" expanded="true" />
-            <element signature="e#8746#8747#0" expanded="true" />
-            <element signature="e#8822#8823#0" expanded="true" />
-            <element signature="e#8908#8909#0" expanded="true" />
-            <element signature="e#8984#8985#0" expanded="true" />
-            <element signature="e#9062#9063#0" expanded="true" />
-            <element signature="e#9136#9137#0" expanded="true" />
-            <element signature="e#9212#9213#0" expanded="true" />
-            <element signature="e#9286#9287#0" expanded="true" />
-            <element signature="e#9362#9363#0" expanded="true" />
+            <element signature="e#8116#8117#0" expanded="true" />
+            <element signature="e#8184#8185#0" expanded="true" />
+            <element signature="e#8254#8255#0" expanded="true" />
+            <element signature="e#8326#8327#0" expanded="true" />
+            <element signature="e#8410#8411#0" expanded="true" />
+            <element signature="e#8488#8489#0" expanded="true" />
+            <element signature="e#8572#8573#0" expanded="true" />
+            <element signature="e#8646#8647#0" expanded="true" />
+            <element signature="e#8730#8731#0" expanded="true" />
+            <element signature="e#8806#8807#0" expanded="true" />
+            <element signature="e#8892#8893#0" expanded="true" />
+            <element signature="e#8968#8969#0" expanded="true" />
+            <element signature="e#9046#9047#0" expanded="true" />
+            <element signature="e#9120#9121#0" expanded="true" />
+            <element signature="e#9196#9197#0" expanded="true" />
+            <element signature="e#9270#9271#0" expanded="true" />
+            <element signature="e#9346#9347#0" expanded="true" />
             <element signature="e#8585#8586#0" expanded="true" />
             <element signature="e#8616#8617#0" expanded="true" />
             <element signature="e#8652#8653#0" expanded="true" />
@@ -841,66 +925,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/markup/Token.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ling/Lemma.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="93" selection-start-line="93" selection-end-line="93" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#setDepRel#0;class#Token#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ling/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="69" column="39" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
+        <state relative-caret-position="445">
+          <caret line="54" column="5" lean-forward="true" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ling/Affix.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ling/LemmaTestArr.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="612">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="152" selection-start-line="152" selection-end-line="152" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Main#0;class#Main#0" />
-            <element signature="e#1466#1467#0" expanded="true" />
-            <element signature="e#1494#1495#0" expanded="true" />
-            <element signature="e#1931#1932#0" expanded="true" />
-            <element signature="e#1959#1960#0" expanded="true" />
-            <element signature="e#1998#1999#0" expanded="true" />
-            <element signature="e#2026#2027#0" expanded="true" />
-            <element signature="e#2069#2070#0" expanded="true" />
-            <element signature="e#2097#2098#0" expanded="true" />
-            <element signature="e#2144#2145#0" expanded="true" />
-            <element signature="e#2174#2175#0" expanded="true" />
-            <element signature="e#2219#2220#0" expanded="true" />
-            <element signature="e#2247#2248#0" expanded="true" />
-            <element signature="e#2297#2298#0" expanded="true" />
-            <element signature="e#2323#2324#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ling/RelatedPairs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
         </state>
       </provider>
     </entry>

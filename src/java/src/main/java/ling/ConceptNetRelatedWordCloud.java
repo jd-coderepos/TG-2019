@@ -40,7 +40,7 @@ public class ConceptNetRelatedWordCloud extends Features {
         if (relatedTerms == null) return;
         //Synonym
         for (String relation : relatedTerms.keySet()) {
-            if (relation.equals("Synonym") || relation.equals("IsA") || relation.equals("Similar") || relation.equals("RelatedTo"))
+            if (relation.equals("Synonym") || relation.equals("Similar") || relation.equals("RelatedTo"))
                 continue;
 
             List<String> terms = relatedTerms.get(relation);

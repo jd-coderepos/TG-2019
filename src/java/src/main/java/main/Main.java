@@ -32,7 +32,6 @@ public class Main {
     ConceptNetIsA cnisa;
     ConceptNetSimilar cnsim;
     ConceptNetRelatedTo cnrelto;
-    ConceptNetRelations cnrel;
     ConceptNetRelatedWordCloud rwc;
 
     public Main() {
@@ -54,7 +53,6 @@ public class Main {
         cnisa = new ConceptNetIsA();
         cnsim = new ConceptNetSimilar();
         cnrelto = new ConceptNetRelatedTo();
-        cnrel = new ConceptNetRelations();
         rwc = new ConceptNetRelatedWordCloud();
     }
 
@@ -118,10 +116,6 @@ public class Main {
         return cnrelto;
     }
 
-    public ConceptNetRelations getCnrel() {
-        return cnrel;
-    }
-
     public ConceptNetRelatedWordCloud getRwc() {
         return rwc;
     }
@@ -154,15 +148,13 @@ public class Main {
         con.setFeatureSizes(affix.getLastSize());
         //pt.setFeatureSizes(con.getLastSize());
         //dep.setFeatureSizes(con.getLastSize());
-        //openRel.setFeatureSizes(con.getLastSize());
+        openRel.setFeatureSizes(con.getLastSize());
         //cn.setFeatureSizes(openRel.getLastSize());
 
-        //cnsyn.setFeatureSizes(openRel.getLastSize());
-        //cnisa.setFeatureSizes(openRel.getLastSize());
-        //cnsim.setFeatureSizes(openRel.getLastSize());
-        //cnrelto.setFeatureSizes(cnsim.getLastSize());
-        //cnrel.setFeatureSizes(openRel.getLastSize());
-        //rwc.setFeatureSizes(openRel.getLastSize());
+        cnsyn.setFeatureSizes(openRel.getLastSize());
+        cnsim.setFeatureSizes(cnsyn.getLastSize());
+        cnrelto.setFeatureSizes(cnsim.getLastSize());
+        rwc.setFeatureSizes(cnrelto.getLastSize());
 
         System.out.println("Done generating training features!");
 
@@ -174,11 +166,11 @@ public class Main {
         //train.writeOutput(new FileOutputStream(data_dir+"\\"+output_file));
 
         train.setNegAnn(IO.readCSV(data_dir+"\\"+id_file, '\t', 0));
-        train.generateNegativeQAExpl(numNeg);
+        //train.generateNegativeQAExpl(numNeg);
         train.writePosAndNegSelectInstances(new FileOutputStream(data_dir+"\\"+output_file),
                 /*new FileOutputStream(data_dir+"\\"+id_file)*/null);
 
-        System.out.println("Done writing training data!");
+        //System.out.println("Done writing training data!");
         /*Select s = new Select();
         String heu_data = "Elem-main.Train-Expl-heu1.csv";
         String heu_output_file = "train_heu1.dat";
@@ -192,12 +184,12 @@ public class Main {
 
         NLP.setStopwords(IO.readFile(data_dir+"\\resources\\stopwords", StandardCharsets.UTF_8).split("\\n"));
         NLP.setConcepts(IO.readCSV(data_dir+"\\resources\\concepts.txt", '\t', 0));
-        //NLP.setConceptRelations(IO.readCSV(data_dir+"\\resources\\conceptnet\\wordlemmatriples.txt", '\t', 0));
-        //NLP.setConceptRelations(IO.readCSV(data_dir+"\\resources\\conceptnet\\wordtriples.txt", '\t', 0));
+        NLP.setConceptRelations(IO.readCSV(data_dir+"\\resources\\conceptnet\\wordtriples.txt", '\t', 0));
+        //NLP.setPairedRelatedWords(IO.readCSV(data_dir+"\\resources\\conceptnet\\wordpairs-relations.txt", '\t', 0));
 
         Main main = new Main();
         //String feat_grp = "lemma-con-dep-rel-v2-cn";
-        String feat_grp = "lemma-affix-con";
+        String feat_grp = "lemma-affix-con-rel-cnsyn-sim-relTo-rwc";
         main.initTrainSetup(data_dir, 500, feat_grp);
         main.initDevSetup(data_dir, feat_grp);
     }

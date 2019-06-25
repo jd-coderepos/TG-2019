@@ -16,17 +16,15 @@ public class Utils {
         return main.getLemma().toSVMRankString(q, a, expl)+" "+
                 main.getTs().toSVMRankString(source)+" "+
                 main.getAffix().toSVMRankString(q, a, expl)+" "+
-                main.getCon().toSVMRankString(q, a, expl);//+" "+
+                main.getCon().toSVMRankString(q, a, expl)+" "+
                 //main.getPosTags().toSVMRankString(q, a, expl);
                 //main.getDep().toSVMRankString(q, a, expl)+" "+
-                //main.getOpenRel().toSVMRankString(q, a, expl)+" "+
+                main.getOpenRel().toSVMRankString(q, a, expl)+" "+
                 //main.getConceptNet().toSVMRankString(q, a, expl)+" "+
-                //main.getCnsyn().toSVMRankString(q, a, expl);
-                //main.getCnisa().toSVMRankString(q, a, expl);
-                //main.getCnsim().toSVMRankString(q, a, expl)+" "+
-                //main.getCnrelto().toSVMRankString(q, a, expl);
-                //main.getCnrel().toSVMRankString(q, a, expl);
-                //main.getRwc().toSVMRankString(q, a, expl);
+                main.getCnsyn().toSVMRankString(q, a, expl)+" "+
+                main.getCnsim().toSVMRankString(q, a, expl)+" "+
+                main.getCnrelto().toSVMRankString(q, a, expl)+" "+
+                main.getRwc().toSVMRankString(q, a, expl);
     }
 
     public static String getFeature(int start, List<String> globalfeatures, List<String> localfeatures, int end) {
