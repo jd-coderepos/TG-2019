@@ -16,13 +16,10 @@ public class Sentence {
     List<String> words;
 
     List<String> lemmas;
-    List<Integer> lemmaIndexes;
 
     List<String> posTags;
     List<String> concepts;
-    List<String> abstractLemmas;
-    List<String> focusLemmas;
-    List<String> concreteLemmas;
+
     List<String> inDepRels;
     List<String> inlemmaDepRels;
     List<String> outDepRels;
@@ -38,26 +35,17 @@ public class Sentence {
     List<String> rel_words;
     List<String> rel_lemmas;
 
-    List<String> cn_relations;
-
-    List<String> synonyms;
-    List<String> similar;
-    List<String> relatedTo;
-
-    List<String> relatedWordCloud;
+    List<String> cn_lemmarelations;
 
     public Sentence() {
         tokens = new ArrayList<>();
         words = new ArrayList<>();
 
         lemmas = new ArrayList<>();
-        lemmaIndexes = new ArrayList<>();
 
         posTags = new ArrayList<>();
         concepts = new ArrayList<>();
-        abstractLemmas = new ArrayList<>();
-        focusLemmas = new ArrayList<>();
-        concreteLemmas = new ArrayList<>();
+
         inDepRels = new ArrayList<>();
         inlemmaDepRels = new ArrayList<>();
         outDepRels = new ArrayList<>();
@@ -73,13 +61,7 @@ public class Sentence {
         rel_words = new ArrayList<>();
         rel_lemmas = new ArrayList<>();
 
-        cn_relations = new ArrayList<>();
-
-        synonyms = new ArrayList<>();
-        similar = new ArrayList<>();
-        relatedTo = new ArrayList<>();
-
-        relatedWordCloud = new ArrayList<>();
+        cn_lemmarelations = new ArrayList<>();
     }
 
     //set only non-stopword tokens
@@ -103,12 +85,9 @@ public class Sentence {
                 main.getLemma().setUniFeatures(t);
                 main.getAffix().setUniFeatures(t);
                 main.getCon().setUniFeatures(t);
-                //main.getPosTags().setUniFeatures(t);
+                main.getPosTags().setUniFeatures(t);
+                main.getCnrel().setUniFeatures(t);
                 //main.getDep().setUniFeatures(t);
-                //main.getCnsyn().setUniFeatures(t);
-                //main.getCnsim().setUniFeatures(t);
-                //main.getCnrelto().setUniFeatures(t);
-                //main.getRwc().setUniFeatures(t);
             }
         }
     }
@@ -130,16 +109,6 @@ public class Sentence {
             if (!suffix.contains(suff)) suffix.add(suff);
         }
 
-        if (t.getConcretenessLabel().equals("Abstract")) {
-            if (!abstractLemmas.contains(t.getLemma())) abstractLemmas.add(t.getLemma());
-        }
-        else if (t.getConcretenessLabel().equals("Focus")) {
-            if (!focusLemmas.contains(t.getLemma())) focusLemmas.add(t.getLemma());
-        }
-        else if (t.getConcretenessLabel().equals("Concrete")) {
-            if (!concreteLemmas.contains(t.getLemma())) concreteLemmas.add(t.getLemma());
-        }
-
         if (!t.getInDeprel().isEmpty()) {
             for (String inDepRel : t.getInDeprel()) {
                 if (!inDepRels.contains(inDepRel)) inDepRels.add(inDepRel);
@@ -158,37 +127,14 @@ public class Sentence {
             }
         }
 
-        Map<String, List<String>> relatedTerms = NLP.conceptRelations.get(t.word.toLowerCase());
-        //Map<String, List<String>> relatedTerms = NLP.conceptRelations.get(t.lemma.toLowerCase());
+        //Map<String, List<String>> relatedTerms = NLP.conceptRelations.get(t.word.toLowerCase());
+        Map<String, List<String>> relatedTerms = NLP.conceptRelations.get(t.lemma.toLowerCase());
         if (relatedTerms == null) return;
-        //Synonym
-        if (relatedTerms.containsKey("Synonym")) {
-            List<String> terms = relatedTerms.get("Synonym");
-            for (String term : terms) {
-                if (!synonyms.contains(term)) synonyms.add(term);
-            }
-        }
-        //Similar
-        if (relatedTerms.containsKey("Similar")) {
-            List<String> terms = relatedTerms.get("Similar");
-            for (String term : terms) {
-                if (similar.contains(term)) similar.add(term);
-            }
-        }
-        //RelatedTo
-        if (relatedTerms.containsKey("RelatedTo")) {
-            List<String> terms = relatedTerms.get("RelatedTo");
-            for (String term : terms) {
-                if (relatedTo.contains(term)) relatedTo.add(term);
-            }
-        }
 
         for (String relation : relatedTerms.keySet()) {
-            if (relation.equals("Synonym") || relation.equals("IsA") || relation.equals("Similar") || relation.equals("RelatedTo")) continue;
-
             List<String> terms = relatedTerms.get(relation);
             for (String term : terms) {
-                if (!relatedWordCloud.contains(term)) relatedWordCloud.add(term);
+                if (!cn_lemmarelations.contains(relation+"-"+term)) cn_lemmarelations.add(relation+"-"+term);
             }
         }
     }
@@ -235,18 +181,6 @@ public class Sentence {
         return concepts;
     }
 
-    public List<String> getAbstractLemmas() {
-        return abstractLemmas;
-    }
-
-    public List<String> getFocusLemmas() {
-        return focusLemmas;
-    }
-
-    public List<String> getConcreteLemmas() {
-        return concreteLemmas;
-    }
-
     public List<String> getInDepRels() {
         return inDepRels;
     }
@@ -287,24 +221,8 @@ public class Sentence {
         return rel_lemmas;
     }
 
-    public List<String> getSynonyms() {
-        return synonyms;
-    }
-
-    public List<String> getSimilar() {
-        return similar;
-    }
-
-    public List<String> getRelatedTo() {
-        return relatedTo;
-    }
-
-    public List<String> getCNRelations() {
-        return cn_relations;
-    }
-
-    public List<String> getRelatedWordCloud() {
-        return relatedWordCloud;
+    public List<String> getCn_lemmarelations() {
+        return cn_lemmarelations;
     }
 
     public List<String> getPrefix() {

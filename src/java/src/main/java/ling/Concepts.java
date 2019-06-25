@@ -61,9 +61,6 @@ public class Concepts extends Features {
 
     @Override
     public String toSVMRankString(Sentence question, Sentence correctAns, Sentence expl) {
-
-        //System.out.println("Fetching Concepts String");
-
         return getFeature(start, conceptsIndexed, question.getConcepts(), end7) +" "+
                 getFeature(end7, conceptsIndexed, correctAns.getConcepts(), end8) +" "+
                 getFeature(end8, conceptsIndexed, expl.getConcepts(), end9) +" "+

@@ -8,6 +8,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import static ling.Utils.*;
+
 /**
  * @author jld
  */
@@ -68,12 +70,12 @@ public class Lemma extends Features {
         System.out.println(Utils.getFeature(end4, lemmaIndexed, Utils.getCommon(List.copyOf(correctAns.getLemmas()), List.copyOf(expl.getLemmas())), end5));
         System.out.println(Utils.getFeature(end5, lemmaIndexed, Utils.getCommon(Utils.getGroup(List.copyOf(question.getLemmas()), List.copyOf(correctAns.getLemmas())), List.copyOf(expl.getLemmas())), end6));*/
 
-        return Utils.getFeature(start, lemmaIndexed, question.getLemmas(), end1)+" "+
-                Utils.getFeature(end1, lemmaIndexed, correctAns.getLemmas(), end2) +" "+
-                Utils.getFeature(end2, lemmaIndexed, expl.getLemmas(), end3) +" "+
-                Utils.getFeature(end3, lemmaIndexed, Utils.getCommon(List.copyOf(question.getLemmas()), List.copyOf(expl.getLemmas())), end4) + " " +
-                Utils.getFeature(end4, lemmaIndexed, Utils.getCommon(List.copyOf(correctAns.getLemmas()), List.copyOf(expl.getLemmas())), end5) + " " +
-                Utils.getFeature(end5, lemmaIndexed, Utils.getCommon(Utils.getGroup(List.copyOf(question.getLemmas()), List.copyOf(correctAns.getLemmas())), List.copyOf(expl.getLemmas())), end6);
+        return getFeature(start, lemmaIndexed, question.getLemmas(), end1)+" "+
+                getFeature(end1, lemmaIndexed, correctAns.getLemmas(), end2) +" "+
+                getFeature(end2, lemmaIndexed, expl.getLemmas(), end3) +" "+
+                getFeature(end3, lemmaIndexed, getCommon(List.copyOf(question.getLemmas()), List.copyOf(expl.getLemmas())), end4) + " " +
+                getFeature(end4, lemmaIndexed, getCommon(List.copyOf(correctAns.getLemmas()), List.copyOf(expl.getLemmas())), end5) + " " +
+                getFeature(end5, lemmaIndexed, getCommon(getGroup(List.copyOf(question.getLemmas()), List.copyOf(correctAns.getLemmas())), List.copyOf(expl.getLemmas())), end6);
     }
 
 }

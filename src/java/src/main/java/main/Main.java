@@ -25,10 +25,7 @@ public class Main {
     Concepts con;
     OpenIERel openRel;
 
-    ConceptNetSynonyms cnsyn;
-    ConceptNetSimilar cnsim;
-    ConceptNetRelatedTo cnrelto;
-    ConceptNetRelatedWordCloud rwc;
+    ConceptNetRelations cnrel;
 
     public Main() {
         lemma = new Lemma();
@@ -40,13 +37,11 @@ public class Main {
         con = new Concepts();
         openRel = new OpenIERel();
 
-        dep = new Dependencies();
         pt = new PosTags();
 
-        cnsyn = new ConceptNetSynonyms();
-        cnsim = new ConceptNetSimilar();
-        cnrelto = new ConceptNetRelatedTo();
-        rwc = new ConceptNetRelatedWordCloud();
+        dep = new Dependencies();
+
+        cnrel = new ConceptNetRelations();
     }
 
     public Lemma getLemma() {
@@ -77,20 +72,8 @@ public class Main {
         return openRel;
     }
 
-    public ConceptNetSynonyms getCnsyn() {
-        return cnsyn;
-    }
-
-    public ConceptNetSimilar getCnsim() {
-        return cnsim;
-    }
-
-    public ConceptNetRelatedTo getCnrelto() {
-        return cnrelto;
-    }
-
-    public ConceptNetRelatedWordCloud getRwc() {
-        return rwc;
+    public ConceptNetRelations getCnrel() {
+        return cnrel;
     }
 
     public void initDevSetup(String data_dir, String feat_grp) throws IOException {
@@ -119,15 +102,10 @@ public class Main {
         ts.setFeatureSizes(lemma.getLastSize());
         affix.setFeatureSizes(ts.getLastSize());
         con.setFeatureSizes(affix.getLastSize());
-        //pt.setFeatureSizes(con.getLastSize());
         //dep.setFeatureSizes(con.getLastSize());
         openRel.setFeatureSizes(con.getLastSize());
-        //cn.setFeatureSizes(openRel.getLastSize());
-
-        //cnsyn.setFeatureSizes(openRel.getLastSize());
-        //cnsim.setFeatureSizes(cnsyn.getLastSize());
-        //cnrelto.setFeatureSizes(cnsim.getLastSize());
-        //rwc.setFeatureSizes(cnrelto.getLastSize());
+        pt.setFeatureSizes(openRel.getLastSize());
+        cnrel.setFeatureSizes(pt.getLastSize());
 
         System.out.println("Done generating training features!");
 
@@ -152,11 +130,10 @@ public class Main {
 
         NLP.setStopwords(IO.readFile(data_dir+"\\resources\\stopwords", StandardCharsets.UTF_8).split("\\n"));
         NLP.setConcepts(IO.readCSV(data_dir+"\\resources\\concepts.txt", '\t', 0));
-        NLP.setConceptRelations(IO.readCSV(data_dir+"\\resources\\conceptnet\\wordtriples.txt", '\t', 0));
-        NLP.setPairedRelatedWords(IO.readCSV(data_dir+"\\resources\\conceptnet\\wordpairs-relations.txt", '\t', 0));
+        NLP.setConceptRelations(IO.readCSV(data_dir+"\\resources\\conceptnet\\wordlemmatriples.txt", '\t', 0));
 
         Main main = new Main();
-        String feat_grp = "lemma-ts-affix-concepts-openIE";
+        String feat_grp = "lemma-ts-affix-concepts-openIE-pt-cnrel";
         main.initTrainSetup(data_dir, 500, feat_grp);
         main.initDevSetup(data_dir, feat_grp);
     }
