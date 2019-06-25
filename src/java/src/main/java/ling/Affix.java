@@ -4,7 +4,9 @@ import markup.Sentence;
 import markup.Token;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import static ling.Utils.*;
 
@@ -25,8 +27,8 @@ public class Affix extends Features {
     int end23;  //Expl suffixes
     int end24;  //Q + A + Expl sufixes
 
-    List<String> prefix = new ArrayList<>();
-    List<String> suffix = new ArrayList<>();
+    Map<String, Integer> prefixIndexed = new HashMap<>();
+    Map<String, Integer> suffixIndexed = new HashMap<>();
 
     @Override
     public int getFirstSize() {
@@ -41,10 +43,12 @@ public class Affix extends Features {
     @Override
     public void setUniFeatures(Token token) {
         for (String pref : token.getPrefix()) {
-            if (!prefix.contains(pref)) prefix.add(pref);
+            if (prefixIndexed.isEmpty()) prefixIndexed.put(pref, 0);
+            else if (!prefixIndexed.containsKey(pref)) prefixIndexed.put(pref, prefixIndexed.size());
         }
         for (String suff : token.getSuffix()) {
-            if (!suffix.contains(suff)) suffix.add(suff);
+            if (suffixIndexed.isEmpty()) suffixIndexed.put(suff, 0);
+            else if (!suffixIndexed.containsKey(suff)) suffixIndexed.put(suff, prefixIndexed.size());
         }
     }
 
@@ -52,15 +56,15 @@ public class Affix extends Features {
     public void setFeatureSizes(int start) {
         this.start = start;
 
-        end11 = start+prefix.size();
-        end12 = end11+prefix.size();
-        end13 = end12+prefix.size();
-        end14 = end13+prefix.size();
+        end11 = start+prefixIndexed.size();
+        end12 = end11+prefixIndexed.size();
+        end13 = end12+prefixIndexed.size();
+        end14 = end13+prefixIndexed.size();
 
-        end21 = end14+suffix.size();
-        end22 = end21+suffix.size();
-        end23 = end22+suffix.size();
-        end24 = end23+suffix.size();
+        end21 = end14+suffixIndexed.size();
+        end22 = end21+suffixIndexed.size();
+        end23 = end22+suffixIndexed.size();
+        end24 = end23+suffixIndexed.size();
     }
 
     @Override
@@ -68,13 +72,13 @@ public class Affix extends Features {
 
         //System.out.println("Fetching Lemma String");
 
-        return getFeature(this.start, prefix, question.getPrefix(), end11) +" "+
-                getFeature(end11, prefix, correctAns.getPrefix(), end12) +" "+
-                getFeature(end12, prefix, expl.getPrefix(), end13) +" "+
-                getFeature(end13, prefix, getCommon(getGroup(List.copyOf(question.getPrefix()), List.copyOf(correctAns.getPrefix())), List.copyOf(expl.getPrefix())), end14) +" "+
-                getFeature(end14, suffix, question.getSuffix(), end21) +" "+
-                getFeature(end21, suffix, correctAns.getSuffix(), end22) +" "+
-                getFeature(end22, suffix, expl.getSuffix(), end23) +" "+
-                getFeature(end23, suffix, getCommon(getGroup(List.copyOf(question.getSuffix()), List.copyOf(correctAns.getSuffix())), List.copyOf(expl.getSuffix())), end24);
+        return getFeature(this.start, prefixIndexed, question.getPrefix(), end11) +" "+
+                getFeature(end11, prefixIndexed, correctAns.getPrefix(), end12) +" "+
+                getFeature(end12, prefixIndexed, expl.getPrefix(), end13) +" "+
+                getFeature(end13, prefixIndexed, getCommon(getGroup(List.copyOf(question.getPrefix()), List.copyOf(correctAns.getPrefix())), List.copyOf(expl.getPrefix())), end14) +" "+
+                getFeature(end14, suffixIndexed, question.getSuffix(), end21) +" "+
+                getFeature(end21, suffixIndexed, correctAns.getSuffix(), end22) +" "+
+                getFeature(end22, suffixIndexed, expl.getSuffix(), end23) +" "+
+                getFeature(end23, suffixIndexed, getCommon(getGroup(List.copyOf(question.getSuffix()), List.copyOf(correctAns.getSuffix())), List.copyOf(expl.getSuffix())), end24);
     }
 }

@@ -14,7 +14,7 @@ public class TableStore extends Features {
     public int start;
     public int end1;
 
-    public List<String> tablestore = new ArrayList<>();
+    List<String> tablestore = new ArrayList<>();
 
     @Override
     public int getFirstSize() {
@@ -47,9 +47,6 @@ public class TableStore extends Features {
     }
 
     public String toSVMRankString(String source) {
-
-        //System.out.println("Fetching Tablestore String");
-
         return Utils.getFeature(start, tablestore, source, end1);
     }
 

@@ -1,6 +1,5 @@
 package markup;
 
-import ling.Lemma;
 import main.Main;
 import utils.NLP;
 
@@ -15,7 +14,10 @@ public class Sentence {
     List<Token> tokens;
 
     List<String> words;
+
     List<String> lemmas;
+    List<Integer> lemmaIndexes;
+
     List<String> posTags;
     List<String> concepts;
     List<String> abstractLemmas;
@@ -36,10 +38,9 @@ public class Sentence {
     List<String> rel_words;
     List<String> rel_lemmas;
 
-    List<String> relations;
+    List<String> cn_relations;
 
     List<String> synonyms;
-    List<String> isA;
     List<String> similar;
     List<String> relatedTo;
 
@@ -48,7 +49,10 @@ public class Sentence {
     public Sentence() {
         tokens = new ArrayList<>();
         words = new ArrayList<>();
+
         lemmas = new ArrayList<>();
+        lemmaIndexes = new ArrayList<>();
+
         posTags = new ArrayList<>();
         concepts = new ArrayList<>();
         abstractLemmas = new ArrayList<>();
@@ -69,12 +73,12 @@ public class Sentence {
         rel_words = new ArrayList<>();
         rel_lemmas = new ArrayList<>();
 
+        cn_relations = new ArrayList<>();
+
         synonyms = new ArrayList<>();
-        isA = new ArrayList<>();
         similar = new ArrayList<>();
         relatedTo = new ArrayList<>();
 
-        relations = new ArrayList<>();
         relatedWordCloud = new ArrayList<>();
     }
 
@@ -101,22 +105,16 @@ public class Sentence {
                 main.getCon().setUniFeatures(t);
                 //main.getPosTags().setUniFeatures(t);
                 //main.getDep().setUniFeatures(t);
-                //main.getConceptNet().setUniFeatures(t);
-                main.getCnsyn().setUniFeatures(t);
-                main.getCnsim().setUniFeatures(t);
-                main.getCnrelto().setUniFeatures(t);
-                main.getRwc().setUniFeatures(t);
+                //main.getCnsyn().setUniFeatures(t);
+                //main.getCnsim().setUniFeatures(t);
+                //main.getCnrelto().setUniFeatures(t);
+                //main.getRwc().setUniFeatures(t);
             }
         }
-        /*for (Token token : tokens) {
-            String word = token.getWord().toLowerCase();
-
-
-
-        }*/
     }
 
     public void setCumulativeValues(Token t){
+        if (!words.contains(t.getWord())) words.add(t.getWord());
         if (!lemmas.contains(t.getLemma())) lemmas.add(t.getLemma());
         if (!posTags.contains(t.getPos())) posTags.add(t.getPos());
         if (t.getConcepts() != null) {
@@ -168,13 +166,6 @@ public class Sentence {
             List<String> terms = relatedTerms.get("Synonym");
             for (String term : terms) {
                 if (!synonyms.contains(term)) synonyms.add(term);
-            }
-        }
-        //IsA
-        if (relatedTerms.containsKey("IsA")) {
-            List<String> terms = relatedTerms.get("IsA");
-            for (String term : terms) {
-                if (!isA.contains(term)) isA.add(term);
             }
         }
         //Similar
@@ -300,10 +291,6 @@ public class Sentence {
         return synonyms;
     }
 
-    public List<String> getIsA() {
-        return isA;
-    }
-
     public List<String> getSimilar() {
         return similar;
     }
@@ -312,8 +299,8 @@ public class Sentence {
         return relatedTo;
     }
 
-    public List<String> getRelations() {
-        return relations;
+    public List<String> getCNRelations() {
+        return cn_relations;
     }
 
     public List<String> getRelatedWordCloud() {

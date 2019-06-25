@@ -3,8 +3,6 @@ package ling;
 import main.Main;
 import markup.Sentence;
 
-import java.io.IOException;
-import java.sql.Timestamp;
 import java.util.*;
 
 /**
@@ -19,12 +17,28 @@ public class Utils {
                 main.getCon().toSVMRankString(q, a, expl)+" "+
                 //main.getPosTags().toSVMRankString(q, a, expl);
                 //main.getDep().toSVMRankString(q, a, expl)+" "+
-                main.getOpenRel().toSVMRankString(q, a, expl)+" "+
+                main.getOpenRel().toSVMRankString(q, a, expl);//+" "+
                 //main.getConceptNet().toSVMRankString(q, a, expl)+" "+
-                main.getCnsyn().toSVMRankString(q, a, expl)+" "+
+                /*main.getCnsyn().toSVMRankString(q, a, expl)+" "+
                 main.getCnsim().toSVMRankString(q, a, expl)+" "+
                 main.getCnrelto().toSVMRankString(q, a, expl)+" "+
-                main.getRwc().toSVMRankString(q, a, expl);
+                main.getRwc().toSVMRankString(q, a, expl);*/
+    }
+
+    public static String getFeature(int start, Map<String, Integer> globalfeatures, List<String> localfeatures, int end) {
+        String featureStr = "";
+        Set<Integer> indexes = new HashSet<>();
+        for (String localfeature : localfeatures) {
+            int index = globalfeatures.containsKey(localfeature) ? globalfeatures.get(localfeature)+1+start : end;
+            indexes.add(index);
+        }
+        List<Integer> list = new ArrayList<>(indexes);
+        Collections.sort(list);
+        for (int index : list) {
+            featureStr += index+":1 ";
+        }
+        //featureStr = featureStr.trim();
+        return featureStr.trim();
     }
 
     public static String getFeature(int start, List<String> globalfeatures, List<String> localfeatures, int end) {
@@ -47,35 +61,18 @@ public class Utils {
     }
 
     public static List<String> getCommon(List<String> terms1, List<String> terms2) {
-        /*Set<String> terms1Set = new HashSet<>(terms1);
-        Set<String> terms2Set = new HashSet<>(terms2);
-        terms2Set.retainAll(terms1Set);
-        return new ArrayList<>(terms2Set);*/
-
         terms1 = new ArrayList<>(terms1);
         terms2 = new ArrayList<>(terms2);
         terms1.retainAll(terms2);
         return terms1;
     }
 
-    /*public static List<String> getCommonList(List<String> terms1, List<String> terms2) {
-        terms1 = new ArrayList<>(terms1);
-        terms2 = new ArrayList<>(terms2);
-        terms1.retainAll(terms2);
-        return terms1;
-    }*/
-
     public static List<String> getGroup(List<String> terms1, List<String> terms2) {
-        /*Set<String> terms1Set = new HashSet<>(terms1);
-        Set<String> terms2Set = new HashSet<>(terms2);
-        terms2Set.addAll(terms1Set);*/
-
         terms1 = new ArrayList<>(terms1);
         terms2 = new ArrayList<>(terms2);
         for (String term : terms2) {
             if (!terms1.contains(term)) terms1.add(term);
         }
-        //return new ArrayList<>(terms2Set);
         return terms1;
     }
 

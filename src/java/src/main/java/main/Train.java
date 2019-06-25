@@ -33,8 +33,6 @@ public class Train {
     public void processExpl(List<String[]> lines) {
         for (String[] line : lines) {
             Explanation obj = new Explanation(line, true, main);
-            //Explanation obj = new Explanation(line[0], line[2]);
-            //obj.setTokens(line[1].split("\\s"), true, main);
             idExpl.put(line[0], obj);
         }
     }
@@ -96,11 +94,8 @@ public class Train {
             Sentence explSent = expl.getSentence();
 
             String featureStr = Utils.getFeatureStr(main, q, a, explSent, expl.getSource()).replaceAll("\\s+", " ");
-
             String outputStr = rank+" qid:"+qid+" "+featureStr;
             output.write((outputStr+"\n").getBytes());
-
-            //System.out.println("written one training instance");
 
             if (idLog != null) idLog.write((qaID+"\t"+explID+"\n").getBytes());
 
@@ -130,6 +125,23 @@ public class Train {
             iterateExplanations(qid, qaID, explIDs, quesSent, ansSent, rank, output, idLog);
 
             qid++;
+        }
+    }
+
+    public void writePosAndNegIDs(FileOutputStream output) throws IOException {
+        for (String qaID : posAnn.keySet()) {
+
+            List<String> explIDs = posAnn.get(qaID);
+            for (String explID : explIDs) {
+                output.write((qaID+"\t"+explID+"\t1\n").getBytes());
+            }
+
+            //negative explanation IDs
+            explIDs = negAnn.get(qaID);
+            for (String explID : explIDs) {
+                output.write((qaID+"\t"+explID+"\t1\n").getBytes());
+            }
+
         }
     }
 
