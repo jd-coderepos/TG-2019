@@ -22,7 +22,7 @@ public class NLP {
         for (String[] line : lines) {
             if (line.length == 1) continue;
 
-            int end = line.length < 11 ? line.length : 11;
+            int end = line.length < 51 ? line.length : 51;
 
             List<String> temp = Arrays.asList(Arrays.copyOfRange(line, 1, end));
             List<String> conceptsList = new ArrayList<>(temp);

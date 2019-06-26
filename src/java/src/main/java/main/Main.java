@@ -21,11 +21,12 @@ public class Main {
     Affix affix;
 
     Dependencies dep;
-    PosTags pt;
     Concepts con;
     OpenIERel openRel;
 
     ConceptNetRelations cnrel;
+
+    ConceptNetRelationsExt cnrelext;
 
     public Main() {
         lemma = new Lemma();
@@ -37,11 +38,11 @@ public class Main {
         con = new Concepts();
         openRel = new OpenIERel();
 
-        pt = new PosTags();
-
         dep = new Dependencies();
 
         cnrel = new ConceptNetRelations();
+
+        cnrelext = new ConceptNetRelationsExt();
     }
 
     public Lemma getLemma() {
@@ -60,10 +61,6 @@ public class Main {
         return dep;
     }
 
-    public PosTags getPosTags() {
-        return pt;
-    }
-
     public Concepts getCon() {
         return con;
     }
@@ -74,6 +71,10 @@ public class Main {
 
     public ConceptNetRelations getCnrel() {
         return cnrel;
+    }
+
+    public ConceptNetRelationsExt getCnrelext() {
+        return cnrelext;
     }
 
     public void initDevSetup(String data_dir, String feat_grp) throws IOException {
@@ -102,10 +103,9 @@ public class Main {
         ts.setFeatureSizes(lemma.getLastSize());
         affix.setFeatureSizes(ts.getLastSize());
         con.setFeatureSizes(affix.getLastSize());
-        //dep.setFeatureSizes(con.getLastSize());
         openRel.setFeatureSizes(con.getLastSize());
-        pt.setFeatureSizes(openRel.getLastSize());
-        cnrel.setFeatureSizes(pt.getLastSize());
+        cnrel.setFeatureSizes(openRel.getLastSize());
+        //cnrelext.setFeatureSizes(con.getLastSize());
 
         System.out.println("Done generating training features!");
 
@@ -130,10 +130,11 @@ public class Main {
 
         NLP.setStopwords(IO.readFile(data_dir+"\\resources\\stopwords", StandardCharsets.UTF_8).split("\\n"));
         NLP.setConcepts(IO.readCSV(data_dir+"\\resources\\concepts.txt", '\t', 0));
-        NLP.setConceptRelations(IO.readCSV(data_dir+"\\resources\\conceptnet\\wordlemmatriples.txt", '\t', 0));
+        NLP.setConceptRelations(IO.readCSV(data_dir+"\\resources\\conceptnet\\wordtriples.txt", '\t', 0));
+        //NLP.setConceptRelations(IO.readCSV(data_dir+"\\resources\\conceptnet\\wordtriplesext.txt", '\t', 0));
 
         Main main = new Main();
-        String feat_grp = "lemma-ts-affix-concepts-openIE-pt-cnrel";
+        String feat_grp = "lemma-ts-affix-concepts-openie-conceptrel";
         main.initTrainSetup(data_dir, 500, feat_grp);
         main.initDevSetup(data_dir, feat_grp);
     }

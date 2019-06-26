@@ -4,6 +4,7 @@ import main.Main;
 import markup.Sentence;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * @author jld
@@ -15,10 +16,9 @@ public class Utils {
                 main.getTs().toSVMRankString(source)+" "+
                 main.getAffix().toSVMRankString(q, a, expl)+" "+
                 main.getCon().toSVMRankString(q, a, expl)+" "+
-                //main.getDep().toSVMRankString(q, a, expl)+" "+
                 main.getOpenRel().toSVMRankString(q, a, expl)+" "+
-                main.getPosTags().toSVMRankString(q, a, expl)+" "+
                 main.getCnrel().toSVMRankString(q, a, expl);
+                //main.getCnrelext().toSVMRankString(q, a, expl);
     }
 
     public static String getFeature(int start, Map<String, Integer> globalfeatures, List<String> localfeatures, int end) {
@@ -34,6 +34,22 @@ public class Utils {
             featureStr += index+":1 ";
         }
         //featureStr = featureStr.trim();
+        return featureStr.trim();
+    }
+
+    public static String getFeature(int start, Map<String, Integer> globalfeatures, Map<String, Integer> localfeatures, int end) {
+        String featureStr = "";
+
+        Map<String, Integer> globalfeaturescopy = new HashMap<>(globalfeatures);
+        globalfeaturescopy.keySet().retainAll(localfeatures.keySet());
+
+        Map<String, Integer> sortedMap = globalfeaturescopy.entrySet().stream()
+                .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new));
+        for (String v : sortedMap.keySet()) {
+            featureStr += sortedMap.get(v)+":1 ";
+        }
+
         return featureStr.trim();
     }
 
@@ -63,12 +79,26 @@ public class Utils {
         return terms1;
     }
 
+    public static Map<String, Integer> getCommon(Map<String, Integer> terms1, Map<String, Integer> terms2) {
+        terms1 = new HashMap<>(terms1);
+        terms2 = new HashMap<>(terms2);
+        terms1.keySet().retainAll(terms2.keySet());
+        return terms1;
+    }
+
     public static List<String> getGroup(List<String> terms1, List<String> terms2) {
         terms1 = new ArrayList<>(terms1);
         terms2 = new ArrayList<>(terms2);
         for (String term : terms2) {
             if (!terms1.contains(term)) terms1.add(term);
         }
+        return terms1;
+    }
+
+    public static Map<String, Integer> getGroup(Map<String, Integer> terms1, Map<String, Integer> terms2) {
+        terms1 = new HashMap<>(terms1);
+        terms2 = new HashMap<>(terms2);
+        terms1.putAll(terms2);
         return terms1;
     }
 

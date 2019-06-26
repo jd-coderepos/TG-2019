@@ -4,6 +4,7 @@ import main.Main;
 import utils.NLP;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -37,6 +38,8 @@ public class Sentence {
 
     List<String> cn_lemmarelations;
 
+    Map<String, Integer> cn_wordrelations;
+
     public Sentence() {
         tokens = new ArrayList<>();
         words = new ArrayList<>();
@@ -62,6 +65,8 @@ public class Sentence {
         rel_lemmas = new ArrayList<>();
 
         cn_lemmarelations = new ArrayList<>();
+
+        cn_wordrelations = new HashMap<>();
     }
 
     //set only non-stopword tokens
@@ -85,8 +90,8 @@ public class Sentence {
                 main.getLemma().setUniFeatures(t);
                 main.getAffix().setUniFeatures(t);
                 main.getCon().setUniFeatures(t);
-                main.getPosTags().setUniFeatures(t);
                 main.getCnrel().setUniFeatures(t);
+                //main.getCnrelext().setUniFeatures(t);
                 //main.getDep().setUniFeatures(t);
             }
         }
@@ -127,16 +132,30 @@ public class Sentence {
             }
         }
 
-        //Map<String, List<String>> relatedTerms = NLP.conceptRelations.get(t.word.toLowerCase());
-        Map<String, List<String>> relatedTerms = NLP.conceptRelations.get(t.lemma.toLowerCase());
-        if (relatedTerms == null) return;
-
-        for (String relation : relatedTerms.keySet()) {
-            List<String> terms = relatedTerms.get(relation);
-            for (String term : terms) {
-                if (!cn_lemmarelations.contains(relation+"-"+term)) cn_lemmarelations.add(relation+"-"+term);
+        Map<String, List<String>> relatedTerms = NLP.conceptRelations.get(t.word.toLowerCase());
+        if (relatedTerms != null) {
+            for (String relation : relatedTerms.keySet()) {
+                List<String> terms = relatedTerms.get(relation);
+                for (String term : terms) {
+                    cn_wordrelations.put(relation + "-" + term, 0);
+                }
             }
         }
+
+        List<String> concepts = t.getConcepts();
+        if (concepts != null) {
+            for (String concept : concepts) {
+                relatedTerms = NLP.conceptRelations.get(concept);
+                if (relatedTerms == null) continue;
+                for (String relation : relatedTerms.keySet()) {
+                    List<String> terms = relatedTerms.get(relation);
+                    for (String term : terms) {
+                        cn_wordrelations.put(relation + "-" + term, 0);
+                    }
+                }
+            }
+        }
+
     }
 
     public void setRelations(String stringRel, boolean train, Main main) {
@@ -231,6 +250,14 @@ public class Sentence {
 
     public List<String> getSuffix() {
         return suffix;
+    }
+
+    public List<String> getWords() {
+        return words;
+    }
+
+    public Map<String, Integer> getCn_wordrelations() {
+        return cn_wordrelations;
     }
 
 }
