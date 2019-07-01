@@ -62,14 +62,6 @@ public class Lemma extends Features {
     }
 
     public String toSVMRankString(Sentence question, Sentence correctAns, Sentence expl) {
-
-        /*System.out.println(Utils.getFeature(start, lemmaIndexed, question.getLemmas(), end1));
-        System.out.println(Utils.getFeature(end1, lemmaIndexed, correctAns.getLemmas(), end2));
-        System.out.println(Utils.getFeature(end2, lemmaIndexed, expl.getLemmas(), end3));
-        System.out.println(Utils.getFeature(end3, lemmaIndexed, Utils.getCommon(List.copyOf(question.getLemmas()), List.copyOf(expl.getLemmas())), end4));
-        System.out.println(Utils.getFeature(end4, lemmaIndexed, Utils.getCommon(List.copyOf(correctAns.getLemmas()), List.copyOf(expl.getLemmas())), end5));
-        System.out.println(Utils.getFeature(end5, lemmaIndexed, Utils.getCommon(Utils.getGroup(List.copyOf(question.getLemmas()), List.copyOf(correctAns.getLemmas())), List.copyOf(expl.getLemmas())), end6));*/
-
         return getFeature(start, lemmaIndexed, question.getLemmas(), end1)+" "+
                 getFeature(end1, lemmaIndexed, correctAns.getLemmas(), end2) +" "+
                 getFeature(end2, lemmaIndexed, expl.getLemmas(), end3) +" "+

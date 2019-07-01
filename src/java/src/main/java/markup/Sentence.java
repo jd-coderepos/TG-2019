@@ -36,9 +36,15 @@ public class Sentence {
     List<String> rel_words;
     List<String> rel_lemmas;
 
-    List<String> cn_lemmarelations;
+    List<String> cn_wordrelations;
 
-    Map<String, Integer> cn_wordrelations;
+    List<String> wikicategories;
+
+    List<String> wikititles;
+
+    List<String> framefills;
+    List<String> framepredicates;
+    List<String> framearguments;
 
     public Sentence() {
         tokens = new ArrayList<>();
@@ -64,9 +70,43 @@ public class Sentence {
         rel_words = new ArrayList<>();
         rel_lemmas = new ArrayList<>();
 
-        cn_lemmarelations = new ArrayList<>();
+        cn_wordrelations = new ArrayList<>();
 
-        cn_wordrelations = new HashMap<>();
+        wikicategories = new ArrayList<>();
+
+        wikititles = new ArrayList<>();
+
+        framefills = new ArrayList<>();
+        framepredicates = new ArrayList<>();
+        framearguments = new ArrayList<>();
+    }
+
+    public void setFrames(String frameStr, boolean train, Main main) {
+        String[] tokens = frameStr.split("\\|\\|");
+
+        /*System.out.println(frameStr);
+        System.out.println(tokens.length);*/
+
+        String[] fills = tokens[0].split("\t");
+        for (String fill : fills) {
+            framefills.add(fill);
+        }
+
+        String[] predicates = tokens[1].split("\t");
+        for (String predicate : predicates) {
+            framepredicates.add(predicate);
+        }
+
+        if (tokens.length > 2) {
+            String[] arguments = tokens[2].split("\t");
+            for (String argument : arguments) {
+                framearguments.add(argument);
+            }
+        }
+
+        if (train) {
+            main.getFrameNet().setUniFeatures(this);
+        }
     }
 
     //set only non-stopword tokens
@@ -83,6 +123,12 @@ public class Sentence {
             if (elements.length == 8) {
                 t.setDepRel(elements[7].split("\\|"), true);
             }
+
+            String word_lowercase = t.word.toLowerCase();
+            t.setCn_wordrelations(word_lowercase);
+            t.setWikicategories(word_lowercase);
+            t.setWikititles(word_lowercase);
+
             tokens.add(t);
             setCumulativeValues(t);
 
@@ -91,15 +137,17 @@ public class Sentence {
                 main.getAffix().setUniFeatures(t);
                 main.getCon().setUniFeatures(t);
                 main.getCnrel().setUniFeatures(t);
-                //main.getCnrelext().setUniFeatures(t);
-                //main.getDep().setUniFeatures(t);
+                main.getWikicat().setUniFeatures(t);
+                main.getWikit().setUniFeatures(t);
             }
         }
     }
 
     public void setCumulativeValues(Token t){
         if (!words.contains(t.getWord())) words.add(t.getWord());
+
         if (!lemmas.contains(t.getLemma())) lemmas.add(t.getLemma());
+
         if (!posTags.contains(t.getPos())) posTags.add(t.getPos());
         if (t.getConcepts() != null) {
             for (String concept : t.getConcepts()) {
@@ -132,27 +180,21 @@ public class Sentence {
             }
         }
 
-        Map<String, List<String>> relatedTerms = NLP.conceptRelations.get(t.word.toLowerCase());
-        if (relatedTerms != null) {
-            for (String relation : relatedTerms.keySet()) {
-                List<String> terms = relatedTerms.get(relation);
-                for (String term : terms) {
-                    cn_wordrelations.put(relation + "-" + term, 0);
-                }
+        if (!t.getCn_wordrelations().isEmpty()) {
+            for (String wordrelation : t.getCn_wordrelations()) {
+                if (!cn_wordrelations.contains(wordrelation)) cn_wordrelations.add(wordrelation);
             }
         }
 
-        List<String> concepts = t.getConcepts();
-        if (concepts != null) {
-            for (String concept : concepts) {
-                relatedTerms = NLP.conceptRelations.get(concept);
-                if (relatedTerms == null) continue;
-                for (String relation : relatedTerms.keySet()) {
-                    List<String> terms = relatedTerms.get(relation);
-                    for (String term : terms) {
-                        cn_wordrelations.put(relation + "-" + term, 0);
-                    }
-                }
+        if (!t.getWikicategories().isEmpty()) {
+            for (String wikicategory : t.getWikicategories()) {
+                if (!wikicategories.contains(wikicategory)) wikicategories.add(wikicategory);
+            }
+        }
+
+        if (!t.getWikititles().isEmpty()) {
+            for (String wikititle : t.getWikititles()) {
+                if (!wikititles.contains(wikititle)) wikititles.add(wikititle);
             }
         }
 
@@ -240,10 +282,6 @@ public class Sentence {
         return rel_lemmas;
     }
 
-    public List<String> getCn_lemmarelations() {
-        return cn_lemmarelations;
-    }
-
     public List<String> getPrefix() {
         return prefix;
     }
@@ -256,8 +294,28 @@ public class Sentence {
         return words;
     }
 
-    public Map<String, Integer> getCn_wordrelations() {
+    public List<String> getCn_wordrelations() {
         return cn_wordrelations;
+    }
+
+    public List<String> getWikicategories() {
+        return wikicategories;
+    }
+
+    public List<String> getWikititles() {
+        return wikititles;
+    }
+
+    public List<String> getFramefills() {
+        return framefills;
+    }
+
+    public List<String> getFramepredicates() {
+        return framepredicates;
+    }
+
+    public List<String> getFramearguments() {
+        return framearguments;
     }
 
 }

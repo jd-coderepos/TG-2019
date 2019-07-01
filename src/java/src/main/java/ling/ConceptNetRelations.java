@@ -17,12 +17,12 @@ public class ConceptNetRelations extends Features {
 
     int start;
 
-    int end11; //Q lemma related words
-    int end21; //A lemma related words
-    int end31; //Expl lemma related words
-    int end41; //Q+A+Expl lemma related words
+    int end11; //Q word related words
+    int end21; //A word related words
+    int end31; //Expl word related words
+    int end41; //Q+A+Expl word related words
 
-    Map<String, Integer> relationLemmaIndexed = new HashMap<>();
+    Map<String, Integer> relationWordIndexed = new HashMap<>();
 
     @Override
     public int getFirstSize() {
@@ -45,8 +45,8 @@ public class ConceptNetRelations extends Features {
 
             for (String term : terms) {
 
-                if (relationLemmaIndexed.isEmpty()) relationLemmaIndexed.put(relation+"-"+term, 0);
-                else if (!relationLemmaIndexed.containsKey(relation+"-"+term)) relationLemmaIndexed.put(relation+"-"+term, relationLemmaIndexed.size());
+                if (relationWordIndexed.isEmpty()) relationWordIndexed.put(relation+"-"+term, 0);
+                else if (!relationWordIndexed.containsKey(relation+"-"+term)) relationWordIndexed.put(relation+"-"+term, relationWordIndexed.size());
 
             }
         }
@@ -55,17 +55,17 @@ public class ConceptNetRelations extends Features {
     @Override
     public void setFeatureSizes(int start) {
         this.start = start;
-        end11 = start+relationLemmaIndexed.size()+1;
-        end21 = end11+relationLemmaIndexed.size()+1;
-        end31 = end21+relationLemmaIndexed.size()+1;
-        end41 = end31+relationLemmaIndexed.size()+1;
+        end11 = start+relationWordIndexed.size()+1;
+        end21 = end11+relationWordIndexed.size()+1;
+        end31 = end21+relationWordIndexed.size()+1;
+        end41 = end31+relationWordIndexed.size()+1;
     }
 
     @Override
     public String toSVMRankString(Sentence question, Sentence correctAns, Sentence expl) {
-        return getFeature(start, relationLemmaIndexed, question.getCn_lemmarelations(), end11) +" "+
-                getFeature(end11, relationLemmaIndexed, correctAns.getCn_lemmarelations(), end21) +" "+
-                getFeature(end21, relationLemmaIndexed, expl.getCn_lemmarelations(), end31) +" "+
-                getFeature(end31, relationLemmaIndexed, getCommon(getGroup(List.copyOf(question.getCn_lemmarelations()), List.copyOf(correctAns.getCn_lemmarelations())), List.copyOf(expl.getCn_lemmarelations())), end41);
+        return getFeature(start, relationWordIndexed, question.getCn_wordrelations(), end11) +" "+
+                getFeature(end11, relationWordIndexed, correctAns.getCn_wordrelations(), end21) +" "+
+                getFeature(end21, relationWordIndexed, expl.getCn_wordrelations(), end31) +" "+
+                getFeature(end31, relationWordIndexed, getCommon(getGroup(List.copyOf(question.getCn_wordrelations()), List.copyOf(correctAns.getCn_wordrelations())), List.copyOf(expl.getCn_wordrelations())), end41);
     }
 }

@@ -1,7 +1,10 @@
 package markup;
 
+import utils.NLP;
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author jld
@@ -21,6 +24,12 @@ public class Token {
     List<String> inDeprel;
     List<String> inLemmaDeprel;
 
+    List<String> cn_wordrelations;
+
+    List<String> wikicategories;
+
+    List<String> wikititles;
+
     public Token(String w, String l, String p, String cl, Double cs, List<String> concepts) {
         this.word = w;
         this.lemma = l;
@@ -37,6 +46,10 @@ public class Token {
         this.outLemmaDeprel = new ArrayList<>();
         this.inDeprel = new ArrayList<>();
         this.inLemmaDeprel = new ArrayList<>();
+
+        cn_wordrelations = new ArrayList<>();
+        wikicategories = new ArrayList<>();
+        wikititles = new ArrayList<>();
     }
 
     public void setDepRel(String[] tokens, boolean out) {
@@ -48,6 +61,36 @@ public class Token {
             else inDeprel.add(rel);
             if (out) outLemmaDeprel.add(l+"-"+rel);
             else inLemmaDeprel.add(l+"-"+rel);
+        }
+    }
+
+    public void setCn_wordrelations(String word) {
+        Map<String, List<String>> relatedTerms = NLP.conceptRelations.get(word);
+        if (relatedTerms != null) {
+            for (String relation : relatedTerms.keySet()) {
+                List<String> terms = relatedTerms.get(relation);
+                for (String term : terms) {
+                    if (!cn_wordrelations.contains(relation + "-" + term)) cn_wordrelations.add(relation + "-" + term);
+                }
+            }
+        }
+    }
+
+    public void setWikicategories(String word) {
+        List<String> categories = NLP.wikiCategories.get(word);
+        if (categories != null) {
+            for (String category : categories) {
+                if (!wikicategories.contains(category)) wikicategories.add(category);
+            }
+        }
+    }
+
+    public void setWikititles(String word) {
+        List<String> titles = NLP.wikiTitles.get(word);
+        if (titles != null) {
+            for (String title : titles) {
+                if (!wikititles.contains(title)) wikititles.add(title);
+            }
         }
     }
 
@@ -117,6 +160,18 @@ public class Token {
 
     public List<String> getSuffix() {
         return suffix;
+    }
+
+    public List<String> getCn_wordrelations() {
+        return cn_wordrelations;
+    }
+
+    public List<String> getWikicategories() {
+        return wikicategories;
+    }
+
+    public List<String> getWikititles() {
+        return wikititles;
     }
 
 }

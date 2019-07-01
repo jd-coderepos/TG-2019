@@ -1,6 +1,8 @@
 package markup;
 
 import main.Main;
+import utils.IO;
+import utils.NLP;
 
 /**
  * @author jld
@@ -12,19 +14,13 @@ public class QA {
     String correctAnsOption;
     Sentence correctAns;
 
-    /*public QA(String[] line, boolean train, Main main) {
-        this.qaID = line[0];
-        //System.out.println(line[0]);
-        this.question = new Sentence();
-        this.question.setTokens(line[1].split("\\s"), train, main);
-        this.correctAnsOption = line[2];
-        this.correctAns = new Sentence();
-        this.correctAns.setTokens(line[getCorrectAns(line)].split("\\s"), train, main);
-    }*/
-
     public QA(String[] line, boolean train, Main main) {
         this.qaID = line[0];
         this.question = new Sentence();
+        if (NLP.frames.containsKey(this.qaID)) {
+            String frameStr = NLP.frames.get(this.qaID);
+            this.question.setFrames(frameStr, train, main);
+        }
         this.question.setTokens(line[1].split("\\s"), train, main);
         this.question.setRelations(line.length > 3 ? line[3] : null, train, main);
 

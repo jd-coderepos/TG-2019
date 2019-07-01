@@ -26,7 +26,11 @@ public class Main {
 
     ConceptNetRelations cnrel;
 
-    ConceptNetRelationsExt cnrelext;
+    WikiCategories wikicat;
+
+    WikiTitles wikit;
+
+    FrameNet frameNet;
 
     public Main() {
         lemma = new Lemma();
@@ -42,7 +46,11 @@ public class Main {
 
         cnrel = new ConceptNetRelations();
 
-        cnrelext = new ConceptNetRelationsExt();
+        wikicat = new WikiCategories();
+
+        wikit = new WikiTitles();
+
+        frameNet = new FrameNet();
     }
 
     public Lemma getLemma() {
@@ -73,8 +81,16 @@ public class Main {
         return cnrel;
     }
 
-    public ConceptNetRelationsExt getCnrelext() {
-        return cnrelext;
+    public WikiCategories getWikicat() {
+        return wikicat;
+    }
+
+    public WikiTitles getWikit() {
+        return wikit;
+    }
+
+    public FrameNet getFrameNet() {
+        return frameNet;
     }
 
     public void initDevSetup(String data_dir, String feat_grp) throws IOException {
@@ -105,7 +121,9 @@ public class Main {
         con.setFeatureSizes(affix.getLastSize());
         openRel.setFeatureSizes(con.getLastSize());
         cnrel.setFeatureSizes(openRel.getLastSize());
-        //cnrelext.setFeatureSizes(con.getLastSize());
+        wikicat.setFeatureSizes(cnrel.getLastSize());
+        wikit.setFeatureSizes(wikicat.getLastSize());
+        frameNet.setFeatureSizes(wikit.getLastSize());
 
         System.out.println("Done generating training features!");
 
@@ -130,11 +148,17 @@ public class Main {
 
         NLP.setStopwords(IO.readFile(data_dir+"\\resources\\stopwords", StandardCharsets.UTF_8).split("\\n"));
         NLP.setConcepts(IO.readCSV(data_dir+"\\resources\\concepts.txt", '\t', 0));
-        NLP.setConceptRelations(IO.readCSV(data_dir+"\\resources\\conceptnet\\wordtriples.txt", '\t', 0));
-        //NLP.setConceptRelations(IO.readCSV(data_dir+"\\resources\\conceptnet\\wordtriplesext.txt", '\t', 0));
+        NLP.setConceptRelations(IO.readCSV(data_dir+"\\resources\\wordtriples.txt", '\t', 0));
+        NLP.setWikiCategories(IO.readCSV(data_dir+"\\resources\\wiki-concept-categories.txt", '\t', 0));
+        NLP.setWikiTitles(IO.readCSV(data_dir+"\\resources\\wiki-concept-search-titles.txt", '\t', 0));
+
+        NLP.setFrames(IO.readFile(data_dir+"\\resources\\framenet\\predicted-args-train.txt", StandardCharsets.UTF_8).split("\\n"));
+        NLP.setFrames(IO.readFile(data_dir+"\\resources\\framenet\\predicted-args-dev.txt", StandardCharsets.UTF_8).split("\\n"));
+        NLP.setFrames(IO.readFile(data_dir+"\\resources\\framenet\\predicted-args-expl.txt", StandardCharsets.UTF_8).split("\\n"));
 
         Main main = new Main();
-        String feat_grp = "lemma-ts-affix-concepts-openie-conceptrel";
+        String feat_grp = "lemma-ts-affix-concepts-openie-conceptrel-wikicategories-wikititles-50-framenet";
+        //String feat_grp = "lemma-ts-affix-concepts-openie-conceptrel-wikicategories-wikititles-50";
         main.initTrainSetup(data_dir, 500, feat_grp);
         main.initDevSetup(data_dir, feat_grp);
     }

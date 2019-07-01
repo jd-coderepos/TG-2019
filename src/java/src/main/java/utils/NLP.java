@@ -55,4 +55,49 @@ public class NLP {
         }
     }
 
+    public static Map<String, List<String>> wikiCategories = new HashMap<>();
+
+    public static void setWikiCategories(List<String[]> lines) {
+        for (String[] line : lines) {
+            if (line.length == 1) continue;
+
+            List<String> temp = Arrays.asList(Arrays.copyOfRange(line, 1, line.length));
+            List<String> categoriesList = new ArrayList<>(temp);
+            if (categoriesList.contains("")) {
+                categoriesList.remove("");
+            }
+
+            wikiCategories.put(line[0], categoriesList);
+        }
+    }
+
+    public static Map<String, List<String>> wikiTitles = new HashMap<>();
+
+    public static void setWikiTitles(List<String[]> lines) {
+        for (String[] line : lines) {
+            if (line.length == 1) continue;
+
+            int end = line.length < 51 ? line.length : 51;
+            //int end = line.length < 101 ? line.length : 101;
+            //int end = line.length < 151 ? line.length : 151;
+
+            wikiTitles.put(line[0], Arrays.asList(Arrays.copyOfRange(line, 1, end)));
+        }
+    }
+
+    public static Map<String, String> frames = new HashMap<>();
+
+    public static void setFrames(String[] lines) {
+        for (String line : lines) {
+            String[] tokens = line.split("\\|\\|");
+            String identifier = tokens[0];
+            //String[] fills = tokens[1].split("\t");
+            //String[] predicates = tokens[2].split("\t");
+            //String[] arguments = tokens[3].split("\t");
+
+            line = line.replace(identifier+"||", "");
+            frames.put(identifier, line);
+        }
+    }
+
 }
