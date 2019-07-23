@@ -2,43 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45865c0a-ca09-40d6-91f1-909d5af1b1e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/Embeddings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/FrameNet1_5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/TAG.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/WordNet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/WordNetCompute.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ling/FrameNet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ling/Lemma.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ling/Lemma.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ling/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ling/Utils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/main/Dev.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/main/Dev.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/main/Train.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/main/Train.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/markup/Explanation.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/markup/Explanation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/markup/QA.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/markup/QA.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/markup/Sentence.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/markup/Sentence.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/markup/Token.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/markup/Token.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/utils/NLP.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/utils/NLP.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ling/FrameNet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ling/FrameNet1_7.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ling/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ling/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/Dev.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Dev.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/Train.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Train.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/markup/Explanation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/markup/Explanation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/markup/QA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/markup/QA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/markup/Sentence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/markup/Sentence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/markup/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/markup/Token.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/NLP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/NLP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ling/Lemma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ling/Lemma.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -78,14 +42,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/main/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="176" column="10" selection-start-line="176" selection-start-column="10" selection-end-line="176" selection-end-column="10" />
+            <state relative-caret-position="1332">
+              <caret line="125" column="25" selection-start-line="125" selection-start-column="25" selection-end-line="125" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#Main#0;class#Main#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ling/Lemma.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -94,7 +69,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/markup/Token.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1445">
+            <state relative-caret-position="-412">
               <caret line="160" selection-start-line="160" selection-end-line="160" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -111,7 +86,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/utils/NLP.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
+            <state relative-caret-position="1989">
               <caret line="119" column="56" selection-start-line="119" selection-start-column="56" selection-end-line="119" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -148,8 +123,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/main/Train.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="99" selection-start-line="99" selection-end-line="99" />
+            <state relative-caret-position="278">
+              <caret line="42" column="14" lean-forward="true" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#processPositiveQAExpl#0;class#Train#0" />
@@ -162,25 +137,25 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ling/Utils.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/markup/QA.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="22" column="66" selection-start-line="22" selection-start-column="66" selection-end-line="22" selection-end-column="66" />
+            <state relative-caret-position="357">
+              <caret line="23" column="27" lean-forward="true" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#getCorrectAns#0;class#QA#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/main/Dev.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/markup/Sentence.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="64" column="54" selection-start-line="64" selection-start-column="54" selection-end-line="64" selection-end-column="54" />
+            <state relative-caret-position="15">
+              <caret line="258" column="23" lean-forward="true" selection-start-line="258" selection-start-column="23" selection-end-line="258" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#Dev#0;class#Dev#0" />
               </folding>
             </state>
           </provider>
@@ -241,7 +216,6 @@
         <option value="$PROJECT_DIR$/src/main/java/ling/WikiTitles.java" />
         <option value="$PROJECT_DIR$/src/main/java/ling/BigramLemma.java" />
         <option value="$PROJECT_DIR$/src/main/java/ling/FrameNet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ling/Lemma.java" />
         <option value="$PROJECT_DIR$/src/main/java/ling/FrameNet1_7.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/ling/WordNetCompute.java" />
@@ -258,6 +232,7 @@
         <option value="$PROJECT_DIR$/src/main/java/main/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/ling/Utils.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/Train.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ling/Lemma.java" />
       </list>
     </option>
   </component>
@@ -281,6 +256,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -342,7 +318,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -444,8 +419,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19482619" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19805983" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -602,28 +578,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/markup/QA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getCorrectAns#0;class#QA#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ling/QAE.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/markup/Sentence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="94" column="37" selection-start-line="94" selection-start-column="37" selection-end-line="94" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ling/WikiTitles.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="867">
@@ -638,16 +593,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
           <caret line="56" column="84" lean-forward="true" selection-start-line="56" selection-start-column="15" selection-end-line="56" selection-end-column="84" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ling/Lemma.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="822">
-          <caret line="63" column="90" selection-start-line="63" selection-start-column="90" selection-end-line="63" selection-end-column="90" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -743,17 +688,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/markup/Token.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/NLP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1445">
-          <caret line="160" selection-start-line="160" selection-end-line="160" />
+        <state relative-caret-position="1989">
+          <caret line="119" column="56" selection-start-line="119" selection-start-column="56" selection-end-line="119" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#732#1654#0" />
-            <element signature="e#1660#2071#0" />
-            <element signature="e#2077#2577#0" />
-            <element signature="e#2583#2890#0" />
-            <element signature="e#2896#3166#0" />
           </folding>
         </state>
       </provider>
@@ -779,19 +719,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/NLP.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="119" column="56" selection-start-line="119" selection-start-column="56" selection-end-line="119" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ling/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
+        <state relative-caret-position="306">
           <caret line="22" column="66" selection-start-line="22" selection-start-column="66" selection-end-line="22" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -799,23 +729,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/Train.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="99" selection-start-line="99" selection-end-line="99" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#processPositiveQAExpl#0;class#Train#0" />
-            <element signature="method#generateNegativeQAExpl#0;class#Train#0" />
-            <element signature="method#writeSelectedInstances#0;class#Train#0" />
-            <element signature="method#writeOutput#0;class#Train#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main/Dev.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
+        <state relative-caret-position="918">
           <caret line="64" column="54" selection-start-line="64" selection-start-column="54" selection-end-line="64" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -826,11 +742,70 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="176" column="10" selection-start-line="176" selection-start-column="10" selection-end-line="176" selection-end-column="10" />
+        <state relative-caret-position="1332">
+          <caret line="125" column="25" selection-start-line="125" selection-start-column="25" selection-end-line="125" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#Main#0;class#Main#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ling/Lemma.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/Train.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="42" column="14" lean-forward="true" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#processPositiveQAExpl#0;class#Train#0" />
+            <element signature="method#generateNegativeQAExpl#0;class#Train#0" />
+            <element signature="method#writeSelectedInstances#0;class#Train#0" />
+            <element signature="method#writeOutput#0;class#Train#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/markup/QA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="23" column="27" lean-forward="true" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getCorrectAns#0;class#QA#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/markup/Token.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-412">
+          <caret line="160" selection-start-line="160" selection-end-line="160" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#732#1654#0" />
+            <element signature="e#1660#2071#0" />
+            <element signature="e#2077#2577#0" />
+            <element signature="e#2583#2890#0" />
+            <element signature="e#2896#3166#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/markup/Sentence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="258" column="23" lean-forward="true" selection-start-line="258" selection-start-column="23" selection-end-line="258" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

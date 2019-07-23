@@ -40,7 +40,6 @@ public class Lemma extends Features {
     public void setUniFeatures(Token token) {
         if (lemmaIndexed.isEmpty()) lemmaIndexed.put(token.getLemma(), 0);
         else if (!lemmaIndexed.containsKey(token.getLemma())) lemmaIndexed.put(token.getLemma(), lemmaIndexed.size());
-        //System.out.println(lemmaIndexed);
     }
 
     public void setFeatureSizes(int s) {
