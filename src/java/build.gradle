@@ -19,4 +19,13 @@ dependencies {
     // https://mvnrepository.com/artifact/com.opencsv/opencsv
     compile group: 'com.opencsv', name: 'opencsv', version: '4.6'
 
+    // https://mvnrepository.com/artifact/net.sf.extjwnl/extjwnl
+    compile group: 'net.sf.extjwnl', name: 'extjwnl', version: '2.0.2'
+
+    // https://mvnrepository.com/artifact/net.sf.extjwnl/extjwnl-data-wn31
+    compile group: 'net.sf.extjwnl', name: 'extjwnl-data-wn31', version: '1.2'
+
+    // https://mvnrepository.com/artifact/net.sf.extjwnl/extjwnl-parent
+    //compile group: 'net.sf.extjwnl', name: 'extjwnl-parent', version: '2.0.2', ext: 'pom'
+
 }

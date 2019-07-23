@@ -42,9 +42,16 @@ public class Sentence {
 
     List<String> wikititles;
 
-    List<String> framefills;
-    List<String> framepredicates;
-    List<String> framearguments;
+    List<String> framefills1_7;
+    List<String> framepredicates1_7;
+    List<String> framearguments1_7;
+
+    List<String> synonyms;
+    List<String> hyponyms;
+    List<String> hypernyms;
+    List<String> meronyms;
+    List<String> holonyms;
+    List<String> antonyms;
 
     public Sentence() {
         tokens = new ArrayList<>();
@@ -76,36 +83,48 @@ public class Sentence {
 
         wikititles = new ArrayList<>();
 
-        framefills = new ArrayList<>();
-        framepredicates = new ArrayList<>();
-        framearguments = new ArrayList<>();
+        framefills1_7 = new ArrayList<>();
+        framepredicates1_7 = new ArrayList<>();
+        framearguments1_7 = new ArrayList<>();
+
+        synonyms = new ArrayList<>();
+        hyponyms = new ArrayList<>();
+        hypernyms = new ArrayList<>();
+        meronyms = new ArrayList<>();
+        holonyms = new ArrayList<>();
+        antonyms = new ArrayList<>();
     }
 
-    public void setFrames(String frameStr, boolean train, Main main) {
-        String[] tokens = frameStr.split("\\|\\|");
+    public void setQAETag(String featStr, boolean train, Main main) {
+        String[] featTokens = featStr.split("\\s");
 
-        /*System.out.println(frameStr);
-        System.out.println(tokens.length);*/
+        if (train) {
+            //main.getTag().setUniFeatures(this);
+        }
+    }
+
+    public void setFrames1_7(String frameStr, boolean train, Main main) {
+        String[] tokens = frameStr.split("\\|\\|");
 
         String[] fills = tokens[0].split("\t");
         for (String fill : fills) {
-            framefills.add(fill);
+            framefills1_7.add(fill);
         }
 
         String[] predicates = tokens[1].split("\t");
         for (String predicate : predicates) {
-            framepredicates.add(predicate);
+            framepredicates1_7.add(predicate);
         }
 
         if (tokens.length > 2) {
             String[] arguments = tokens[2].split("\t");
             for (String argument : arguments) {
-                framearguments.add(argument);
+                framearguments1_7.add(argument);
             }
         }
 
         if (train) {
-            main.getFrameNet().setUniFeatures(this);
+            main.getFrameNet1_7().setUniFeatures(this);
         }
     }
 
@@ -128,6 +147,7 @@ public class Sentence {
             t.setCn_wordrelations(word_lowercase);
             t.setWikicategories(word_lowercase);
             t.setWikititles(word_lowercase);
+            t.setWordNetLinguisticRelations(word_lowercase, t.getPos());
 
             tokens.add(t);
             setCumulativeValues(t);
@@ -139,6 +159,7 @@ public class Sentence {
                 main.getCnrel().setUniFeatures(t);
                 main.getWikicat().setUniFeatures(t);
                 main.getWikit().setUniFeatures(t);
+                main.getWordNet().setUniFeatures(t);
             }
         }
     }
@@ -198,6 +219,41 @@ public class Sentence {
             }
         }
 
+        if (!t.getSynonyms().isEmpty()) {
+            for (String synonym : t.getSynonyms()) {
+                if (!synonyms.contains(synonym)) synonyms.add(synonym);
+            }
+        }
+
+        if (!t.getHyponyms().isEmpty()) {
+            for (String hyponym : t.getHyponyms()) {
+                if (!hyponyms.contains(hyponym)) hyponyms.add(hyponym);
+            }
+        }
+
+        if (!t.getHypernyms().isEmpty()) {
+            for (String hypernym : t.getHypernyms()) {
+                if (!hypernyms.contains(hypernym)) hypernyms.add(hypernym);
+            }
+        }
+
+        if (!t.getMeronyms().isEmpty()) {
+            for (String meronym : t.getMeronyms()) {
+                if (!meronyms.contains(meronym)) meronyms.add(meronym);
+            }
+        }
+
+        if (!t.getHolonyms().isEmpty()) {
+            for (String holonym : t.getHolonyms()) {
+                if (!holonyms.contains(holonym)) holonyms.add(holonym);
+            }
+        }
+
+        if (!t.getAntonyms().isEmpty()) {
+            for (String antonym : t.getAntonyms()) {
+                if (!antonyms.contains(antonym)) antonyms.add(antonym);
+            }
+        }
     }
 
     public void setRelations(String stringRel, boolean train, Main main) {
@@ -306,16 +362,40 @@ public class Sentence {
         return wikititles;
     }
 
-    public List<String> getFramefills() {
-        return framefills;
+    public List<String> getFramefills1_7() {
+        return framefills1_7;
     }
 
-    public List<String> getFramepredicates() {
-        return framepredicates;
+    public List<String> getFramepredicates1_7() {
+        return framepredicates1_7;
     }
 
-    public List<String> getFramearguments() {
-        return framearguments;
+    public List<String> getFramearguments1_7() {
+        return framearguments1_7;
+    }
+
+    public List<String> getSynonyms() {
+        return synonyms;
+    }
+
+    public List<String> getHyponyms() {
+        return hyponyms;
+    }
+
+    public List<String> getHypernyms() {
+        return hypernyms;
+    }
+
+    public List<String> getMeronyms() {
+        return meronyms;
+    }
+
+    public List<String> getHolonyms() {
+        return holonyms;
+    }
+
+    public List<String> getAntonyms() {
+        return antonyms;
     }
 
 }

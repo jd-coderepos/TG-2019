@@ -30,7 +30,11 @@ public class Main {
 
     WikiTitles wikit;
 
-    FrameNet frameNet;
+    FrameNet1_7 frameNet1_7;
+
+    WordNet wn;
+
+    TAG tag;
 
     public Main() {
         lemma = new Lemma();
@@ -50,7 +54,11 @@ public class Main {
 
         wikit = new WikiTitles();
 
-        frameNet = new FrameNet();
+        frameNet1_7 = new FrameNet1_7();
+
+        wn = new WordNet();
+
+        tag = new TAG();
     }
 
     public Lemma getLemma() {
@@ -89,8 +97,16 @@ public class Main {
         return wikit;
     }
 
-    public FrameNet getFrameNet() {
-        return frameNet;
+    public FrameNet1_7 getFrameNet1_7() {
+        return frameNet1_7;
+    }
+
+    public WordNet getWordNet() {
+        return wn;
+    }
+
+    public TAG getTag() {
+        return tag;
     }
 
     public void initDevSetup(String data_dir, String feat_grp) throws IOException {
@@ -123,7 +139,8 @@ public class Main {
         cnrel.setFeatureSizes(openRel.getLastSize());
         wikicat.setFeatureSizes(cnrel.getLastSize());
         wikit.setFeatureSizes(wikicat.getLastSize());
-        frameNet.setFeatureSizes(wikit.getLastSize());
+        frameNet1_7.setFeatureSizes(wikit.getLastSize());
+        //tag.setFeatureSizes(frameNet1_7.getLastSize());
 
         System.out.println("Done generating training features!");
 
@@ -136,7 +153,7 @@ public class Main {
         //train.generateNegativeQAExpl(numNeg);
 
         train.setNegAnn(IO.readCSV(data_dir+"\\"+id_file, '\t', 0));
-        //train.writePosAndNegIDs(new FileOutputStream(data_dir+"\\training_data.txt"));
+        train.writePosAndNegIDs(new FileOutputStream(data_dir+"\\training_data.txt"));
         train.writePosAndNegSelectInstances(new FileOutputStream(data_dir+"\\"+output_file),
                 /*new FileOutputStream(data_dir+"\\"+id_file)*/null);
 
@@ -152,13 +169,14 @@ public class Main {
         NLP.setWikiCategories(IO.readCSV(data_dir+"\\resources\\wiki-concept-categories.txt", '\t', 0));
         NLP.setWikiTitles(IO.readCSV(data_dir+"\\resources\\wiki-concept-search-titles.txt", '\t', 0));
 
-        NLP.setFrames(IO.readFile(data_dir+"\\resources\\framenet\\predicted-args-train.txt", StandardCharsets.UTF_8).split("\\n"));
-        NLP.setFrames(IO.readFile(data_dir+"\\resources\\framenet\\predicted-args-dev.txt", StandardCharsets.UTF_8).split("\\n"));
-        NLP.setFrames(IO.readFile(data_dir+"\\resources\\framenet\\predicted-args-expl.txt", StandardCharsets.UTF_8).split("\\n"));
+        NLP.setFrames1_7(IO.readFile(data_dir+"\\resources\\framenet\\predicted-args-train.txt", StandardCharsets.UTF_8).split("\\n"));
+        NLP.setFrames1_7(IO.readFile(data_dir+"\\resources\\framenet\\predicted-args-dev.txt", StandardCharsets.UTF_8).split("\\n"));
+        NLP.setFrames1_7(IO.readFile(data_dir+"\\resources\\framenet\\predicted-args-expl.txt", StandardCharsets.UTF_8).split("\\n"));
 
         Main main = new Main();
-        String feat_grp = "lemma-ts-affix-concepts-openie-conceptrel-wikicategories-wikititles-50-framenet";
-        //String feat_grp = "lemma-ts-affix-concepts-openie-conceptrel-wikicategories-wikititles-50";
+        //NLP.setTAGFeat(IO.readFile(data_dir+"\\resources\\qae_TAG.txt", StandardCharsets.UTF_8).split("\\n"), main.getTag());
+
+        String feat_grp = "framenet";
         main.initTrainSetup(data_dir, 500, feat_grp);
         main.initDevSetup(data_dir, feat_grp);
     }

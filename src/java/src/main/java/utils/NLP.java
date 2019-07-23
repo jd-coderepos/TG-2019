@@ -1,5 +1,7 @@
 package utils;
 
+import ling.TAG;
+
 import java.util.*;
 
 /**
@@ -85,18 +87,56 @@ public class NLP {
         }
     }
 
-    public static Map<String, String> frames = new HashMap<>();
+    public static Map<String, String> frames1_7 = new HashMap<>();
 
-    public static void setFrames(String[] lines) {
+    public static void setFrames1_7(String[] lines) {
         for (String line : lines) {
             String[] tokens = line.split("\\|\\|");
             String identifier = tokens[0];
-            //String[] fills = tokens[1].split("\t");
-            //String[] predicates = tokens[2].split("\t");
-            //String[] arguments = tokens[3].split("\t");
 
             line = line.replace(identifier+"||", "");
-            frames.put(identifier, line);
+            frames1_7.put(identifier, line);
+        }
+    }
+
+    public static Map<String, Map<Integer, List<String>>> wordLinguisticRelations = new HashMap<>();
+
+    public static void setWordNet(String[] lines) {
+        for (String line : lines) {
+            line = line.trim();
+
+            String[] tokens = line.split("\\|\\|");
+
+            Map<Integer, List<String>> linguisticRelations = new HashMap<>();
+            for (int i = 2; i < tokens.length; i++) {
+                List<String> lingword = Arrays.asList(tokens[i].split("\t"));
+                if (lingword.isEmpty()) continue;
+                linguisticRelations.put(i-1, lingword);
+            }
+            wordLinguisticRelations.put(tokens[0]+"||"+tokens[1], linguisticRelations);
+        }
+    }
+
+    public static Map<String, Map<String, String>> idTAGFeat = new HashMap<>();
+
+    public static void setTAGFeat(String[] lines, TAG tag) {
+        for (String line : lines) {
+            line = line.trim();
+
+            String[] tokens = line.split("\t");
+
+            Map<String, String> tagFeat = idTAGFeat.get(tokens[0]+" "+tokens[1]);
+            if (tagFeat == null) idTAGFeat.put(tokens[0]+" "+tokens[1], tagFeat = new HashMap<>());
+
+            String[] feats = tokens[2].split("\\s");
+            for (String feat : feats) {
+                String v = feat.split(":")[1];
+
+                String name = feat.split(":")[0];
+                tagFeat.put(name, v);
+
+                tag.setUniFeatures(name);
+            }
         }
     }
 

@@ -4,6 +4,7 @@ import ling.Utils;
 import markup.Explanation;
 import markup.QA;
 import markup.Sentence;
+import utils.NLP;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -61,13 +62,15 @@ public class Dev {
             Explanation expl = idExpl.get(explID);
             Sentence explSent = expl.getSentence();
 
-            String featureStr = Utils.getFeatureStr(main, q, a, explSent, expl.getSource()).replaceAll("\\s+", " ");
+            Map<String, String> tagFeatures = NLP.idTAGFeat.get(qaID+" "+explID);
 
-            String outputStr = rank+" qid:"+qid+" "+featureStr;
+            String featureStr = Utils.getFeatureStr(main, q, a, explSent, expl.getSource(), tagFeatures).replaceAll("\\s+", " ");
+
+            String outputStr = qid != -1 ? (rank+" qid:"+qid+" "+featureStr) : (rank+" "+featureStr);
             output.write((outputStr+"\n").getBytes());
             if (idLog != null) idLog.write((qaID+"\t"+explID+"\n").getBytes());
 
-            if(rank != 1) rank--;
+            if(rank >= 1) rank--;
         }
         return rank;
     }
@@ -95,7 +98,7 @@ public class Dev {
                 Explanation expl = idExpl.get(explID);
                 Sentence explSent = expl.getSentence();
 
-                String featureStr = Utils.getFeatureStr(main, quesSent, ansSent, explSent, expl.getSource()).replaceAll("\\s+", " ");
+                String featureStr = Utils.getFeatureStr(main, quesSent, ansSent, explSent, expl.getSource(), null).replaceAll("\\s+", " ");
 
                 String outputStr = rank+" qid:"+qid+" "+featureStr;
                 output.write((outputStr+"\n").getBytes());
@@ -106,5 +109,38 @@ public class Dev {
         }
     }
 
+    public void writeOutput(FileOutputStream data, FileOutputStream query, FileOutputStream idLog) throws IOException {
+        int qid = 1;
+        for (String qaID : posAnn.keySet()) {
+            QA qa = idQa.get(qaID);
+            Sentence quesSent = qa.getQuestion();
+            Sentence ansSent = qa.getCorrectAns();
+
+            List<String> explIDs = posAnn.get(qaID);
+            int rank = explIDs.size();
+            rank = iterateExplanations(-1, qaID, explIDs, quesSent, ansSent, rank, data, idLog);
+
+            int total = explIDs.size();
+
+            for (String explID : idExpl.keySet()) {
+                if (explIDs.contains(explID)) continue;
+
+                total++;
+
+                Explanation expl = idExpl.get(explID);
+                Sentence explSent = expl.getSentence();
+
+                String featureStr = Utils.getFeatureStr(main, quesSent, ansSent, explSent, expl.getSource(), null).replaceAll("\\s+", " ");
+
+                String outputStr = qid != -1 ? ("0 qid:"+qid+" "+featureStr) : ("0 "+featureStr);
+                data.write((outputStr+"\n").getBytes());
+                if (idLog != null) idLog.write((qaID+"\t"+explID+"\n").getBytes());
+            }
+
+            query.write((total+"\n").getBytes());
+
+            qid++;
+        }
+    }
 
 }

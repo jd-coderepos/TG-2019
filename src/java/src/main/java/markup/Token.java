@@ -30,6 +30,13 @@ public class Token {
 
     List<String> wikititles;
 
+    List<String> synonyms;
+    List<String> hyponyms;
+    List<String> hypernyms;
+    List<String> meronyms;
+    List<String> holonyms;
+    List<String> antonyms;
+
     public Token(String w, String l, String p, String cl, Double cs, List<String> concepts) {
         this.word = w;
         this.lemma = l;
@@ -50,6 +57,13 @@ public class Token {
         cn_wordrelations = new ArrayList<>();
         wikicategories = new ArrayList<>();
         wikititles = new ArrayList<>();
+
+        synonyms = new ArrayList<>();
+        hyponyms = new ArrayList<>();
+        hypernyms = new ArrayList<>();
+        meronyms = new ArrayList<>();
+        holonyms = new ArrayList<>();
+        antonyms = new ArrayList<>();
     }
 
     public void setDepRel(String[] tokens, boolean out) {
@@ -92,6 +106,29 @@ public class Token {
                 if (!wikititles.contains(title)) wikititles.add(title);
             }
         }
+    }
+
+    public void setWordNetLinguisticRelations(String word, String pos) {
+        Map<Integer, List<String>> linguisticRelations = NLP.wordLinguisticRelations.get(word+"||"+pos);
+        if (linguisticRelations == null) return;
+        /*if (linguisticRelations.containsKey(1)) {
+            synonyms = linguisticRelations.get(1);
+        }*/
+        if (linguisticRelations.containsKey(2)) {
+            hyponyms = linguisticRelations.get(2);
+        }
+        if (linguisticRelations.containsKey(3)) {
+            hypernyms = linguisticRelations.get(3);
+        }
+        /*if (linguisticRelations.containsKey(4)) {
+            meronyms = linguisticRelations.get(4);
+        }
+        if (linguisticRelations.containsKey(5)) {
+            holonyms = linguisticRelations.get(5);
+        }
+        if (linguisticRelations.containsKey(6)) {
+            antonyms = linguisticRelations.get(6);
+        }*/
     }
 
     public String getWord() {
@@ -172,6 +209,30 @@ public class Token {
 
     public List<String> getWikititles() {
         return wikititles;
+    }
+
+    public List<String> getSynonyms() {
+        return synonyms;
+    }
+
+    public List<String> getHyponyms() {
+        return hyponyms;
+    }
+
+    public List<String> getHypernyms() {
+        return hypernyms;
+    }
+
+    public List<String> getMeronyms() {
+        return meronyms;
+    }
+
+    public List<String> getHolonyms() {
+        return holonyms;
+    }
+
+    public List<String> getAntonyms() {
+        return antonyms;
     }
 
 }

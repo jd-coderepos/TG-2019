@@ -4,6 +4,7 @@ import ling.Utils;
 import markup.Explanation;
 import markup.QA;
 import markup.Sentence;
+import utils.NLP;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -93,13 +94,18 @@ public class Train {
             Explanation expl = idExpl.get(explID);
             Sentence explSent = expl.getSentence();
 
-            String featureStr = Utils.getFeatureStr(main, q, a, explSent, expl.getSource()).replaceAll("\\s+", " ");
-            String outputStr = rank+" qid:"+qid+" "+featureStr;
+            Map<String, String> tagFeatureStr = NLP.idTAGFeat.get(qaID+" "+explID);
+
+            String featureStr = Utils.getFeatureStr(main, q, a, explSent, expl.getSource(), tagFeatureStr).replaceAll("\\s+", " ");
+
+            String outputStr = qid != -1 ? (rank+" qid:"+qid+" "+featureStr) : (rank+" "+featureStr);
             output.write((outputStr+"\n").getBytes());
 
             if (idLog != null) idLog.write((qaID+"\t"+explID+"\n").getBytes());
 
-            if(rank != 1) rank--;
+            //if (rank==0 && qid != -1) rank--;
+
+            if(rank >= 1) rank--;
         }
         return rank;
     }
@@ -123,6 +129,30 @@ public class Train {
             }
             explIDs = negAnn.get(qaID);
             iterateExplanations(qid, qaID, explIDs, quesSent, ansSent, rank, output, idLog);
+
+            qid++;
+        }
+    }
+
+    public void writePosAndNegSelectInstances(FileOutputStream data, FileOutputStream query, FileOutputStream idLog) throws IOException {
+        int qid = 1;
+        for (String qaID : posAnn.keySet()) {
+            QA qa = idQa.get(qaID);
+            Sentence quesSent = qa.getQuestion();
+            Sentence ansSent = qa.getCorrectAns();
+
+            List<String> explIDs = posAnn.get(qaID);
+            int rank = explIDs.size();
+            rank = iterateExplanations(-1, qaID, explIDs, quesSent, ansSent, rank, data, idLog);
+
+            int total = explIDs.size();
+
+            explIDs = negAnn.get(qaID);
+            iterateExplanations(-1, qaID, explIDs, quesSent, ansSent, 0, data, idLog);
+
+            total += explIDs.size();
+
+            query.write((total+"\n").getBytes());
 
             qid++;
         }
@@ -159,7 +189,7 @@ public class Train {
                 int rank = subannotations.get(explID);
                 Sentence explSent = expl.getSentence();
 
-                String featureStr = Utils.getFeatureStr(main, quesSent, ansSent, explSent, expl.getSource());
+                String featureStr = Utils.getFeatureStr(main, quesSent, ansSent, explSent, expl.getSource(), null);
                 String outputStr = rank + " qid:" + qid + " " + featureStr;
                 output.write((outputStr + "\n").getBytes());
             }
@@ -189,7 +219,7 @@ public class Train {
                 Explanation expl = idExpl.get(explID);
                 Sentence explSent = expl.getSentence();
 
-                String featureStr = Utils.getFeatureStr(main, quesSent, ansSent, explSent, expl.getSource());
+                String featureStr = Utils.getFeatureStr(main, quesSent, ansSent, explSent, expl.getSource(), null);
 
                 String outputStr = rank+" qid:"+qid+" "+featureStr;
                 output.write((outputStr+"\n").getBytes());

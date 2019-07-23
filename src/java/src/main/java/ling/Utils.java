@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
  */
 public class Utils {
 
-    public static String getFeatureStr(Main main, Sentence q, Sentence a, Sentence expl, String source) {
+    public static String getFeatureStr(Main main, Sentence q, Sentence a, Sentence expl, String source, Map<String, String> tagFeatures) {
         return main.getLemma().toSVMRankString(q, a, expl)+" "+
                 main.getTs().toSVMRankString(source)+" "+
                 main.getAffix().toSVMRankString(q, a, expl)+" "+
@@ -20,7 +20,10 @@ public class Utils {
                 main.getCnrel().toSVMRankString(q, a, expl)+" "+
                 main.getWikicat().toSVMRankString(q, a, expl)+" "+
                 main.getWikit().toSVMRankString(q, a, expl)+" "+
-                main.getFrameNet().toSVMRankString(q, a, expl);
+                main.getFrameNet1_7().toSVMRankString(q, a, expl);//+" "+
+                //main.getFrameNet1_5().toSVMRankString(q, a, expl);
+                //main.getWordNet().toSVMRankString(q, a, expl);
+                //main.getTag().toSVMRankString(tagFeatures);
     }
 
     public static String getFeature(int start, Map<String, Integer> globalfeatures, List<String> localfeatures, int end) {
@@ -39,17 +42,20 @@ public class Utils {
         return featureStr.trim();
     }
 
-    public static String getFeature(int start, Map<String, Integer> globalfeatures, Map<String, Integer> localfeatures, int end) {
+    public static String getFeature(int start, Map<String, Integer> globalfeatures, Map<String, String> localfeatures, int end) {
         String featureStr = "";
+
+        if (localfeatures == null || localfeatures.isEmpty()) return end+":1";
 
         Map<String, Integer> globalfeaturescopy = new HashMap<>(globalfeatures);
         globalfeaturescopy.keySet().retainAll(localfeatures.keySet());
 
         Map<String, Integer> sortedMap = globalfeaturescopy.entrySet().stream()
-                .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
+                .sorted(Map.Entry.comparingByValue())
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new));
         for (String v : sortedMap.keySet()) {
-            featureStr += sortedMap.get(v)+":1 ";
+            int index = sortedMap.get(v)+start+1;
+            featureStr += index+":"+localfeatures.get(v)+" ";
         }
 
         return featureStr.trim();
