@@ -70,7 +70,7 @@ public class Dev {
             output.write((outputStr+"\n").getBytes());
             if (idLog != null) idLog.write((qaID+"\t"+explID+"\n").getBytes());
 
-            if(rank >= 1) rank--;
+            if(rank > 1) rank--;
         }
         return rank;
     }
@@ -84,6 +84,8 @@ public class Dev {
 
             List<String> explIDs = posAnn.get(qaID);
             int rank = explIDs.size()+1;
+            //System.out.println(qaID);
+            //System.out.println(explIDs);
             rank = iterateExplanations(qid, qaID, explIDs, quesSent, ansSent, rank, output, idLog);
 
             if (rank != 1) {

@@ -63,14 +63,27 @@ public class Train {
 
             explIDs.removeAll(posExplIDs);
 
+            List<String> negExplIDs = negAnn.get(qa);
+            //if (negExplIDs == null) negAnn.put(qa, negExplIDs = new ArrayList<>());
+
+            if (negExplIDs == null) {
+                System.out.println(qa);
+                System.exit(-1);
+            }
+            else if (negExplIDs.size() != 500) {
+                System.out.println(negExplIDs.size());
+                System.out.println(qa);
+                System.exit(-1);
+            }
+
+            explIDs.removeAll(negExplIDs);
+
             List<Integer> range = IntStream.range(0, explIDs.size()).boxed().collect(Collectors.toCollection(ArrayList::new));
             Collections.shuffle(range);
 
-            List<String> negExplIDs = negAnn.get(qa);
-            if (negExplIDs == null) negAnn.put(qa, negExplIDs = new ArrayList<>());
-
             for (int i = 0; i < num; i++) {
-                negExplIDs.add(explIDs.get(range.get(i)));
+                String explID = explIDs.get(range.get(i));
+                negExplIDs.add(explID);
             }
         }
     }
@@ -105,7 +118,7 @@ public class Train {
 
             //if (rank==0 && qid != -1) rank--;
 
-            if(rank >= 1) rank--;
+            if(rank > 1) rank--;
         }
         return rank;
     }

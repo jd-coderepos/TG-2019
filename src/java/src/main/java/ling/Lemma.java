@@ -3,7 +3,6 @@ package ling;
 import markup.Sentence;
 import markup.Token;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;

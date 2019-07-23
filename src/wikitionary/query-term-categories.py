@@ -5,13 +5,13 @@ url = "https://en.wiktionary.org/w/api.php"
 
 RES_DIR = "../../data/resources"
 
-f = open(os.path.join(RES_DIR, "concepts.txt"), "r", encoding="utf8")
-fw = open(os.path.join(RES_DIR, "wiki-concept-categories.txt"), "w", encoding="utf8")
+f = open(os.path.join(RES_DIR, "querytermsforconceptnet.txt"), "r", encoding="utf8")
+fw = open(os.path.join(RES_DIR, "new-wiki-concept-categories.txt"), "w", encoding="utf8")
 
 
 for x in f:
 	x = x.strip()
-	x = x.split('\t')[0]
+	#x = x.split('\t')[0]
 	querystring = {"action":"query","prop":"categories","titles":x,"cllimit":"500","format":"json"}
 
 	headers = {

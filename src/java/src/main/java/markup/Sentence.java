@@ -147,7 +147,6 @@ public class Sentence {
             t.setCn_wordrelations(word_lowercase);
             t.setWikicategories(word_lowercase);
             t.setWikititles(word_lowercase);
-            t.setWordNetLinguisticRelations(word_lowercase, t.getPos());
 
             tokens.add(t);
             setCumulativeValues(t);
@@ -159,7 +158,6 @@ public class Sentence {
                 main.getCnrel().setUniFeatures(t);
                 main.getWikicat().setUniFeatures(t);
                 main.getWikit().setUniFeatures(t);
-                main.getWordNet().setUniFeatures(t);
             }
         }
     }

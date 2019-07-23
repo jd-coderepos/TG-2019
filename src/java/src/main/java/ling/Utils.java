@@ -15,15 +15,12 @@ public class Utils {
         return main.getLemma().toSVMRankString(q, a, expl)+" "+
                 main.getTs().toSVMRankString(source)+" "+
                 main.getAffix().toSVMRankString(q, a, expl)+" "+
-                main.getCon().toSVMRankString(q, a, expl)+" "+
                 main.getOpenRel().toSVMRankString(q, a, expl)+" "+
+                main.getCon().toSVMRankString(q, a, expl)+" "+
                 main.getCnrel().toSVMRankString(q, a, expl)+" "+
                 main.getWikicat().toSVMRankString(q, a, expl)+" "+
                 main.getWikit().toSVMRankString(q, a, expl)+" "+
-                main.getFrameNet1_7().toSVMRankString(q, a, expl);//+" "+
-                //main.getFrameNet1_5().toSVMRankString(q, a, expl);
-                //main.getWordNet().toSVMRankString(q, a, expl);
-                //main.getTag().toSVMRankString(tagFeatures);
+                main.getFrameNet1_7().toSVMRankString(q, a, expl);
     }
 
     public static String getFeature(int start, Map<String, Integer> globalfeatures, List<String> localfeatures, int end) {

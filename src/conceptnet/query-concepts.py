@@ -4,12 +4,12 @@ import os
 #RES_DIR = "../../data/resources/conceptnet"
 RES_DIR = "../../data/resources"
 
-f = open(os.path.join(RES_DIR, "queryfileforwordtriples.txt"), "r", encoding="utf8")
+f = open(os.path.join(RES_DIR, "querytermsforconceptnet.txt"), "r", encoding="utf8")
 #f = open(os.path.join(RES_DIR, "new-words.txt"), "r", encoding="utf8")
 #f = open(os.path.join(RES_DIR, "new-wordlemmas.txt"), "r", encoding="utf8")
 #fw = open(os.path.join(RES_DIR, "new-word-triples.txt"), "w", encoding="utf8")
 #fw = open(os.path.join(RES_DIR, "new-wordlemma-triples.txt"), "w", encoding="utf8")
-fw = open(os.path.join(RES_DIR, "wordtriplesrem_out.txt"), "w", encoding="utf8")
+fw = open(os.path.join(RES_DIR, "new-wordtriples.txt"), "w", encoding="utf8")
 
 for x in f:
 	x = x.strip()
