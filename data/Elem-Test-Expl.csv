@@ -769,7 +769,7 @@ Mercury_SC_409024	db10-d17e-ddad-d545	to exhale means to release	LEXGLUE
 Mercury_SC_409024	7b20-0992-8ec1-c73c	a plant absorbs carbon dioxide from the air for photosynthesis	CENTRAL
 Mercury_SC_409024	160e-6da0-3cc4-1b3d	take in means absorb	LEXGLUE
 Mercury_SC_LBS11012	f5c3-d141-1a8b-80c9	solar energy is a renewable resource	ROLE
-Mercury_SC_LBS11012	b62f-8dfd-e486-3a96	--[NOT FOUND]--	CENTRAL
+Mercury_SC_LBS11012	b504-fe0c-2e70-84b4	a source of heat can be used to heat something	CENTRAL
 Mercury_SC_LBS11012	8b98-86c4-6f2f-94ad	a house is a kind of home	LEXGLUE
 Mercury_SC_LBS11012	dff5-88e0-55c8-e6a6	electricity sometimes is used for heating buildings or substances	CENTRAL
 Mercury_SC_LBS11012	4d1f-ad79-3299-bfb4	a home is a kind of building	GROUNDING
@@ -1110,7 +1110,6 @@ Mercury_SC_405885	66d6-b4c3-4854-2197	crashing a car causes harm to a person	CEN
 Mercury_SC_405885	57d4-79ba-a97d-0f9a	harming something has a negative impact on or effect on that something	CENTRAL
 Mercury_SC_405885	d055-74a0-b787-57b8	a concern or a problem is a possible negative impact	LEXGLUE
 Mercury_SC_406012	52f6-322b-a00b-cf49	controlling is a kind of function	CENTRAL
-Mercury_SC_406012	94a0-d90c-b39c-7263	--[NOT FOUND]--	ROLE
 Mercury_SC_400182	4399-9824-93cb-c8e7	solar energy is a kind of light	CENTRAL
 Mercury_SC_400182	0350-5cfd-debd-dee8	light can travel through a vacuum	CENTRAL
 Mercury_SC_400182	7c96-f704-e51e-1678	form means kind	LEXGLUE
@@ -2446,7 +2445,6 @@ Mercury_SC_410895	791e-1c71-7a1d-d10a	weathering means breaking down rocks or su
 Mercury_SC_410895	518b-ce25-7fb9-adfb	break apart means break down	LEXGLUE
 Mercury_SC_401827	22ce-038b-ff4f-c5ba	electrical conduction is when metals or electrical conductors conduct electricity through a wire or electrical conductor or metal	CENTRAL
 Mercury_SC_401827	ac2a-9f55-aeab-2917	to conduct is similar to to transfer	LEXGLUE
-Mercury_SC_407592	5124-b03e-ff20-b4d6	--[NOT FOUND]--	CENTRAL
 Mercury_SC_407592	3033-d050-eb10-b696	renewable is the opposite of nonrenewable	CENTRAL
 Mercury_SC_407592	372a-9e36-7f56-af5c	a renewable resource can be replaced	CENTRAL
 Mercury_SC_407592	044f-98c1-07d1-2e57	an energy source is a kind of resource	GROUNDING
@@ -2493,7 +2491,6 @@ Mercury_SC_405928	aa7b-a050-ec29-97a1	planting trees is the opposite of cutting 
 Mercury_SC_405928	58fb-4d30-982b-787b	deforested area means an area where trees have been cut down	LEXGLUE
 Mercury_SC_401278	d148-e8f6-c895-1843	as the kinetic energy of a molecule increases , the temperature will increase	CENTRAL
 Mercury_SC_401278	8346-8315-1f24-a5be	a thermometer is used to measure temperature	CENTRAL
-Mercury_SC_408747	5124-b03e-ff20-b4d6	--[NOT FOUND]--	CENTRAL
 Mercury_SC_408747	044f-98c1-07d1-2e57	an energy source is a kind of resource	LEXGLUE
 Mercury_SC_400003	700a-4b04-6cef-9114	a spider web is used to capture food by spiders	CENTRAL
 Mercury_SC_400003	679c-fab2-a001-db1e	to be used for something means to help to do that something	LEXGLUE
