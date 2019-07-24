@@ -17,16 +17,16 @@ public class QA {
     public QA(String[] line, boolean train, Main main) {
         this.qaID = line[0];
         this.question = new Sentence();
-        if (NLP.frames1_7.containsKey(this.qaID)) {
+        /*if (NLP.frames1_7.containsKey(this.qaID)) {
             String frameStr = NLP.frames1_7.get(this.qaID);
             this.question.setFrames1_7(frameStr, train, main);
-        }
+        }*/
         this.question.setTokens(line[1].split("\\s"), train, main);
-        this.question.setRelations(line.length > 3 ? line[3] : null, train, main);
+        //this.question.setRelations(line.length > 3 ? line[3] : null, train, main);
 
         this.correctAns = new Sentence();
         this.correctAns.setTokens(line[2].split("\\s"), train, main);
-        this.correctAns.setRelations(line.length > 4 ? line[4] : null, train, main);
+        //this.correctAns.setRelations(line.length > 4 ? line[4] : null, train, main);
     }
 
     public int getCorrectAns(String[] tokens) {

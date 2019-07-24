@@ -119,8 +119,8 @@ public class Main {
         dev.processPositiveQAExpl(IO.readCSV(data_dir+"\\"+gold_data, '\t', 0));
         String output_file = "test-"+feat_grp+".dat";
         String id_file = "test-ids.txt";
-        dev.writeOutput(new FileOutputStream(data_dir+"\\"+output_file), new FileOutputStream(data_dir+"\\"+id_file));
-        //dev.writeOutput(new FileOutputStream(data_dir+"\\"+output_file), null);
+        //dev.writeOutput(new FileOutputStream(data_dir+"\\"+output_file), new FileOutputStream(data_dir+"\\"+id_file));
+        dev.writeOutput(new FileOutputStream(data_dir+"\\"+output_file), null);
     }
 
     public void initDevSetup(String data_dir, String feat_grp) throws IOException {
@@ -144,14 +144,14 @@ public class Main {
         String expl_file = "expl-tablestore-rel.csv";
         train.processExpl(IO.readCSV(data_dir+"\\"+expl_file, '\t', 0));
         lemma.setFeatureSizes(0);
-        ts.setFeatureSizes(lemma.getLastSize());
-        affix.setFeatureSizes(ts.getLastSize());
-        openRel.setFeatureSizes(affix.getLastSize());
-        con.setFeatureSizes(openRel.getLastSize());
-        cnrel.setFeatureSizes(con.getLastSize());
-        wikicat.setFeatureSizes(cnrel.getLastSize());
-        wikit.setFeatureSizes(wikicat.getLastSize());
-        frameNet1_7.setFeatureSizes(wikit.getLastSize());
+        //ts.setFeatureSizes(lemma.getLastSize());
+        //affix.setFeatureSizes(ts.getLastSize());
+        //openRel.setFeatureSizes(affix.getLastSize());
+        //con.setFeatureSizes(openRel.getLastSize());
+        //cnrel.setFeatureSizes(con.getLastSize());
+        //wikicat.setFeatureSizes(cnrel.getLastSize());
+        //wikit.setFeatureSizes(wikicat.getLastSize());
+        //frameNet1_7.setFeatureSizes(wikit.getLastSize());
 
         System.out.println("Done generating training features!");
 
@@ -175,19 +175,19 @@ public class Main {
         String data_dir = "C:\\Users\\DSouzaJ\\Desktop\\Code\\TG-2019\\data";
 
         NLP.setStopwords(IO.readFile(data_dir+"\\resources\\stopwords", StandardCharsets.UTF_8).split("\\n"));
-        NLP.setConcepts(IO.readCSV(data_dir+"\\resources\\concepts.txt", '\t', 0));
-        NLP.setConceptRelations(IO.readCSV(data_dir+"\\resources\\wordtriples.txt", '\t', 0));
-        NLP.setWikiCategories(IO.readCSV(data_dir+"\\resources\\wiki-concept-categories.txt", '\t', 0));
-        NLP.setWikiTitles(IO.readCSV(data_dir+"\\resources\\wiki-concept-search-titles.txt", '\t', 0));
+        //NLP.setConcepts(IO.readCSV(data_dir+"\\resources\\concepts.txt", '\t', 0));
+        //NLP.setConceptRelations(IO.readCSV(data_dir+"\\resources\\wordtriples.txt", '\t', 0));
+        //NLP.setWikiCategories(IO.readCSV(data_dir+"\\resources\\wiki-concept-categories.txt", '\t', 0));
+        //NLP.setWikiTitles(IO.readCSV(data_dir+"\\resources\\wiki-concept-search-titles.txt", '\t', 0));
 
-        NLP.setFrames1_7(IO.readFile(data_dir+"\\resources\\framenet\\predicted-args-train.txt", StandardCharsets.UTF_8).split("\\n"));
-        NLP.setFrames1_7(IO.readFile(data_dir+"\\resources\\framenet\\predicted-args-dev.txt", StandardCharsets.UTF_8).split("\\n"));
-        NLP.setFrames1_7(IO.readFile(data_dir+"\\resources\\framenet\\predicted-args-test.txt", StandardCharsets.UTF_8).split("\\n"));
-        NLP.setFrames1_7(IO.readFile(data_dir+"\\resources\\framenet\\predicted-args-expl.txt", StandardCharsets.UTF_8).split("\\n"));
+        //NLP.setFrames1_7(IO.readFile(data_dir+"\\resources\\framenet\\predicted-args-train.txt", StandardCharsets.UTF_8).split("\\n"));
+        //NLP.setFrames1_7(IO.readFile(data_dir+"\\resources\\framenet\\predicted-args-dev.txt", StandardCharsets.UTF_8).split("\\n"));
+        //NLP.setFrames1_7(IO.readFile(data_dir+"\\resources\\framenet\\predicted-args-test.txt", StandardCharsets.UTF_8).split("\\n"));
+        //NLP.setFrames1_7(IO.readFile(data_dir+"\\resources\\framenet\\predicted-args-expl.txt", StandardCharsets.UTF_8).split("\\n"));
 
         Main main = new Main();
 
-        String feat_grp = "framenet";
+        String feat_grp = "lemma";
         main.initTrainSetup(data_dir, 500, feat_grp);
         main.initDevSetup(data_dir, feat_grp);
         main.initTestSetup(data_dir, feat_grp);

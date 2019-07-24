@@ -144,20 +144,20 @@ public class Sentence {
             }
 
             String word_lowercase = t.word.toLowerCase();
-            t.setCn_wordrelations(word_lowercase);
-            t.setWikicategories(word_lowercase);
-            t.setWikititles(word_lowercase);
+            //t.setCn_wordrelations(word_lowercase);
+            //t.setWikicategories(word_lowercase);
+            //t.setWikititles(word_lowercase);
 
             tokens.add(t);
             setCumulativeValues(t);
 
             if (train) {
                 main.getLemma().setUniFeatures(t);
-                main.getAffix().setUniFeatures(t);
-                main.getCon().setUniFeatures(t);
-                main.getCnrel().setUniFeatures(t);
-                main.getWikicat().setUniFeatures(t);
-                main.getWikit().setUniFeatures(t);
+                //main.getAffix().setUniFeatures(t);
+                //main.getCon().setUniFeatures(t);
+                //main.getCnrel().setUniFeatures(t);
+                //main.getWikicat().setUniFeatures(t);
+                //main.getWikit().setUniFeatures(t);
             }
         }
     }
@@ -276,7 +276,7 @@ public class Sentence {
 
         }
         if (train) {
-            main.getOpenRel().setUniFeatures(this);
+            //main.getOpenRel().setUniFeatures(this);
         }
     }
 

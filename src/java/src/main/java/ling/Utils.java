@@ -12,15 +12,15 @@ import java.util.stream.Collectors;
 public class Utils {
 
     public static String getFeatureStr(Main main, Sentence q, Sentence a, Sentence expl, String source, Map<String, String> tagFeatures) {
-        return main.getLemma().toSVMRankString(q, a, expl)+" "+
-                main.getTs().toSVMRankString(source)+" "+
-                main.getAffix().toSVMRankString(q, a, expl)+" "+
-                main.getOpenRel().toSVMRankString(q, a, expl)+" "+
-                main.getCon().toSVMRankString(q, a, expl)+" "+
-                main.getCnrel().toSVMRankString(q, a, expl)+" "+
-                main.getWikicat().toSVMRankString(q, a, expl)+" "+
-                main.getWikit().toSVMRankString(q, a, expl)+" "+
-                main.getFrameNet1_7().toSVMRankString(q, a, expl);
+        return main.getLemma().toSVMRankString(q, a, expl);//+" "+
+                //main.getTs().toSVMRankString(source);//+" "+
+                //main.getAffix().toSVMRankString(q, a, expl);//+" "+
+                //main.getOpenRel().toSVMRankString(q, a, expl);//+" "+
+                //main.getCon().toSVMRankString(q, a, expl);//+" "+
+                //main.getCnrel().toSVMRankString(q, a, expl);//+" "+
+                //main.getWikicat().toSVMRankString(q, a, expl);//+" "+
+                //main.getWikit().toSVMRankString(q, a, expl)//+" "+
+                //main.getFrameNet1_7().toSVMRankString(q, a, expl);
     }
 
     public static String getFeature(int start, Map<String, Integer> globalfeatures, List<String> localfeatures, int end) {
